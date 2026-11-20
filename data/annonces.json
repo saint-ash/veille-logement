@@ -1,6 +1,75 @@
 {
- "maj": "2026-11-20T14:12:25Z",
+ "maj": "2026-11-20T21:46:16Z",
  "annonces": [
+  {
+   "cle": "bienici:iad-france-2151546",
+   "source": "Bien'ici",
+   "url": "https://www.bienici.com/annonce/iad-france-2151546",
+   "titre": "Location Appartement 1 pièce",
+   "prix": 880,
+   "surface": 18,
+   "pieces": 1,
+   "ville": "Courbevoie",
+   "code_postal": "92400",
+   "lat": 48.89942574452149,
+   "lon": 2.2366694550239252,
+   "rayon_flou_km": 0.05,
+   "photo": "https://passerelle.static.iadfrance.com/photos/realestate/2026-11/product-2219465-1.jpg?bridge=bienici&ts=202611201544",
+   "photos": [
+    "https://passerelle.static.iadfrance.com/photos/realestate/2026-11/product-2219465-1.jpg?bridge=bienici&ts=202611201544",
+    "https://passerelle.static.iadfrance.com/photos/realestate/2026-11/product-2219465-2.jpg?bridge=bienici&ts=202611201544",
+    "https://passerelle.static.iadfrance.com/photos/realestate/2026-11/product-2219465-3.jpg?bridge=bienici&ts=202611201544",
+    "https://passerelle.static.iadfrance.com/photos/realestate/2026-11/product-2219465-4.jpg?bridge=bienici&ts=202611201544"
+   ],
+   "charges": 50,
+   "meuble": true,
+   "etage": 8,
+   "annonceur": "agence",
+   "frais_agence": 273,
+   "date": "2026-11-13T18:56:21.637Z",
+   "insee": "92026",
+   "coup_de_coeur": true,
+   "securite": {
+    "niveau": 3,
+    "taux": 3.7,
+    "rang": 140,
+    "sur": 293,
+    "annee": "2025",
+    "code": "92026"
+   },
+   "gare": "La Défense",
+   "lignes": [
+    "A",
+    "M1",
+    "L",
+    "E",
+    "U"
+   ],
+   "gare_lat": 48.89169,
+   "gare_lon": 2.2386,
+   "distance_km": 0.872,
+   "minutes": 14,
+   "position_approx": false,
+   "trajets": {
+    "SKEMA": null,
+    "Porte Maillot": null
+   },
+   "ratio_marche": 1.136,
+   "prix_m2": 48.9,
+   "note_detail": {
+    "prix": 7,
+    "securite": 10,
+    "trajets": 10,
+    "gare": 0,
+    "surface": 0,
+    "bonus": 4
+   },
+   "score": 31,
+   "tags": [],
+   "extrait": "iad France - Aurelia Vakili Taleghani (<span class=\"importDescriptionDecorator\" data-type=\"phone\">07 61 53 76 41</span>) vous propose : À LOUER - STUDIO MEUBLÉ AVEC BALCON - AUX PORTES DE LA DÉFENSE <br>Idéalement situé près de l'arrêt de T2 Faubourg de l'arche, au sein d'une rés…",
+   "vu_le": "2026-11-20T21:46:14Z",
+   "prix_initial": 880
+  },
   {
    "cle": "bienici:ladresse-1-adresse-14705828",
    "source": "Bien'ici",
@@ -309,17 +378,17 @@
     "SKEMA": null,
     "Porte Maillot": null
    },
-   "ratio_marche": 1.0,
+   "ratio_marche": 0.938,
    "prix_m2": 40.3,
    "note_detail": {
-    "prix": 15,
+    "prix": 19,
     "securite": 5,
     "trajets": 10,
     "gare": 12,
     "surface": 2,
     "bonus": 4
    },
-   "score": 48,
+   "score": 51,
    "tags": [],
    "extrait": "À LOUER : Découvrez ce charmant appartement T1 situé au cœur de Courbevoie, dans un quartier prisé et dynamique à 5mn de la Défense. Niché au troisième étage d'un immeuble élégant, cet espace de vie de 20 m² allie confort et fonctionnalité, idéal pour une personne seule.\n\nL'appar…",
    "vu_le": "2026-11-20T14:09:48Z",
@@ -571,17 +640,17 @@
     "SKEMA": null,
     "Porte Maillot": null
    },
-   "ratio_marche": 1.188,
+   "ratio_marche": 1.114,
    "prix_m2": 47.9,
    "note_detail": {
-    "prix": 4,
+    "prix": 8,
     "securite": 5,
     "trajets": 10,
     "gare": 7,
     "surface": 0,
     "bonus": 4
    },
-   "score": 30,
+   "score": 35,
    "tags": [],
    "extrait": "Situé au 4e étage d'une résidence avec ascenseur, ce charmant studio meublé de 18,57 m2 vous séduira par son agencement fonctionnel, sa luminosité et son emplacement à proximité du quartier d'affaires de La Défense.<br> Entièrement aménagé et équipé, cet appartement offre un cadr…",
    "vu_le": "2026-11-20T14:09:48Z",
@@ -636,17 +705,17 @@
     "SKEMA": null,
     "Porte Maillot": null
    },
-   "ratio_marche": 0.853,
+   "ratio_marche": 0.799,
    "prix_m2": 34.4,
    "note_detail": {
-    "prix": 24,
+    "prix": 27,
     "securite": 5,
     "trajets": 10,
     "gare": 13,
     "surface": 5,
     "bonus": 4
    },
-   "score": 61,
+   "score": 64,
    "tags": [
     "bonne_affaire"
    ],
@@ -659,7 +728,7 @@
    "source": "Bien'ici",
    "url": "https://www.bienici.com/annonce/netty-rueil-appt-3021",
    "titre": "STUDIO RUEIL-MALMAISON PLAINE GARE PROCHE GARES RER RUEIL ET NAN",
-   "prix": 790,
+   "prix": 740,
    "surface": 22.99,
    "pieces": 1,
    "ville": "Rueil-Malmaison",
@@ -682,10 +751,10 @@
    "date": "2026-10-01T16:13:43.362Z",
    "insee": "92063",
    "securite": {
-    "niveau": 2,
-    "taux": 14.0,
-    "rang": 198,
-    "sur": 311,
+    "niveau": 3,
+    "taux": 3.3,
+    "rang": 124,
+    "sur": 293,
     "annee": "2025",
     "code": "92063"
    },
@@ -698,22 +767,26 @@
    "distance_km": 0.553,
    "minutes": 9,
    "position_approx": false,
+   "tags": [
+    "baisse",
+    "bonne_affaire"
+   ],
+   "baisse_le": "2026-11-20T21:46:11Z",
    "trajets": {
     "SKEMA": null,
     "Porte Maillot": null
    },
-   "ratio_marche": 0.904,
-   "prix_m2": 34.4,
+   "ratio_marche": 0.847,
+   "prix_m2": 32.2,
    "note_detail": {
-    "prix": 21,
-    "securite": 5,
+    "prix": 24,
+    "securite": 10,
     "trajets": 10,
     "gare": 10,
     "surface": 4,
     "bonus": 0
    },
-   "score": 50,
-   "tags": [],
+   "score": 58,
    "extrait": "*** IMPORTANT : demande de contact à faire par e-mail via le formulaire sur cette annonce. Un accès vous sera automatiquement ouvert pour déposer votre dossier en ligne. Les visites seront organisées après validation de votre dossier. ***<br>NESTENN Rueil-Malmaison vous propose, …",
    "vu_le": "2026-11-20T14:09:48Z",
    "prix_initial": 790
@@ -829,18 +902,20 @@
     "SKEMA": null,
     "Porte Maillot": null
    },
-   "ratio_marche": 0.904,
+   "ratio_marche": 0.847,
    "prix_m2": 36.5,
    "note_detail": {
-    "prix": 21,
+    "prix": 24,
     "securite": 5,
     "trajets": 10,
     "gare": 0,
     "surface": 5,
     "bonus": 4
    },
-   "score": 44,
-   "tags": [],
+   "score": 48,
+   "tags": [
+    "bonne_affaire"
+   ],
    "extrait": "COURBEVOIE / Bd de Verdun - au 1er étage d'une copropriété sécurisée, avec ascenseur, Studio MEUBLE de 24.41m² composé d'une entrée placard, pièce principale avec coin cuisine aménagé et équipé, donnant sur balcon, une salle de bains avec WC. Parking en sous-sol. Chauffage indivi…",
    "vu_le": "2026-11-20T14:09:48Z",
    "prix_initial": 890
@@ -961,17 +1036,17 @@
     "SKEMA": null,
     "Porte Maillot": null
    },
-   "ratio_marche": 1.133,
+   "ratio_marche": 1.062,
    "prix_m2": 45.7,
    "note_detail": {
-    "prix": 7,
+    "prix": 11,
     "securite": 8,
     "trajets": 10,
     "gare": 11,
     "surface": 0,
     "bonus": 4
    },
-   "score": 40,
+   "score": 45,
    "tags": [
     "securise"
    ],
