@@ -14,6 +14,7 @@ import json
 import imaplib
 import os
 import re
+from datetime import datetime, timedelta
 from email.header import decode_header, make_header
 from email.utils import parseaddr
 from html.parser import HTMLParser
@@ -185,29 +186,35 @@ def _corps_html(msg):
 
 
 def recuperer(conf):
+    """Lit les alertes reçues ces 2 derniers jours, sans rien modifier dans la boîte mail
+    (pas de « lu », pas de déplacement). Les doublons sont filtrés par l'adresse de l'annonce."""
     c = conf["sources"]["emails"]
     user, mdp = os.environ.get("IMAP_USER"), os.environ.get("IMAP_PASSWORD")
     if not (user and mdp):
         print("[emails] IMAP_USER / IMAP_PASSWORD absents, source ignorée")
         return []
-    annonces = []
+    depuis = (datetime.now() - timedelta(days=c.get("jours", 2))).strftime("%d-%b-%Y")
+    annonces, lus = [], 0
     with imaplib.IMAP4_SSL(c.get("imap_host", "imap.gmail.com")) as M:
-        M.login(user, mdp)
-        M.select(c.get("dossier", "INBOX"))
-        _, data = M.search(None, "UNSEEN")
+        M.login(user, mdp.replace(" ", ""))
+        M.select(c.get("dossier", "INBOX"), readonly=True)
+        _, data = M.search(None, "SINCE", depuis)
         for num in data[0].split():
-            _, d = M.fetch(num, "(BODY.PEEK[])")
-            msg = email.message_from_bytes(d[0][1])
-            expediteur = parseaddr(msg.get("From", ""))[1].lower()
+            _, h = M.fetch(num, "(BODY.PEEK[HEADER.FIELDS (FROM)])")
+            expediteur = parseaddr(email.message_from_bytes(h[0][1]).get("From", ""))[1].lower()
             domaine = next((x for x in c["expediteurs"] if expediteur.endswith(x)), None)
             if not domaine:
-                continue  # pas une alerte immo : on n'y touche pas
+                continue  # pas une alerte immo : on n'ouvre même pas le mail
+            _, d = M.fetch(num, "(BODY.PEEK[])")
+            msg = email.message_from_bytes(d[0][1])
             sujet = str(make_header(decode_header(msg.get("Subject", ""))))
-            trouvees = extraire_annonces(_corps_html(msg), domaine, c.get("liens_max_par_mail", 10))
+            trouvees = extraire_annonces(_corps_html(msg), domaine, c.get("liens_max_par_mail", 15))
             if domaine in c.get("sites_particuliers", []):
                 for t in trouvees:
                     t["annonceur"] = "particulier"
-            print(f"[emails] {domaine} « {sujet[:60]} » → {len(trouvees)} annonce(s)")
+            lus += 1
             annonces += trouvees
-            M.store(num, "+FLAGS", "\\Seen")
+            if trouvees:
+                print(f"[emails] {domaine} « {sujet[:50]} » → {len(trouvees)} annonce(s)")
+    print(f"[emails] {lus} alerte(s) lue(s), {len(annonces)} annonce(s) extraite(s)")
     return annonces

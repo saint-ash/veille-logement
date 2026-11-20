@@ -293,7 +293,8 @@ paris = 4
 est = 1
 
 [sources.emails]
-actif = false
+actif = true              # s'active dès que IMAP_USER et IMAP_PASSWORD sont dans les secrets GitHub
+jours = 2                 # relit les alertes des 2 derniers jours (rien n'est modifié dans ta boîte)
 imap_host = "imap.gmail.com"
 dossier = "INBOX"
 # Particuliers : pap.fr, leboncoin.fr, locservice.fr, entreparticuliers.com, paruvendu.fr
