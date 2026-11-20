@@ -1,0 +1,325 @@
+{
+ "total": 13,
+ "realEstateAds": [
+  {
+   "id": "ag1-001",
+   "title": "Studio meublé 28 m²",
+   "city": "Nanterre",
+   "postalCode": "92000",
+   "price": 850,
+   "surfaceArea": 28,
+   "roomsQuantity": 1,
+   "description": "Proche RER A, lumineux, 3e étage",
+   "publicationDate": "2026-11-20T09:00:00Z",
+   "photos": [
+    {
+     "url_photo": "https://file.bienici.com/photo/ag1-001.jpg"
+    }
+   ],
+   "blurInfo": {
+    "position": {
+     "lat": 48.8965,
+     "lon": 2.211
+    }
+   },
+   "isFurnished": true,
+   "floor": 3,
+   "adCreatedByPro": true
+  },
+  {
+   "id": "ag1-002",
+   "title": "Studio meublé 25 m²",
+   "city": "Rueil-Malmaison",
+   "postalCode": "92500",
+   "price": 720,
+   "surfaceArea": 25,
+   "roomsQuantity": 1,
+   "description": "",
+   "publicationDate": "2026-11-20T09:00:00Z",
+   "photos": [
+    {
+     "url_photo": "https://file.bienici.com/photo/ag1-002.jpg"
+    }
+   ],
+   "blurInfo": {
+    "position": {
+     "lat": 48.864,
+     "lon": 2.19
+    }
+   },
+   "isFurnished": true,
+   "floor": 2,
+   "adCreatedByPro": true
+  },
+  {
+   "id": "ag1-003",
+   "title": "T2 meublé 44 m² balcon",
+   "city": "Courbevoie",
+   "postalCode": "92400",
+   "price": 890,
+   "surfaceArea": 44,
+   "roomsQuantity": 2,
+   "description": "",
+   "publicationDate": "2026-11-20T09:00:00Z",
+   "photos": [
+    {
+     "url_photo": "https://file.bienici.com/photo/ag1-003.jpg"
+    }
+   ],
+   "blurInfo": {
+    "type": "disk",
+    "centroid": {
+     "lat": 48.8975,
+     "lon": 2.25
+    },
+    "radius": 500
+   },
+   "isFurnished": null,
+   "floor": 4,
+   "adCreatedByPro": true
+  },
+  {
+   "id": "ag1-004",
+   "title": "T2 standing meublé",
+   "city": "Puteaux",
+   "postalCode": "92800",
+   "price": 1450,
+   "surfaceArea": 48,
+   "roomsQuantity": 2,
+   "description": "",
+   "publicationDate": "2026-11-20T09:00:00Z",
+   "photos": [
+    {
+     "url_photo": "https://file.bienici.com/photo/ag1-004.jpg"
+    }
+   ],
+   "blurInfo": {
+    "position": {
+     "lat": 48.889,
+     "lon": 2.24
+    }
+   },
+   "isFurnished": true,
+   "floor": 2,
+   "adCreatedByPro": true
+  },
+  {
+   "id": "ag1-005",
+   "title": "Chambre en colocation",
+   "city": "Nanterre",
+   "postalCode": "92000",
+   "price": 600,
+   "surfaceArea": 20,
+   "roomsQuantity": 1,
+   "description": "colocation meublée 3 personnes",
+   "publicationDate": "2026-11-20T09:00:00Z",
+   "photos": [
+    {
+     "url_photo": "https://file.bienici.com/photo/ag1-005.jpg"
+    }
+   ],
+   "blurInfo": {
+    "position": {
+     "lat": 48.895,
+     "lon": 2.214
+    }
+   },
+   "isFurnished": true,
+   "floor": 2,
+   "adCreatedByPro": true
+  },
+  {
+   "id": "ag1-006",
+   "title": "Studio meublé Paris 18e",
+   "city": "Paris 18e",
+   "postalCode": "75018",
+   "price": 850,
+   "surfaceArea": 22,
+   "roomsQuantity": 1,
+   "description": "",
+   "publicationDate": "2026-11-20T09:00:00Z",
+   "photos": [
+    {
+     "url_photo": "https://file.bienici.com/photo/ag1-006.jpg"
+    }
+   ],
+   "blurInfo": {
+    "position": {
+     "lat": 48.885,
+     "lon": 2.3
+    }
+   },
+   "isFurnished": true,
+   "floor": 2,
+   "adCreatedByPro": true
+  },
+  {
+   "id": "ag1-007",
+   "title": "Studio meublé 12 m²",
+   "city": "Nanterre",
+   "postalCode": "92000",
+   "price": 550,
+   "surfaceArea": 12,
+   "roomsQuantity": 1,
+   "description": "",
+   "publicationDate": "2026-11-20T09:00:00Z",
+   "photos": [
+    {
+     "url_photo": "https://file.bienici.com/photo/ag1-007.jpg"
+    }
+   ],
+   "blurInfo": {
+    "position": {
+     "lat": 48.8925,
+     "lon": 2.197
+    }
+   },
+   "isFurnished": true,
+   "floor": 2,
+   "adCreatedByPro": true
+  },
+  {
+   "id": "ag1-008",
+   "title": "Studio 25 m² location vide",
+   "city": "Suresnes",
+   "postalCode": "92150",
+   "price": 820,
+   "surfaceArea": 25,
+   "roomsQuantity": 1,
+   "description": "Logement non meublé",
+   "publicationDate": "2026-11-20T09:00:00Z",
+   "photos": [
+    {
+     "url_photo": "https://file.bienici.com/photo/ag1-008.jpg"
+    }
+   ],
+   "blurInfo": {
+    "position": {
+     "lat": 48.872,
+     "lon": 2.222
+    }
+   },
+   "isFurnished": false,
+   "floor": 2,
+   "adCreatedByPro": true
+  },
+  {
+   "id": "ag1-009",
+   "title": "Studio meublé 22 m²",
+   "city": "Bois-Colombes",
+   "postalCode": "92270",
+   "price": 780,
+   "surfaceArea": 22,
+   "roomsQuantity": 1,
+   "description": "Rez-de-chaussée sur cour",
+   "publicationDate": "2026-11-20T09:00:00Z",
+   "photos": [
+    {
+     "url_photo": "https://file.bienici.com/photo/ag1-009.jpg"
+    }
+   ],
+   "blurInfo": {
+    "position": {
+     "lat": 48.9135,
+     "lon": 2.2715
+    }
+   },
+   "isFurnished": true,
+   "floor": 0,
+   "adCreatedByPro": true
+  },
+  {
+   "id": "ag1-010",
+   "title": "Studio meublé 24 m²",
+   "city": "Colombes",
+   "postalCode": "92700",
+   "price": 790,
+   "surfaceArea": 24,
+   "roomsQuantity": 1,
+   "description": "Résidence avec gardien et digicode",
+   "publicationDate": "2026-11-20T09:00:00Z",
+   "photos": [
+    {
+     "url_photo": "https://file.bienici.com/photo/ag1-010.jpg"
+    }
+   ],
+   "blurInfo": {
+    "position": {
+     "lat": 48.923,
+     "lon": 2.26
+    }
+   },
+   "isFurnished": null,
+   "floor": 5,
+   "adCreatedByPro": false
+  },
+  {
+   "id": "ag1-011",
+   "title": "Studio 26 m²",
+   "city": "La Garenne-Colombes",
+   "postalCode": "92250",
+   "price": 830,
+   "surfaceArea": 26,
+   "roomsQuantity": 1,
+   "description": "Bel appartement lumineux",
+   "publicationDate": "2026-11-20T09:00:00Z",
+   "photos": [
+    {
+     "url_photo": "https://file.bienici.com/photo/ag1-011.jpg"
+    }
+   ],
+   "blurInfo": {
+    "position": {
+     "lat": 48.909,
+     "lon": 2.24
+    }
+   },
+   "isFurnished": null,
+   "floor": 2,
+   "adCreatedByPro": true
+  },
+  {
+   "id": "ag1-012",
+   "title": "Studio meublé 22 m² Paris 15e",
+   "city": "Paris 15e",
+   "postalCode": "75015",
+   "price": 880,
+   "surfaceArea": 22,
+   "roomsQuantity": 1,
+   "description": "Charmant studio meublé, 4e étage avec ascenseur, digicode",
+   "publicationDate": "2026-11-20T09:00:00Z",
+   "photos": [],
+   "blurInfo": {
+    "position": {
+     "lat": 48.8425,
+     "lon": 2.296
+    }
+   },
+   "isFurnished": true,
+   "floor": 4,
+   "adCreatedByPro": true,
+   "agencyRentalFee": 330
+  },
+  {
+   "id": "ag1-015",
+   "title": "2 pièces meublé 35 m²",
+   "city": "Bry-sur-Marne",
+   "postalCode": "94360",
+   "price": 870,
+   "surfaceArea": 35,
+   "roomsQuantity": 2,
+   "description": "Proche bords de Marne",
+   "publicationDate": "2026-11-20T09:00:00Z",
+   "photos": [],
+   "blurInfo": {
+    "position": {
+     "lat": 48.838,
+     "lon": 2.52
+    }
+   },
+   "isFurnished": true,
+   "floor": 1,
+   "adCreatedByPro": true
+  }
+ ]
+}

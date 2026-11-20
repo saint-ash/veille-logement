@@ -1,0 +1,311 @@
+# ============================================================
+#  Veille logement — T1/T2 meublé, près d'une gare
+#  92 (Courbevoie, Puteaux, Suresnes, Neuilly, Levallois…), Paris,
+#  Bry-sur-Marne, Val de Fontenay, Eaubonne — particuliers ET agences
+#  Modifie les valeurs, enregistre : c'est tout.
+#  Les secrets (Telegram, clés) sont dans GitHub > Settings > Secrets.
+# ============================================================
+
+[recherche]
+loyer_max = 900           # €/mois, charges comprises
+loyer_min = 400           # écarte les parkings / annonces bidon
+surface_min = 18          # m²
+pieces_min = 1            # T1
+pieces_max = 2            # T2
+types_bien = ["flat", "loft"]
+meuble = "oui"            # "oui" = meublé obligatoire · "non" · "indifferent"
+exclure_rdc = true        # pas de rez-de-chaussée (sécurité)
+mots_exclus = ["colocation", "coloc", "sous-location", "viager", "place de parking", "box fermé", "chambre chez l'habitant",
+               "courte durée", "bail mobilité", "location saisonnière"]
+
+[geo]
+# Distance max (à vol d'oiseau) jusqu'à la gare / station la plus proche.
+# 0,6 km ≈ 10 min à pied · 0,8 km ≈ 13 min · 1,0 km ≈ 16 min
+distance_max_km = 0.8
+departements = ["75", "92", "94", "95"]
+paris_arrondissements_exclus = [18, 19]
+# Gares : toutes celles d'Île-de-France (données officielles IDFM, téléchargées
+# automatiquement une fois par mois). Ajoute "TRAMWAY" si le tram te va.
+modes = ["METRO", "RER", "TRAIN"]
+
+# Communes où chercher. Supprime un bloc pour retirer une ville.
+#  secteur : Bien'ici est interrogé secteur par secteur (Paris, très actif, ne noie pas le reste)
+#  zone    : "commune" = toute la commune · "gare" = seulement près d'une gare
+#  coup_de_coeur : petit bonus dans la note
+[[geo.villes]]
+nom = "Courbevoie"
+insee = "92026"
+secteur = "ouest"
+zone = "commune"
+coup_de_coeur = true
+[[geo.villes]]
+nom = "Puteaux"
+insee = "92062"
+secteur = "ouest"
+zone = "commune"
+coup_de_coeur = true
+[[geo.villes]]
+nom = "La Garenne-Colombes"
+insee = "92035"
+secteur = "ouest"
+zone = "commune"
+coup_de_coeur = true
+[[geo.villes]]
+nom = "Colombes"
+insee = "92025"
+secteur = "ouest"
+zone = "commune"
+coup_de_coeur = true
+[[geo.villes]]
+nom = "Suresnes"
+insee = "92073"
+secteur = "ouest"
+zone = "commune"
+[[geo.villes]]
+nom = "Neuilly-sur-Seine"
+insee = "92051"
+secteur = "ouest"
+zone = "commune"
+[[geo.villes]]
+nom = "Levallois-Perret"
+insee = "92044"
+secteur = "ouest"
+zone = "commune"
+[[geo.villes]]
+nom = "Clichy"
+insee = "92024"
+secteur = "ouest"
+zone = "commune"
+[[geo.villes]]
+nom = "Nanterre"
+insee = "92050"
+secteur = "ouest"
+zone = "gare"
+[[geo.villes]]
+nom = "Rueil-Malmaison"
+insee = "92063"
+secteur = "ouest"
+zone = "gare"
+[[geo.villes]]
+nom = "Asnières-sur-Seine"
+insee = "92004"
+secteur = "ouest"
+zone = "gare"
+[[geo.villes]]
+nom = "Bois-Colombes"
+insee = "92009"
+secteur = "ouest"
+zone = "gare"
+[[geo.villes]]
+nom = "Saint-Cloud"
+insee = "92064"
+secteur = "ouest"
+zone = "gare"
+[[geo.villes]]
+nom = "Paris"
+insee = "75056"
+secteur = "paris"
+zone = "commune"
+[[geo.villes]]
+nom = "Bry-sur-Marne"
+insee = "94015"
+secteur = "est"
+zone = "commune"
+[[geo.villes]]
+nom = "Fontenay-sous-Bois"
+insee = "94033"
+secteur = "est"
+zone = "gare"
+[[geo.villes]]
+nom = "Eaubonne"
+insee = "95203"
+secteur = "nord"
+zone = "commune"
+
+# Gares de secours, utilisées seulement si le téléchargement des gares IDFM échoue
+# (coordonnées à ± 150 m).
+[[stations]]
+nom = "La Défense"
+lignes = ["A", "L", "E", "1"]
+lat = 48.8919
+lon = 2.2385
+[[stations]]
+nom = "Nanterre-Préfecture"
+lignes = ["A"]
+lat = 48.8957
+lon = 2.2136
+[[stations]]
+nom = "Nanterre-Université"
+lignes = ["A", "L"]
+lat = 48.901
+lon = 2.2149
+[[stations]]
+nom = "Nanterre-Ville"
+lignes = ["A"]
+lat = 48.8922
+lon = 2.1963
+[[stations]]
+nom = "Rueil-Malmaison"
+lignes = ["A"]
+lat = 48.879
+lon = 2.181
+[[stations]]
+nom = "Puteaux"
+lignes = ["L"]
+lat = 48.8835
+lon = 2.2335
+[[stations]]
+nom = "Suresnes-Mont-Valérien"
+lignes = ["L"]
+lat = 48.8713
+lon = 2.2212
+[[stations]]
+nom = "Le Val d'Or"
+lignes = ["L"]
+lat = 48.8575
+lon = 2.219
+[[stations]]
+nom = "Saint-Cloud"
+lignes = ["L"]
+lat = 48.8466
+lon = 2.2183
+[[stations]]
+nom = "Courbevoie"
+lignes = ["L"]
+lat = 48.897
+lon = 2.25
+[[stations]]
+nom = "Bécon-les-Bruyères"
+lignes = ["L"]
+lat = 48.9056
+lon = 2.2689
+[[stations]]
+nom = "Les Vallées"
+lignes = ["L"]
+lat = 48.9135
+lon = 2.2579
+[[stations]]
+nom = "La Garenne-Colombes"
+lignes = ["L"]
+lat = 48.9092
+lon = 2.2387
+[[stations]]
+nom = "Clichy-Levallois"
+lignes = ["L"]
+lat = 48.897
+lon = 2.2985
+[[stations]]
+nom = "Asnières-sur-Seine"
+lignes = ["L", "J"]
+lat = 48.9056
+lon = 2.2843
+[[stations]]
+nom = "Bois-Colombes"
+lignes = ["J"]
+lat = 48.9139
+lon = 2.2722
+[[stations]]
+nom = "Colombes"
+lignes = ["J"]
+lat = 48.924
+lon = 2.2593
+[[stations]]
+nom = "Le Stade"
+lignes = ["J"]
+lat = 48.9314
+lon = 2.2607
+[[stations]]
+nom = "Bry-sur-Marne"
+lignes = ["A"]
+lat = 48.8394
+lon = 2.5222
+[[stations]]
+nom = "Val de Fontenay"
+lignes = ["A", "E"]
+lat = 48.8536
+lon = 2.4878
+[[stations]]
+nom = "Fontenay-sous-Bois"
+lignes = ["A"]
+lat = 48.8437
+lon = 2.4637
+[[stations]]
+nom = "Eaubonne"
+lignes = ["H"]
+lat = 48.9927
+lon = 2.2797
+[[stations]]
+nom = "Ermont-Eaubonne"
+lignes = ["C", "H", "J"]
+lat = 48.9905
+lon = 2.258
+
+# Tes lieux du quotidien : temps de trajet calculé pour chaque annonce.
+[[lieux]]
+nom = "SKEMA"
+adresse = "5 Quai Marcel Dassault, 92150 Suresnes"
+[[lieux]]
+nom = "Porte Maillot"
+adresse = "Place de la Porte Maillot, 75017 Paris"
+
+[securite]
+# Statistiques officielles de la délinquance par commune (SSMSI, ministère de l'Intérieur).
+# Chaque commune reçoit un niveau de 1 (moins tranquille) à 5 (plus tranquille)
+# par rapport aux autres communes de Paris et de la petite couronne (75, 92, 93, 94).
+actif = true
+niveau_min = 1            # mets 3 pour ignorer les communes les moins tranquilles
+# Zones à éviter : tu connais le coin mieux que les stats. Exemple :
+# [[securite.zones_a_eviter]]
+# nom = "rue X"
+# lat = 48.90
+# lon = 2.25
+# rayon_m = 300
+mots_rassurants = ["gardien", "digicode", "interphone", "visiophone", "résidence sécurisée", "résidence fermée",
+                   "vidéosurveillance", "porte blindée", "badge"]
+
+[score]
+# Note /100 = prix (30) + sécurité (20) + trajets SKEMA/travail (20) + proximité gare (20) + surface (10)
+# + bonus : commune coup de cœur (+4), particulier sans frais d'agence (+3)
+prix_m2_reference = 30
+seuil_bonne_affaire = 0.88
+seuil_suspect = 0.60
+mots_suspects = ["western union", "mandat cash", "transcash", "coupon pcs", "je suis à l'étranger",
+                 "actuellement à l'étranger", "clés par la poste", "clés envoyées", "envoi des clés",
+                 "airbnb", "sans visite", "pas de visite possible", "paiement avant visite"]
+
+[sources.bienici]
+actif = true
+# Nombre de pages de 50 annonces (les plus récentes) par secteur et par passage
+[sources.bienici.pages]
+ouest = 3
+paris = 4
+est = 1
+
+[sources.emails]
+actif = false
+imap_host = "imap.gmail.com"
+dossier = "INBOX"
+# Particuliers : pap.fr, leboncoin.fr, locservice.fr, entreparticuliers.com, paruvendu.fr
+# Étudiants : studapart.com (partenaire de SKEMA), immojeune.com, lokaviz.fr (Crous)
+# Meublés : lodgis.com, parisattitude.com, flatlooker.com · Agences : seloger, logic-immo, bienici…
+expediteurs = ["leboncoin.fr", "seloger.com", "pap.fr", "logic-immo.com", "bienici.com", "avendrealouer.fr",
+               "locservice.fr", "entreparticuliers.com", "paruvendu.fr", "studapart.com", "immojeune.com",
+               "lokaviz.fr", "lodgis.com", "parisattitude.com", "flatlooker.com", "housinganywhere.com",
+               "spotahome.com", "century21.fr", "orpi.com", "laforet.com", "foncia.com", "nexity.fr", "guy-hoquet.com"]
+# Sites d'annonces entre particuliers (badge « Particulier · pas de frais d'agence »)
+sites_particuliers = ["pap.fr", "locservice.fr", "entreparticuliers.com"]
+liens_max_par_mail = 15
+# true = une annonce reçue par mail n'est gardée que si elle cite une de tes villes
+communes_strictes = true
+
+[notifications]
+telegram = true
+ntfy = false
+notifier_existant_au_premier_lancement = false
+score_min = 0                 # ne notifier qu'au-dessus de cette note (0 = tout)
+bilan_quotidien_heure = 20    # récap du jour à 20h ; -1 pour désactiver
+
+[candidature]
+# Ton lien DossierFacile (dossier de location gratuit de l'État, à créer sur
+# dossierfacile.logement.gouv.fr). Il est ajouté à ton message type pour les agences.
+lien_dossier = ""
