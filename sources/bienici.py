@@ -27,8 +27,19 @@ def _session():
     return s
 
 
-def resoudre_zones(villes, departements, session=None):
-    """Nom de commune -> zoneIds Bien'ici (mis en cache dans data/)."""
+def _norm(x):
+    import unicodedata
+    x = unicodedata.normalize("NFKD", str(x)).encode("ascii", "ignore").decode().lower()
+    return " ".join(x.replace("-", " ").split())
+
+
+def resoudre_zones(villes, departements, session=None, cps_attendus=None):
+    """Nom de commune / d'arrondissement -> zoneIds Bien'ici (mis en cache dans data/).
+
+    On garde la proposition dont le nom correspond, ou dont un code postal est celui
+    attendu (« Paris 15e » -> 75015), quel que soit son type (ville, arrondissement…).
+    """
+    cps_attendus = cps_attendus or {}
     cache = {}
     if os.path.exists(ZONES_CACHE):
         with open(ZONES_CACHE, encoding="utf-8") as f:
@@ -40,23 +51,38 @@ def resoudre_zones(villes, departements, session=None):
             continue
         r = session.get(SUGGEST_URL, params={"q": ville}, timeout=20)
         r.raise_for_status()
-        trouve = None
+        trouve, attendu, meilleur = None, cps_attendus.get(ville), 0
         for item in r.json():
-            cps = item.get("postalCodes") or []
-            bon_dept = any(str(cp).startswith(tuple(departements)) for cp in cps) or not cps
-            if item.get("type") == "city" and bon_dept and item.get("zoneIds"):
-                trouve = item["zoneIds"]
-                break
+            if not item.get("zoneIds"):
+                continue
+            cps = [str(c) for c in (item.get("postalCodes") or [])]
+            bon_dept = any(c.startswith(tuple(departements)) for c in cps) or not cps
+            # priorité : nom exact > code postal attendu (zone précise) > ville du bon département
+            note = (3 if _norm(item.get("name", "")) == _norm(ville) and bon_dept
+                    else 2 if attendu and cps == [attendu]
+                    else 1 if item.get("type") == "city" and bon_dept and not attendu else 0)
+            if note > meilleur:
+                trouve, meilleur = item["zoneIds"], note
         if trouve:
             cache[ville] = trouve
             modifie = True
         else:
-            print(f"[bienici] commune introuvable : {ville}")
+            print(f"[bienici] zone introuvable : {ville}")
     if modifie:
         os.makedirs(os.path.dirname(ZONES_CACHE), exist_ok=True)
         with open(ZONES_CACHE, "w", encoding="utf-8") as f:
             json.dump(cache, f, indent=1, ensure_ascii=False)
     return [z for v in villes for z in cache.get(v, [])]
+
+
+def arrondissements(exclus):
+    """« Paris 1er » … « Paris 20e » (sans les arrondissements exclus) et leurs codes postaux."""
+    noms = {}
+    for n in range(1, 21):
+        if n in exclus:
+            continue
+        noms[f"Paris {n}{'er' if n == 1 else 'e'}"] = f"750{n:02d}"
+    return noms
 
 
 def construire_filtres(conf_r, zone_ids, page):
@@ -120,12 +146,17 @@ def recuperer(conf, session=None):
     session = session or _session()
     conf_r, conf_g = conf["recherche"], conf["geo"]
     pages = conf["sources"]["bienici"].get("pages", {})
-    secteurs = {}
+    secteurs, cps = {}, {}
     for v in conf_g["villes"]:
-        secteurs.setdefault(v.get("secteur", "principal"), []).append(v["nom"])
+        if v["insee"] == "75056":  # Paris : arrondissement par arrondissement (18e et 19e exclus)
+            arr = arrondissements(conf_g.get("paris_arrondissements_exclus", []))
+            cps.update(arr)
+            secteurs.setdefault(v.get("secteur", "principal"), []).extend(arr)
+        else:
+            secteurs.setdefault(v.get("secteur", "principal"), []).append(v["nom"])
     annonces = []
     for secteur, noms in secteurs.items():
-        zones = resoudre_zones(noms, conf_g["departements"], session)
+        zones = resoudre_zones(noms, conf_g["departements"], session, cps)
         if not zones:
             print(f"[bienici] {secteur} : aucune zone résolue")
             continue
@@ -136,7 +167,10 @@ def recuperer(conf, session=None):
             if r.status_code != 200:
                 print(f"[bienici] {secteur} HTTP {r.status_code} — {r.text[:150]}")
                 break
-            ads = r.json().get("realEstateAds") or []
+            rep = r.json()
+            ads = rep.get("realEstateAds") or []
+            if page == 1:
+                print(f"[bienici] {secteur} : {len(zones)} zones, {rep.get('total', '?')} annonces au total sur Bien'ici")
             annonces += [normaliser(a) for a in ads]
             if len(ads) < PAGE_SIZE:
                 break

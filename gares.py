@@ -7,6 +7,7 @@ config.toml.
 """
 import json
 import os
+import re
 import time
 import unicodedata
 
@@ -66,6 +67,8 @@ def normaliser(records, modes=("METRO", "RER", "TRAIN")):
             continue
         indice = str(_champ(rec, "indice_lig", "ligne", "res_com") or "").replace("METRO", "").replace("RER", "").strip()
         ligne = ("M" + indice) if mode.startswith("METRO") and indice else ("T" + indice.lstrip("T") if mode.startswith("TRAM") else indice)
+        if not re.fullmatch(r"[A-Z]?\d{0,2}[A-Z]?(?:BIS|B)?", ligne.upper()) or len(ligne) > 5:
+            ligne = ""  # ex. « TER GRAND-EST » : on n'affiche pas de pastille
         for g in gares:  # même nom à moins de 400 m : même gare, on fusionne les lignes
             if _norm(g["nom"]) == _norm(nom) and haversine_km(g["lat"], g["lon"], *pos) < 0.4:
                 if ligne and ligne not in g["lignes"]:
@@ -84,7 +87,7 @@ def charger(conf):
     if os.path.exists(CACHE):
         with open(CACHE, encoding="utf-8") as f:
             cache = json.load(f)
-    if cache.get("gares") and cache.get("modes") == modes and time.time() - cache.get("t", 0) < RAFRAICHIR_JOURS * 86400:
+    if cache.get("gares") and cache.get("modes") == modes and cache.get("v") == 2 and time.time() - cache.get("t", 0) < RAFRAICHIR_JOURS * 86400:
         return cache["gares"]
     for url in URLS:
         try:
@@ -93,7 +96,7 @@ def charger(conf):
             gares = normaliser(r.json(), modes)
             if len(gares) < 100:
                 raise ValueError(f"seulement {len(gares)} gares")
-            cache = {"t": int(time.time()), "modes": modes, "source": url, "gares": gares}
+            cache = {"t": int(time.time()), "v": 2, "modes": modes, "source": url, "gares": gares}
             os.makedirs(os.path.dirname(CACHE), exist_ok=True)
             with open(CACHE, "w", encoding="utf-8") as f:
                 json.dump(cache, f, ensure_ascii=False)

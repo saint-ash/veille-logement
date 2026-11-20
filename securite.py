@@ -6,8 +6,7 @@ ministère de l'Intérieur), publiée en open data sur data.gouv.fr.
 
 On additionne, pour la dernière année disponible, les taux pour 1 000 habitants
 des faits qui touchent directement les personnes dans la rue ou les transports :
-vols violents, violences physiques hors cadre familial, violences sexuelles,
-vols sans violence contre des personnes. Chaque commune du 92 est ensuite
+vols violents, violences physiques hors cadre familial, violences sexuelles. Chaque commune du 92 est ensuite
 classée de 1 (taux le plus élevé) à 5 (taux le plus bas), par rapport à
 Paris et à la petite couronne (75, 92, 93, 94).
 
@@ -27,8 +26,10 @@ ICI = os.path.dirname(os.path.abspath(__file__))
 CACHE = os.path.join(ICI, "data", "securite.json")
 URL_CSV_GZ = "https://www.data.gouv.fr/api/1/datasets/r/44ef4323-1097-48d5-8719-3c544b55d294"
 RAFRAICHIR_JOURS = 30
-INDICATEURS = ("vols violents", "hors cadre familial", "coups et blessures", "violences sexuelles",
-               "vols sans violence contre des personnes")
+# Violences seulement : les vols sans violence (vols à la tire) gonflent artificiellement
+# les quartiers d'affaires et touristiques (La Défense, Paris) sans refléter le danger.
+INDICATEURS = ("vols violents", "hors cadre familial", "coups et blessures", "violences sexuelles")
+VERSION = 2
 
 
 def _norm(s):
@@ -109,7 +110,8 @@ def charger(conf, forcer=False):
     if os.path.exists(CACHE):
         with open(CACHE, encoding="utf-8") as f:
             cache = json.load(f)
-    if cache.get("communes") and not forcer and time.time() - cache.get("t", 0) < RAFRAICHIR_JOURS * 86400:
+    if (cache.get("communes") and not forcer and cache.get("v") == VERSION
+            and time.time() - cache.get("t", 0) < RAFRAICHIR_JOURS * 86400):
         return cache["communes"]
     try:
         r = requests.get(URL_CSV_GZ, timeout=120)
@@ -117,7 +119,7 @@ def charger(conf, forcer=False):
         brut = gzip.decompress(r.content) if r.content[:2] == b"\x1f\x8b" else r.content
         texte = io.TextIOWrapper(io.BytesIO(brut), encoding="utf-8-sig", errors="replace")
         communes = calculer(texte, tuple(sorted(set(PETITE_COURONNE) | set(conf["geo"].get("departements", [])))))
-        cache = {"t": int(time.time()), "source": URL_CSV_GZ, "communes": communes}
+        cache = {"t": int(time.time()), "v": VERSION, "source": URL_CSV_GZ, "communes": communes}
         os.makedirs(os.path.dirname(CACHE), exist_ok=True)
         with open(CACHE, "w", encoding="utf-8") as f:
             json.dump(cache, f, indent=1)

@@ -123,7 +123,7 @@ class Tests(unittest.TestCase):
         self.assertEqual((s["92064"]["niveau"], s["92036"]["niveau"]), (5, 1))
         self.assertEqual(s["92064"]["annee"], "2025")
         # intrafamilial et cambriolages exclus
-        self.assertAlmostEqual(s["92064"]["taux"], 3.1, places=1)
+        self.assertAlmostEqual(s["92064"]["taux"], 2.2, places=1)  # violences seulement (0,3 + 0,4 du taux fictif)
         self.assertEqual(securite.insee_de("La Garenne-Colombes", "", self.conf), "92035")
         self.assertEqual(securite.insee_de("Colombes", "", self.conf), "92025")
         self.assertEqual(securite.insee_de("Rueil-Malmaison 92500", "", self.conf), "92063")
