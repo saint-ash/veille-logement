@@ -1,7 +1,7 @@
 # Ma recherche d'appart : le robot et le tableau de bord
 
 T1/T2 **meublés**, **900 € max** charges comprises, **près d'une gare**, à :
-Courbevoie · Puteaux · La Garenne-Colombes · Colombes · Suresnes · Neuilly · Levallois · Clichy · Paris (sauf 18e et 19e) · Bry-sur-Marne · Val de Fontenay · Eaubonne · Nanterre, Rueil, Asnières, Bois-Colombes, Saint-Cloud (seulement près d'une gare).
+Courbevoie · Puteaux · La Garenne-Colombes · Colombes · Suresnes · Neuilly-sur-Seine · Neuilly-Plaisance · Levallois · Clichy · Paris (sauf 18e et 19e) · Bry-sur-Marne · Val de Fontenay · Eaubonne · Nanterre, Rueil, Asnières, Bois-Colombes, Saint-Cloud (seulement près d'une gare).
 **Particuliers et agences** : toutes les annonces arrivent au même endroit.
 
 ## Ce que ça fait

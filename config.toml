@@ -22,7 +22,7 @@ mots_exclus = ["colocation", "coloc", "sous-location", "viager", "place de parki
 # Distance max (à vol d'oiseau) jusqu'à la gare / station la plus proche.
 # 0,6 km ≈ 10 min à pied · 0,8 km ≈ 13 min · 1,0 km ≈ 16 min
 distance_max_km = 0.8
-departements = ["75", "92", "94", "95"]
+departements = ["75", "92", "93", "94", "95"]
 paris_arrondissements_exclus = [18, 19]
 # Gares : toutes celles d'Île-de-France (données officielles IDFM, téléchargées
 # automatiquement une fois par mois). Ajoute "TRAMWAY" si le tram te va.
@@ -111,6 +111,12 @@ nom = "Bry-sur-Marne"
 insee = "94015"
 secteur = "est"
 zone = "commune"
+[[geo.villes]]
+nom = "Neuilly-Plaisance"
+insee = "93049"
+secteur = "est"
+zone = "commune"
+
 [[geo.villes]]
 nom = "Fontenay-sous-Bois"
 insee = "94033"
@@ -219,6 +225,11 @@ nom = "Bry-sur-Marne"
 lignes = ["A"]
 lat = 48.8394
 lon = 2.5222
+[[stations]]
+nom = "Neuilly-Plaisance"
+lignes = ["A"]
+lat = 48.8533
+lon = 2.5136
 [[stations]]
 nom = "Val de Fontenay"
 lignes = ["A", "E"]
