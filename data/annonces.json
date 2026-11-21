@@ -1,6 +1,137 @@
 {
- "maj": "2026-11-21T02:52:00Z",
+ "maj": "2026-11-21T12:45:30Z",
  "annonces": [
+  {
+   "cle": "bienici:ag752861-561635636",
+   "source": "Bien'ici",
+   "url": "https://www.bienici.com/annonce/ag752861-561635636",
+   "titre": "Studio",
+   "prix": 845,
+   "surface": 21,
+   "pieces": 1,
+   "ville": "Rueil-Malmaison",
+   "code_postal": "92500",
+   "lat": 48.8911759383371,
+   "lon": 2.1773781633369906,
+   "rayon_flou_km": 0.05,
+   "photo": "https://photos.ubiflow.net/752861/561635636/photos/1.jpg?INSOON_EB_5512801818_20261121041148",
+   "photos": [
+    "https://photos.ubiflow.net/752861/561635636/photos/1.jpg?INSOON_EB_5512801818_20261121041148",
+    "https://photos.ubiflow.net/752861/561635636/photos/2.jpg?INSOON_EB_5512801818_20261121041148",
+    "https://photos.ubiflow.net/752861/561635636/photos/3.jpg?INSOON_EB_5512801818_20261121041148",
+    "https://photos.ubiflow.net/752861/561635636/photos/4.jpg?INSOON_EB_5512801818_20261121041148"
+   ],
+   "charges": null,
+   "meuble": true,
+   "etage": 6,
+   "annonceur": "agence",
+   "frais_agence": null,
+   "date": "2026-11-21T04:13:13.266Z",
+   "insee": "92063",
+   "securite": {
+    "niveau": 3,
+    "taux": 3.3,
+    "rang": 124,
+    "sur": 293,
+    "annee": "2025",
+    "code": "92063"
+   },
+   "gare": "Rueil-Malmaison",
+   "lignes": [
+    "A"
+   ],
+   "gare_lat": 48.88757,
+   "gare_lon": 2.17258,
+   "distance_km": 0.533,
+   "minutes": 9,
+   "position_approx": false,
+   "trajets": {
+    "SKEMA": null,
+    "Porte Maillot": null
+   },
+   "ratio_marche": 1.018,
+   "prix_m2": 40.2,
+   "note_detail": {
+    "prix": 14,
+    "securite": 10,
+    "trajets": 10,
+    "gare": 11,
+    "surface": 2,
+    "bonus": 0
+   },
+   "score": 47,
+   "tags": [],
+   "extrait": "Avec IMMOJEUNE, trouvez les meilleurs logements étudiants et jeunes actifs en quelques clics et en toute confiance.\n\nÀ seulement 8 km de Paris et à proximité immédiate du quartier d'affaires de la Défense, Rueil-Malmaison bénéficie d'un emplacement privilégié. Notre appartement, …",
+   "vu_le": "2026-11-21T12:45:28Z",
+   "prix_initial": 845
+  },
+  {
+   "cle": "bienici:immo-facile-51708054",
+   "source": "Bien'ici",
+   "url": "https://www.bienici.com/annonce/immo-facile-51708054",
+   "titre": "STUDIO meublé - LA GARENNE COLOMBES - 1 pièce - 26.45m2",
+   "prix": 820,
+   "surface": 26.45,
+   "pieces": 1,
+   "ville": "La Garenne-Colombes",
+   "code_postal": "92250",
+   "lat": 48.90299895048816,
+   "lon": 2.2429002893149175,
+   "rayon_flou_km": 0.05,
+   "photo": "https://media.immo-facile.com/office20/real31_141222/catalog/images/pr_p/5/1/7/0/8/0/5/4/51708054a.jpg?DATEMAJ=19/03/2025-18:12:46",
+   "photos": [
+    "https://media.immo-facile.com/office20/real31_141222/catalog/images/pr_p/5/1/7/0/8/0/5/4/51708054a.jpg?DATEMAJ=19/03/2025-18:12:46",
+    "https://media.immo-facile.com/office20/real31_141222/catalog/images/pr_p/5/1/7/0/8/0/5/4/51708054b.jpg?DATEMAJ=19/03/2025-18:12:46",
+    "https://media.immo-facile.com/office20/real31_141222/catalog/images/pr_p/5/1/7/0/8/0/5/4/51708054c.jpg?DATEMAJ=19/03/2025-18:12:47",
+    "https://media.immo-facile.com/office20/real31_141222/catalog/images/pr_p/5/1/7/0/8/0/5/4/51708054d.jpg?DATEMAJ=19/03/2025-18:12:47"
+   ],
+   "charges": 50,
+   "meuble": true,
+   "etage": 3,
+   "annonceur": "agence",
+   "frais_agence": 396.75,
+   "date": "1970-01-01T00:00:00.000Z",
+   "insee": "92035",
+   "coup_de_coeur": true,
+   "securite": {
+    "niveau": 3,
+    "taux": 3.4,
+    "rang": 129,
+    "sur": 293,
+    "annee": "2025",
+    "code": "92035"
+   },
+   "gare": "Courbevoie",
+   "lignes": [
+    "L"
+   ],
+   "gare_lat": 48.89862,
+   "gare_lon": 2.2492,
+   "distance_km": 0.67,
+   "minutes": 11,
+   "position_approx": false,
+   "trajets": {
+    "SKEMA": null,
+    "Porte Maillot": null
+   },
+   "ratio_marche": 0.784,
+   "prix_m2": 31.0,
+   "note_detail": {
+    "prix": 28,
+    "securite": 10,
+    "trajets": 10,
+    "gare": 6,
+    "surface": 6,
+    "bonus": 4
+   },
+   "score": 64,
+   "tags": [
+    "bonne_affaire"
+   ],
+   "extrait": "La Garenne Colombes- Studio meublé - Cet appartement situé dans une rue calme du centre ville se compose d'une entrée avec penderie et placard, d'une pièce principale avec mezzanine, d'une cuisine aménagée et équipée et d'une salle de bains avec WC. Une cave en sous-sol accompagn…",
+   "vu_le": "2026-11-21T12:45:28Z",
+   "prix_initial": 820
+  },
   {
    "cle": "bienici:iad-france-2151546",
    "source": "Bien'ici",
