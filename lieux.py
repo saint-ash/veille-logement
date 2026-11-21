@@ -50,27 +50,43 @@ _CENTRES = {}
 
 
 def centre_commune(ville, cp):
-    """Centre de la commune (ou de l'arrondissement pour Paris), en cache dans data/lieux.json."""
-    cle = f"centre:{cp or ''}:{ville or ''}".lower()
+    """Centre de la commune, ou de l'arrondissement pour Paris / Lyon / Marseille (cache data/lieux.json)."""
+    cp = str(cp or "")
+    cle = f"centre2:{cp}:{ville or ''}".lower()
     if not _CENTRES:
         _CENTRES.update(_lire(CACHE_LIEUX) or {})
-    if cle not in _CENTRES:
-        q = f"{ville or ''} {cp or ''}".strip()
-        r = None
-        for url in GEOCODEURS:
+    if cle in _CENTRES:
+        return tuple(_CENTRES[cle])
+    citycode, q = None, f"{ville or ''} {cp}".strip()
+    if len(cp) == 5 and cp.startswith("75") and cp[2] in "01" and 1 <= int(cp[-2:]) <= 20:
+        n = int(cp[-2:])
+        citycode, q = f"751{n:02d}", f"Paris {n}{'er' if n == 1 else 'e'} Arrondissement"
+    r = None
+    for url in GEOCODEURS:
+        for params in ({"q": q, "type": "municipality", "limit": 5},
+                       {"q": q, "postcode": cp, "limit": 1} if cp else None):
+            if params is None or r:
+                continue
             try:
-                rep = requests.get(url, params={"q": q, "type": "municipality", "limit": 1}, timeout=20)
-                if rep.ok and rep.json().get("features"):
-                    lon, lat = rep.json()["features"][0]["geometry"]["coordinates"]
+                rep = requests.get(url, params=params, timeout=20)
+                for f in (rep.json().get("features") or []) if rep.ok else []:
+                    pr = f.get("properties", {})
+                    if citycode and pr.get("citycode") != citycode and pr.get("postcode") != cp:
+                        continue  # « Paris 75015 » ne doit pas donner le centre de Paris
+                    lon, lat = f["geometry"]["coordinates"]
                     r = [lat, lon]
                     break
             except (requests.RequestException, ValueError, KeyError, IndexError):
                 continue
-        if r is None:
-            return None
-        _CENTRES[cle] = r
-        _ecrire(CACHE_LIEUX, {**(_lire(CACHE_LIEUX) or {}), cle: r})
-    return tuple(_CENTRES[cle])
+        if r:
+            break
+    if r is None:
+        print(f"[lieux] centre introuvable : {q}")
+        return None
+    print(f"[lieux] centre {q} : {r[0]:.4f}, {r[1]:.4f}")
+    _CENTRES[cle] = r
+    _ecrire(CACHE_LIEUX, {**(_lire(CACHE_LIEUX) or {}), cle: r})
+    return tuple(r)
 
 
 def charger_lieux(conf):

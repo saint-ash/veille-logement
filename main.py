@@ -302,7 +302,7 @@ def main(argv=None):
         if a.get("lat") is not None and lieux:
             a["trajets"] = {l["nom"]: trajets.minutes(a["lat"], a["lon"], l) for l in lieux}
     for a in store.annonces.values():  # annonces déjà en mémoire, retenues avant l'ajout des distances
-        if "distances" not in a:
+        if "distances" not in a or a.get("distances_approx"):
             ajouter_distances(a, lieux, en_ligne=not args.fixtures)
     trajets.sauver()
     ref_de = references(list(store.annonces.values()) + modifiees, conf["score"]["prix_m2_reference"])
