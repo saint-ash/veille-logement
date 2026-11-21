@@ -138,7 +138,8 @@ def ressemble_annonce(url, domaine):
 
 
 ENTETE_ALERTE = re.compile(r"^\s*(?:\d+ )?nouvelles? annonces?\b|pourraient vous int[ée]resser|^\s*localisation diff[ée]rente\s*$"
-                           r"|correspondant à (?:certains de )?vos crit", re.I)
+                           r"|correspondant à (?:certains de )?vos crit|augmentez vos chances|cr[ée]ant votre (?:dossier|profil)"
+                           r"|consultez vos premiers r[ée]sultats", re.I)
 SUIVI_OPAQUE = re.compile(r"^https?://click\.[^/]*seloger\.com/|^https?://[^/]*\.(?:sendgrid|mailjet|sparkpost)", re.I)
 
 
