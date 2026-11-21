@@ -1,5 +1,5 @@
 {
- "maj": "2026-11-20T21:46:16Z",
+ "maj": "2026-11-21T02:52:00Z",
  "annonces": [
   {
    "cle": "bienici:iad-france-2151546",
@@ -119,10 +119,10 @@
     "SKEMA": null,
     "Porte Maillot": null
    },
-   "ratio_marche": 1.29,
+   "ratio_marche": 1.24,
    "prix_m2": 49.0,
    "note_detail": {
-    "prix": 0,
+    "prix": 1,
     "securite": 5,
     "trajets": 10,
     "gare": 11,
@@ -183,17 +183,17 @@
     "SKEMA": null,
     "Porte Maillot": null
    },
-   "ratio_marche": 1.04,
+   "ratio_marche": 1.0,
    "prix_m2": 39.5,
    "note_detail": {
-    "prix": 13,
+    "prix": 15,
     "securite": 5,
     "trajets": 10,
     "gare": 11,
     "surface": 2,
     "bonus": 0
    },
-   "score": 41,
+   "score": 43,
    "tags": [],
    "extrait": "Avec IMMOJEUNE, trouvez les meilleurs logements étudiants et jeunes actifs en quelques clics et en toute confiance.\n\nIdéalement implanté à proximité immédiate du RER A, cet appartement offre un accès rapide à La Défense en seulement 20 minutes et au centre de Paris (Châtelet) en …",
    "vu_le": "2026-11-20T14:09:48Z",
@@ -247,17 +247,17 @@
     "SKEMA": null,
     "Porte Maillot": null
    },
-   "ratio_marche": 1.065,
+   "ratio_marche": 1.024,
    "prix_m2": 40.5,
    "note_detail": {
-    "prix": 11,
+    "prix": 14,
     "securite": 5,
     "trajets": 10,
     "gare": 15,
     "surface": 1,
     "bonus": 0
    },
-   "score": 43,
+   "score": 45,
    "tags": [],
    "extrait": "CENTURY21 L'ami immobilier vous propose :<br>Studio meublé de 20 m² à louer  Rue  Bernard Jugault -Asnières-sur-Seine (92600)<br>À louer, charmant studio meublé de 20 m², idéalement situé à seulement 6 minutes à pied de la gare d'Asnières-sur-Seine.<br>Ce logement fonctionnel et …",
    "vu_le": "2026-11-20T14:09:48Z",
@@ -311,17 +311,17 @@
     "SKEMA": null,
     "Porte Maillot": null
    },
-   "ratio_marche": 0.861,
+   "ratio_marche": 0.827,
    "prix_m2": 32.7,
    "note_detail": {
-    "prix": 23,
+    "prix": 25,
     "securite": 0,
     "trajets": 10,
     "gare": 0,
     "surface": 6,
     "bonus": 0
    },
-   "score": 39,
+   "score": 41,
    "tags": [
     "bonne_affaire"
    ],
@@ -507,18 +507,20 @@
     "SKEMA": null,
     "Porte Maillot": null
    },
-   "ratio_marche": 0.884,
+   "ratio_marche": 0.849,
    "prix_m2": 33.6,
    "note_detail": {
-    "prix": 22,
+    "prix": 24,
     "securite": 5,
     "trajets": 10,
     "gare": 18,
     "surface": 2,
     "bonus": 0
    },
-   "score": 57,
-   "tags": [],
+   "score": 59,
+   "tags": [
+    "bonne_affaire"
+   ],
    "extrait": "Situé à Neuilly-sur-Seine, à proximité du métro et de toutes les commodités, découvrez ce studio meublé de 21,85 m², situé au 8ᵉ et dernier étage sans ascenseur.\n\nLe logement se compose d’une pièce principale lumineuse, d’un coin cuisine, ainsi que d’une salle d’eau avec wc. Enti…",
    "vu_le": "2026-11-20T14:09:48Z",
    "prix_initial": 705
@@ -571,17 +573,17 @@
     "SKEMA": null,
     "Porte Maillot": null
    },
-   "ratio_marche": 0.939,
+   "ratio_marche": 0.902,
    "prix_m2": 35.7,
    "note_detail": {
-    "prix": 19,
+    "prix": 21,
     "securite": 5,
     "trajets": 10,
     "gare": 12,
     "surface": 2,
     "bonus": 0
    },
-   "score": 48,
+   "score": 50,
    "tags": [],
    "extrait": "Avec IMMOJEUNE, trouvez les meilleurs logements étudiants et jeunes actifs en quelques clics et en toute confiance.\n\nIdéalement situé aux abords ouest de Paris et à proximité de Nanterre, cet appartement se trouve à quelques pas de l'Université Paris X – Nanterre, de renommées in…",
    "vu_le": "2026-11-20T14:09:48Z",
@@ -776,17 +778,17 @@
     "SKEMA": null,
     "Porte Maillot": null
    },
-   "ratio_marche": 0.847,
+   "ratio_marche": 0.814,
    "prix_m2": 32.2,
    "note_detail": {
-    "prix": 24,
+    "prix": 26,
     "securite": 10,
     "trajets": 10,
     "gare": 10,
     "surface": 4,
     "bonus": 0
    },
-   "score": 58,
+   "score": 60,
    "extrait": "*** IMPORTANT : demande de contact à faire par e-mail via le formulaire sur cette annonce. Un accès vous sera automatiquement ouvert pour déposer votre dossier en ligne. Les visites seront organisées après validation de votre dossier. ***<br>NESTENN Rueil-Malmaison vous propose, …",
    "vu_le": "2026-11-20T14:09:48Z",
    "prix_initial": 790
@@ -840,7 +842,7 @@
     "SKEMA": null,
     "Porte Maillot": null
    },
-   "ratio_marche": 1.299,
+   "ratio_marche": 1.248,
    "prix_m2": 49.3,
    "note_detail": {
     "prix": 0,
@@ -968,17 +970,17 @@
     "SKEMA": null,
     "Porte Maillot": null
    },
-   "ratio_marche": 0.791,
+   "ratio_marche": 0.76,
    "prix_m2": 30.0,
    "note_detail": {
-    "prix": 28,
+    "prix": 29,
     "securite": 3,
     "trajets": 10,
     "gare": 19,
     "surface": 8,
     "bonus": 0
    },
-   "score": 68,
+   "score": 70,
    "tags": [
     "bonne_affaire",
     "securise"
@@ -1104,17 +1106,17 @@
     "SKEMA": null,
     "Porte Maillot": null
    },
-   "ratio_marche": 0.936,
+   "ratio_marche": 0.9,
    "prix_m2": 35.6,
    "note_detail": {
-    "prix": 19,
+    "prix": 21,
     "securite": 0,
     "trajets": 10,
     "gare": 16,
     "surface": 4,
     "bonus": 0
    },
-   "score": 49,
+   "score": 51,
    "tags": [],
    "extrait": "Au pied du Nouveau Tribunal, porte de Clichy, dans un immeuble calme, au 4ème étage sans ascenseur sur cour sans vis à vis: studio MEUBLE comprenant: cuisine dinatoire,  pièce principale, salle d'eau avec WC.<br>Très calme.<br>",
    "vu_le": "2026-11-20T14:09:48Z",
@@ -1168,17 +1170,17 @@
     "SKEMA": null,
     "Porte Maillot": null
    },
-   "ratio_marche": 0.776,
+   "ratio_marche": 0.746,
    "prix_m2": 29.5,
    "note_detail": {
-    "prix": 28,
+    "prix": 30,
     "securite": 10,
     "trajets": 10,
     "gare": 17,
     "surface": 9,
     "bonus": 0
    },
-   "score": 74,
+   "score": 76,
    "tags": [
     "bonne_affaire"
    ],
@@ -1238,17 +1240,17 @@
     "SKEMA": null,
     "Porte Maillot": null
    },
-   "ratio_marche": 1.168,
+   "ratio_marche": 1.123,
    "prix_m2": 44.4,
    "note_detail": {
-    "prix": 5,
+    "prix": 8,
     "securite": 0,
     "trajets": 10,
     "gare": 19,
     "surface": 0,
     "bonus": 0
    },
-   "score": 34,
+   "score": 36,
    "tags": [],
    "extrait": "À proximité de la Gare du Nord, dans un immeuble ravalé, studio en très bon état.Il se compose d'une entrée desservant une pièce principale avec parquet au sol et fenêtre en double vitrage, et d'une cuisine américaine équipée de plaques de cuisson, d'un réfrigérateur, d'un plan d…",
    "vu_le": "2026-11-20T14:09:48Z",
@@ -1302,10 +1304,10 @@
     "SKEMA": null,
     "Porte Maillot": null
    },
-   "ratio_marche": 1.287,
+   "ratio_marche": 1.237,
    "prix_m2": 48.9,
    "note_detail": {
-    "prix": 0,
+    "prix": 1,
     "securite": 0,
     "trajets": 10,
     "gare": 17,
