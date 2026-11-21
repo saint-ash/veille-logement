@@ -1,6 +1,46 @@
 {
- "maj": "2026-11-21T12:45:30Z",
+ "maj": "2026-11-21T12:50:07Z",
  "annonces": [
+  {
+   "cle": "mail:fc365691c244c608",
+   "source": "LocService",
+   "url": "https://www.locservice.fr/paris-75/location-studio-paris-15/2627323",
+   "titre": "Studio à louer · Paris 15 (75015) · 19 m² · 750 € / mois · Studio de 19m2, Paris 15ème métro Convention. 2ème étage. Immeuble calme avec digicode, gar",
+   "prix": 750.0,
+   "surface": 19.0,
+   "pieces": 1,
+   "code_postal": "75015",
+   "annonceur": "particulier",
+   "coup_de_coeur": true,
+   "meuble": null,
+   "ville": "Paris",
+   "insee": "75056",
+   "securite": {
+    "niveau": 1,
+    "taux": 7.6,
+    "rang": 241,
+    "sur": 293,
+    "annee": "2025",
+    "code": "75115"
+   },
+   "ratio_marche": 0.999,
+   "prix_m2": 39.5,
+   "note_detail": {
+    "prix": 15,
+    "securite": 3,
+    "trajets": 10,
+    "gare": 16,
+    "surface": 1,
+    "bonus": 7
+   },
+   "score": 52,
+   "tags": [
+    "securise"
+   ],
+   "extrait": "Studio à louer · Paris 15 (75015) · 19 m² · 750 € / mois · Studio de 19m2, Paris 15ème métro Convention. 2ème étage. Immeuble calme avec digicode, gardien, ascenseur.…",
+   "vu_le": "2026-11-21T12:50:07Z",
+   "prix_initial": 750.0
+  },
   {
    "cle": "bienici:ag752861-561635636",
    "source": "Bien'ici",
@@ -49,7 +89,7 @@
     "SKEMA": null,
     "Porte Maillot": null
    },
-   "ratio_marche": 1.018,
+   "ratio_marche": 1.019,
    "prix_m2": 40.2,
    "note_detail": {
     "prix": 14,
@@ -114,7 +154,7 @@
     "SKEMA": null,
     "Porte Maillot": null
    },
-   "ratio_marche": 0.784,
+   "ratio_marche": 0.785,
    "prix_m2": 31.0,
    "note_detail": {
     "prix": 28,
@@ -250,7 +290,7 @@
     "SKEMA": null,
     "Porte Maillot": null
    },
-   "ratio_marche": 1.24,
+   "ratio_marche": 1.241,
    "prix_m2": 49.0,
    "note_detail": {
     "prix": 1,
@@ -314,7 +354,7 @@
     "SKEMA": null,
     "Porte Maillot": null
    },
-   "ratio_marche": 1.0,
+   "ratio_marche": 1.001,
    "prix_m2": 39.5,
    "note_detail": {
     "prix": 15,
@@ -442,7 +482,7 @@
     "SKEMA": null,
     "Porte Maillot": null
    },
-   "ratio_marche": 0.827,
+   "ratio_marche": 0.828,
    "prix_m2": 32.7,
    "note_detail": {
     "prix": 25,
@@ -638,7 +678,7 @@
     "SKEMA": null,
     "Porte Maillot": null
    },
-   "ratio_marche": 0.849,
+   "ratio_marche": 0.85,
    "prix_m2": 33.6,
    "note_detail": {
     "prix": 24,
@@ -704,7 +744,7 @@
     "SKEMA": null,
     "Porte Maillot": null
    },
-   "ratio_marche": 0.902,
+   "ratio_marche": 0.903,
    "prix_m2": 35.7,
    "note_detail": {
     "prix": 21,
@@ -909,7 +949,7 @@
     "SKEMA": null,
     "Porte Maillot": null
    },
-   "ratio_marche": 0.814,
+   "ratio_marche": 0.815,
    "prix_m2": 32.2,
    "note_detail": {
     "prix": 26,
@@ -973,7 +1013,7 @@
     "SKEMA": null,
     "Porte Maillot": null
    },
-   "ratio_marche": 1.248,
+   "ratio_marche": 1.249,
    "prix_m2": 49.3,
    "note_detail": {
     "prix": 0,
@@ -1371,7 +1411,7 @@
     "SKEMA": null,
     "Porte Maillot": null
    },
-   "ratio_marche": 1.123,
+   "ratio_marche": 1.124,
    "prix_m2": 44.4,
    "note_detail": {
     "prix": 8,
@@ -1435,7 +1475,7 @@
     "SKEMA": null,
     "Porte Maillot": null
    },
-   "ratio_marche": 1.237,
+   "ratio_marche": 1.238,
    "prix_m2": 48.9,
    "note_detail": {
     "prix": 1,
