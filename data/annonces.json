@@ -1,6 +1,48 @@
 {
- "maj": "2026-11-21T12:50:07Z",
+ "maj": "2026-11-21T12:53:01Z",
  "annonces": [
+  {
+   "cle": "mail:3da92278fb94cb5e",
+   "source": "Lesiteimmo (92)",
+   "url": "https://www.lesiteimmo.com/louer/appartement-1piece/asnieres-sur-seine-92600/34233399",
+   "titre": "C · 1/5 · Locservice Appartement à louer Studio de 20m2 à louer sur Asnières-sur-Seine 859 € CC /mois 43 € / m² 1 pièce • 1 chambre • 20 m² Asnières-s",
+   "prix": 859.0,
+   "surface": 20.0,
+   "pieces": 1,
+   "code_postal": "92600",
+   "meuble_requis": true,
+   "meuble": true,
+   "ville": "Asnières-sur-Seine",
+   "insee": "92004",
+   "securite": {
+    "niveau": 3,
+    "taux": 4.8,
+    "rang": 171,
+    "sur": 293,
+    "annee": "2025",
+    "code": "92004"
+   },
+   "distances": {
+    "SKEMA": 8.1,
+    "Porte Maillot": 4.4
+   },
+   "distances_approx": true,
+   "ratio_marche": 1.087,
+   "prix_m2": 43.0,
+   "note_detail": {
+    "prix": 10,
+    "securite": 10,
+    "trajets": 12,
+    "gare": 10,
+    "surface": 1,
+    "bonus": 0
+   },
+   "score": 43,
+   "tags": [],
+   "extrait": "C · 1/5 · Locservice Appartement à louer Studio de 20m2 à louer sur Asnières-sur-Seine 859 € CC /mois 43 € / m² 1 pièce • 1 chambre • 20 m² Asnières-sur-Seine (92600) Meublé Studio de particulier à louer sur asnières-sur-seine. Disponible le 19 / 12 / 2026 pour cette location meu…",
+   "vu_le": "2026-11-21T12:53:01Z",
+   "prix_initial": 859.0
+  },
   {
    "cle": "mail:fc365691c244c608",
    "source": "LocService",
@@ -89,7 +131,7 @@
     "SKEMA": null,
     "Porte Maillot": null
    },
-   "ratio_marche": 1.019,
+   "ratio_marche": 1.018,
    "prix_m2": 40.2,
    "note_detail": {
     "prix": 14,
@@ -154,7 +196,7 @@
     "SKEMA": null,
     "Porte Maillot": null
    },
-   "ratio_marche": 0.785,
+   "ratio_marche": 0.784,
    "prix_m2": 31.0,
    "note_detail": {
     "prix": 28,
@@ -290,7 +332,7 @@
     "SKEMA": null,
     "Porte Maillot": null
    },
-   "ratio_marche": 1.241,
+   "ratio_marche": 1.24,
    "prix_m2": 49.0,
    "note_detail": {
     "prix": 1,
@@ -354,7 +396,7 @@
     "SKEMA": null,
     "Porte Maillot": null
    },
-   "ratio_marche": 1.001,
+   "ratio_marche": 1.0,
    "prix_m2": 39.5,
    "note_detail": {
     "prix": 15,
@@ -482,7 +524,7 @@
     "SKEMA": null,
     "Porte Maillot": null
    },
-   "ratio_marche": 0.828,
+   "ratio_marche": 0.827,
    "prix_m2": 32.7,
    "note_detail": {
     "prix": 25,
@@ -678,7 +720,7 @@
     "SKEMA": null,
     "Porte Maillot": null
    },
-   "ratio_marche": 0.85,
+   "ratio_marche": 0.849,
    "prix_m2": 33.6,
    "note_detail": {
     "prix": 24,
@@ -744,7 +786,7 @@
     "SKEMA": null,
     "Porte Maillot": null
    },
-   "ratio_marche": 0.903,
+   "ratio_marche": 0.902,
    "prix_m2": 35.7,
    "note_detail": {
     "prix": 21,
@@ -949,7 +991,7 @@
     "SKEMA": null,
     "Porte Maillot": null
    },
-   "ratio_marche": 0.815,
+   "ratio_marche": 0.814,
    "prix_m2": 32.2,
    "note_detail": {
     "prix": 26,
@@ -1013,7 +1055,7 @@
     "SKEMA": null,
     "Porte Maillot": null
    },
-   "ratio_marche": 1.249,
+   "ratio_marche": 1.248,
    "prix_m2": 49.3,
    "note_detail": {
     "prix": 0,
@@ -1411,7 +1453,7 @@
     "SKEMA": null,
     "Porte Maillot": null
    },
-   "ratio_marche": 1.124,
+   "ratio_marche": 1.123,
    "prix_m2": 44.4,
    "note_detail": {
     "prix": 8,
@@ -1475,7 +1517,7 @@
     "SKEMA": null,
     "Porte Maillot": null
    },
-   "ratio_marche": 1.238,
+   "ratio_marche": 1.237,
    "prix_m2": 48.9,
    "note_detail": {
     "prix": 1,
