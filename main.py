@@ -68,12 +68,27 @@ def est_rdc(a):
     return bool(RE_RDC.search(texte)) and "surélev" not in texte
 
 
+def arrondissement_de(a):
+    """75015 / 75116 / « Paris 15e » / « Paris 15ème » -> 15 ; None hors de Paris."""
+    cp = str(a.get("code_postal") or "")
+    if len(cp) == 5 and cp.startswith("75") and cp[2] in "01":
+        n = int(cp[-2:])
+        return n if 1 <= n <= 20 else None
+    m = re.search(r"paris\s*(\d{1,2})\s*(?:e|er|ème|eme)?\b", f"{a.get('ville', '')} {a.get('titre', '')}", re.I)
+    return int(m.group(1)) if m and 1 <= int(m.group(1)) <= 20 else None
+
+
 def garder(a, conf):
     """Applique les critères. Renvoie l'annonce enrichie, ou None si rejetée."""
     r, g, sec = conf["recherche"], conf["geo"], conf.get("securite", {})
     cp = a.get("code_postal") or ""
     if cp and not cp.startswith(tuple(g["departements"])):
         return None
+    arr = arrondissement_de(a)
+    if arr and g.get("paris_arrondissements") and arr not in g["paris_arrondissements"]:
+        return None
+    if arr in g.get("paris_coups_de_coeur", []):
+        a["coup_de_coeur"] = True
     if cp.startswith("750") and len(cp) == 5 and int(cp[-2:] or 0) in g.get("paris_arrondissements_exclus", []):
         return None
     prix = a.get("prix")
@@ -165,6 +180,12 @@ def collecter(conf, fixtures=False):
             annonces += bienici.recuperer(conf)
         except Exception as ex:  # une source en panne ne bloque pas les autres
             print(f"[bienici] erreur : {ex}")
+    if conf["sources"].get("pages", {}).get("actif"):
+        from sources import pages
+        try:
+            annonces += pages.recuperer(conf)
+        except Exception as ex:
+            print(f"[pages] erreur : {ex}")
     if conf["sources"]["emails"].get("actif"):
         from sources import emails
         try:
@@ -245,6 +266,8 @@ def main(argv=None):
     modifiees = nouvelles + [b for b, _ in baisses]
     for a in modifiees:
         if a.get("lat") is not None and lieux:
+            a["distances"] = {l["nom"]: round(haversine_km(a["lat"], a["lon"], l["lat"], l["lon"]), 1)
+                              for l in lieux if l.get("lat") is not None}
             a["trajets"] = {l["nom"]: trajets.minutes(a["lat"], a["lon"], l) for l in lieux}
     trajets.sauver()
     ref_de = references(list(store.annonces.values()) + modifiees, conf["score"]["prix_m2_reference"])

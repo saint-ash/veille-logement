@@ -24,6 +24,11 @@ mots_exclus = ["colocation", "coloc", "sous-location", "viager", "place de parki
 distance_max_km = 0.8
 departements = ["75", "92", "93", "94", "95"]
 paris_arrondissements_exclus = [18, 19]
+# Paris : seulement ces arrondissements (choisis sur la sécurité SSMSI + la distance SKEMA / Porte Maillot)
+#  très bons (coup de cœur) : 15e, 16e, 17e — les plus tranquilles ET les plus proches de tes lieux
+#  bons : 5e, 6e, 7e, 14e
+paris_arrondissements = [5, 6, 7, 14, 15, 16, 17]
+paris_coups_de_coeur = [15, 16, 17]
 # Gares : toutes celles d'Île-de-France (données officielles IDFM, téléchargées
 # automatiquement une fois par mois). Ajoute "TRAMWAY" si le tram te va.
 modes = ["METRO", "RER", "TRAIN"]
@@ -276,6 +281,7 @@ mots_rassurants = ["gardien", "digicode", "interphone", "visiophone", "résidenc
 
 [score]
 # Note /100 = prix (30) + sécurité (20) + trajets SKEMA/travail (20) + proximité gare (20) + surface (10)
+# Sans clé PRIM, la note « trajets » utilise la distance à vol d'oiseau vers SKEMA et Porte Maillot.
 # + bonus : commune coup de cœur (+4), particulier sans frais d'agence (+3)
 prix_m2_reference = 30
 seuil_bonne_affaire = 0.88
@@ -291,6 +297,36 @@ actif = true
 ouest = 3
 paris = 4
 est = 1
+
+[sources.pages]
+# Pages de résultats publiques lues directement (robots.txt respecté, 1 requête par page et par passage).
+# Ajoute l'adresse d'une recherche (avec tes filtres) copiée depuis ton navigateur.
+actif = true
+
+[[sources.pages.sites]]
+nom = "ImmoJeune"
+url = "https://www.immojeune.com/location-meublee/paris-75.html"
+
+[[sources.pages.sites]]
+nom = "ImmoJeune (studios)"
+url = "https://www.immojeune.com/location-studio/paris-75.html"
+
+[[sources.pages.sites]]
+nom = "Studapart"
+url = "https://www.studapart.com/fr/studio-meuble-paris"
+
+[[sources.pages.sites]]
+nom = "Location-Etudiant"
+url = "https://www.location-etudiant.fr/logement-etudiant/Paris-75-studio.html"
+
+[[sources.pages.sites]]
+nom = "LocService"
+url = "https://www.locservice.fr/paris-75/location-studio-paris-16/58409.html"
+particuliers = true
+
+[[sources.pages.sites]]
+nom = "Lesiteimmo"
+url = "https://www.lesiteimmo.com/louer/immo/paris-75"
 
 [sources.emails]
 actif = true              # s'active dès que IMAP_USER et IMAP_PASSWORD sont dans les secrets GitHub

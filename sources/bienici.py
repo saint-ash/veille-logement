@@ -149,7 +149,9 @@ def recuperer(conf, session=None):
     secteurs, cps = {}, {}
     for v in conf_g["villes"]:
         if v["insee"] == "75056":  # Paris : arrondissement par arrondissement (18e et 19e exclus)
-            arr = arrondissements(conf_g.get("paris_arrondissements_exclus", []))
+            garder_arr = conf_g.get("paris_arrondissements")
+            exclus = [n for n in range(1, 21) if garder_arr and n not in garder_arr] + conf_g.get("paris_arrondissements_exclus", [])
+            arr = arrondissements(exclus)
             cps.update(arr)
             secteurs.setdefault(v.get("secteur", "principal"), []).extend(arr)
         else:

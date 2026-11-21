@@ -31,7 +31,9 @@ URL_ANNONCE = re.compile(
     r"pap\.fr/annonces?/|studapart\.com/\w+/(?:property|residence)/|leboncoin\.fr/(?:ad|vi|locations)/|"
     r"seloger\.com/annonces/|bienici\.com/annonce/|logic-immo\.com/(?:detail|annonce)|locservice\.fr/.*(?:annonce|location-)|"
     r"lodgis\.com/.*(?:appartement|apartment|studio)|parisattitude\.com/.*(?:location|rent)|immojeune\.com/.*(?:logement|location)|"
-    r"lokaviz\.fr/.*(?:logement|annonce)|entreparticuliers\.com/annonces?|paruvendu\.fr/immobilier/.*location", re.I)
+    r"lokaviz\.fr/.*(?:logement|annonce)|entreparticuliers\.com/annonces?|paruvendu\.fr/immobilier/.*location|"
+    r"locservice\.fr/.+/\d+\.html|location-etudiant\.fr/.*(?:annonce|logement-etudiant/.+-\d+)|"
+    r"lesiteimmo\.com/.*(?:annonce|louer/.+/\d+)|immojeune\.com/.*(?:annonce|logement-|housing-)", re.I)
 RE_PRIX = re.compile(r"(\d[\d\s  .]{0,7})\s?(?:€|&euro;|eur\b)", re.I)
 RE_SURFACE = re.compile(r"(\d{1,3}(?:[.,]\d)?)\s?m(?:²|2)\b", re.I)
 RE_PIECES = re.compile(r"(\d)\s?pi[eè]ces?|\b[TF]([1-5])\b|(studio)", re.I)

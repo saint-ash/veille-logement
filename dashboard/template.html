@@ -328,7 +328,10 @@ function carte(a, mode) {
     a.position_approx && `<span class="chip">Adresse approx.</span>`].filter(Boolean).join('');
   const ligne = [typ(a), a.surface && `${Math.round(a.surface)} m²`, a.meuble && 'meublé', a.etage > 0 && `${a.etage}e étage`, a.prix_m2 && `${dec(a.prix_m2)} €/m²`].filter(Boolean).join(' · ');
   const traj = (D.lieux || []).map(l => {const m = (a.trajets || {})[l.nom];
-    return m != null ? `<span><b>${esc(l.nom)}</b> ${m} min</span>` : a.lat ? `<a href="${gmaps(a, l.adresse || l.nom, 'transit')}" target="_blank" rel="noopener">${esc(l.nom)} : calculer</a>` : '';}).filter(Boolean).join(' · ');
+    const km = (a.distances || {})[l.nom];
+    return m != null ? `<span><b>${esc(l.nom)}</b> ${m} min</span>`
+      : km != null ? `<a href="${gmaps(a, l.adresse || l.nom, 'transit')}" target="_blank" rel="noopener"><b>${esc(l.nom)}</b> ${dec(km)} km</a>`
+      : a.lat ? `<a href="${gmaps(a, l.adresse || l.nom, 'transit')}" target="_blank" rel="noopener">${esc(l.nom)} : calculer</a>` : '';}).filter(Boolean).join(' · ');
   const sec = a.securite ? `<span class="dots" title="Niveau ${a.securite.niveau} sur 5">${'●'.repeat(a.securite.niveau)}<i>${'●'.repeat(5 - a.securite.niveau)}</i></span><span class="lieu">${a.securite.code === '75056' ? 'Paris (moyenne)' : esc((a.ville || '').replace(/ \d.*$/, ''))} · ${a.securite.rang}ᵉ/${a.securite.sur}</span>` : '<span class="lieu">calculée au premier passage</span>';
   const nd = a.note_detail || {};
   return `<article class="card${['refus', 'non'].includes(s) ? ' off' : ''}" id="${mode || 'c'}-${a.i}">

@@ -65,7 +65,13 @@ def evaluer(a, conf, ref_de):
         d["securite"] = min(20.0, d["securite"] + 3)
 
     trajets = [m for m in (a.get("trajets") or {}).values() if m is not None]
-    d["trajets"] = 10.0 if not trajets else 20 * _borne((50 - sum(trajets) / len(trajets)) / 30)
+    dists = [k for k in (a.get("distances") or {}).values() if k is not None]
+    if trajets:  # temps réels (clé PRIM) : 20 min ou moins = plein, 50 min = 0
+        d["trajets"] = 20 * _borne((50 - sum(trajets) / len(trajets)) / 30)
+    elif dists:  # sinon distance à vol d'oiseau : 2 km ou moins = plein, 12 km = 0
+        d["trajets"] = 20 * _borne((12 - sum(dists) / len(dists)) / 10)
+    else:
+        d["trajets"] = 10.0
 
     dist = a.get("distance_km")
     d["gare"] = 10.0 if dist is None else 20 * _borne(1 - (dist / max(g["distance_max_km"], 0.1)) ** 2)

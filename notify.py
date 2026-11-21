@@ -56,6 +56,8 @@ def formater(a, baisse_depuis=None):
     trajets = {k: v for k, v in (a.get("trajets") or {}).items() if v is not None}
     if trajets:
         lignes.append("🕒 " + " · ".join(f"{e(k)} {v} min" for k, v in trajets.items()))
+    elif a.get("distances"):
+        lignes.append("📏 " + " · ".join(f"{e(k)} {str(v).replace('.', ',')} km" for k, v in a["distances"].items()))
     sec = a.get("securite")
     if sec:
         lignes.append(f"🛡️ Sécurité {'●' * sec['niveau']}{'○' * (5 - sec['niveau'])} "

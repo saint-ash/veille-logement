@@ -97,6 +97,23 @@ class Tests(unittest.TestCase):
         self.assertEqual(emails.cle_url(pap[0]["url"]), "pap.fr/annonces/-r465301608")
         self.assertNotIn("email", pap[0]["url"])  # ton adresse ne doit jamais finir sur le site
 
+    def test_paris_arrondissements(self):
+        self.conf["_securite"] = {}
+        def essai(titre, cp):
+            return main.garder({"cle": "mail:x", "titre": titre, "prix": 800, "surface": 20, "pieces": 1, "code_postal": cp}, self.conf)
+        self.assertTrue(essai("Studio meublé Paris 17", "75017")["coup_de_coeur"])   # très bon
+        self.assertTrue(essai("Studio meublé Paris 16", "75116")["coup_de_coeur"])   # 75116 = 16e
+        self.assertIsNotNone(essai("Studio meublé Paris 5e", "75005"))                # bon
+        self.assertIsNone(essai("Studio meublé Paris 13ème", "75013"))                # hors sélection
+        self.assertIsNone(essai("Studio meublé Paris 18e", "75018"))
+        self.assertEqual(main.arrondissement_de({"ville": "Paris 15e"}), 15)
+
+    def test_note_distance_sans_cle(self):
+        ref = references([], 30)
+        proche = evaluer({"pieces": 1, "prix": 800, "surface": 22, "distances": {"SKEMA": 2.0, "Porte Maillot": 2.5}}, self.conf, ref)
+        loin = evaluer({"pieces": 1, "prix": 800, "surface": 22, "distances": {"SKEMA": 11.0, "Porte Maillot": 12.0}}, self.conf, ref)
+        self.assertGreater(proche["note_detail"]["trajets"], loin["note_detail"]["trajets"] + 15)
+
     def test_score(self):
         base = [{"ville": "Nanterre", "pieces": 2, "prix": 1000, "surface": 40, "distance_km": 0.3}] * 5
         ref = references(base, 30)
