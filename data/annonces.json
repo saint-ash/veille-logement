@@ -1,5 +1,5 @@
 {
- "maj": "2026-11-21T12:54:43Z",
+ "maj": "2026-11-21T12:56:12Z",
  "annonces": [
   {
    "cle": "mail:3da92278fb94cb5e",
@@ -70,12 +70,12 @@
    "note_detail": {
     "prix": 15,
     "securite": 3,
-    "trajets": 10,
+    "trajets": 14,
     "gare": 16,
     "surface": 1,
     "bonus": 7
    },
-   "score": 52,
+   "score": 56,
    "tags": [
     "securise"
    ],
@@ -84,8 +84,8 @@
    "prix_initial": 750.0,
    "distances_approx": true,
    "distances": {
-    "SKEMA": 9.0,
-    "Porte Maillot": 5.2
+    "SKEMA": 5.6,
+    "Porte Maillot": 4.2
    }
   },
   {
