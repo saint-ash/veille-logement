@@ -1,6 +1,49 @@
 {
- "maj": "2026-11-21T12:56:12Z",
+ "maj": "2026-11-21T13:11:39Z",
  "annonces": [
+  {
+   "cle": "mail:426eba1708e78da4",
+   "source": "LocService (92)",
+   "url": "https://www.locservice.fr/hauts-de-seine-92/location-studio-asnieres-sur-seine/202697",
+   "titre": "Studio meublé à louer · Asnières-sur-Seine (92600) · 20 m² · 859 € / mois · Beau studio en excellent état de 20 m² comprenant petite entrée, sdb avec ",
+   "prix": 859.0,
+   "surface": 20.0,
+   "pieces": 1,
+   "code_postal": "92600",
+   "meuble_requis": true,
+   "annonceur": "particulier",
+   "meuble": true,
+   "ville": "Asnières-sur-Seine",
+   "insee": "92004",
+   "securite": {
+    "niveau": 3,
+    "taux": 4.8,
+    "rang": 171,
+    "sur": 293,
+    "annee": "2025",
+    "code": "92004"
+   },
+   "distances_approx": true,
+   "distances": {
+    "SKEMA": 8.1,
+    "Porte Maillot": 4.4
+   },
+   "ratio_marche": 1.077,
+   "prix_m2": 43.0,
+   "note_detail": {
+    "prix": 10,
+    "securite": 10,
+    "trajets": 12,
+    "gare": 10,
+    "surface": 1,
+    "bonus": 3
+   },
+   "score": 46,
+   "tags": [],
+   "extrait": "Studio meublé à louer · Asnières-sur-Seine (92600) · 20 m² · 859 € / mois · Beau studio en excellent état de 20 m² comprenant petite entrée, sdb avec douche, belle pièce à vivre et cui…",
+   "vu_le": "2026-11-21T13:11:39Z",
+   "prix_initial": 859.0
+  },
   {
    "cle": "mail:3da92278fb94cb5e",
    "source": "Lesiteimmo (92)",
@@ -27,7 +70,7 @@
     "Porte Maillot": 4.4
    },
    "distances_approx": true,
-   "ratio_marche": 1.087,
+   "ratio_marche": 1.077,
    "prix_m2": 43.0,
    "note_detail": {
     "prix": 10,
@@ -65,17 +108,17 @@
     "annee": "2025",
     "code": "75115"
    },
-   "ratio_marche": 0.999,
+   "ratio_marche": 0.99,
    "prix_m2": 39.5,
    "note_detail": {
-    "prix": 15,
+    "prix": 16,
     "securite": 3,
     "trajets": 14,
     "gare": 16,
     "surface": 1,
     "bonus": 7
    },
-   "score": 56,
+   "score": 57,
    "tags": [
     "securise"
    ],
@@ -136,7 +179,7 @@
     "SKEMA": null,
     "Porte Maillot": null
    },
-   "ratio_marche": 1.018,
+   "ratio_marche": 1.009,
    "prix_m2": 40.2,
    "note_detail": {
     "prix": 14,
@@ -146,7 +189,7 @@
     "surface": 2,
     "bonus": 0
    },
-   "score": 48,
+   "score": 49,
    "tags": [],
    "extrait": "Avec IMMOJEUNE, trouvez les meilleurs logements étudiants et jeunes actifs en quelques clics et en toute confiance.\n\nÀ seulement 8 km de Paris et à proximité immédiate du quartier d'affaires de la Défense, Rueil-Malmaison bénéficie d'un emplacement privilégié. Notre appartement, …",
    "vu_le": "2026-11-21T12:45:28Z",
@@ -205,7 +248,7 @@
     "SKEMA": null,
     "Porte Maillot": null
    },
-   "ratio_marche": 0.784,
+   "ratio_marche": 0.777,
    "prix_m2": 31.0,
    "note_detail": {
     "prix": 28,
@@ -349,7 +392,7 @@
     "SKEMA": null,
     "Porte Maillot": null
    },
-   "ratio_marche": 1.24,
+   "ratio_marche": 1.229,
    "prix_m2": 49.0,
    "note_detail": {
     "prix": 1,
@@ -359,7 +402,7 @@
     "surface": 0,
     "bonus": 0
    },
-   "score": 35,
+   "score": 36,
    "tags": [],
    "extrait": "L'Adresse immobilier vous présente ce charmant STUDIO  MEUBLE de  18m², idéalement situé au pied du Parc du Château, entouré de commodités locales (T2 et Ligne L). Il se site rue Pierre Dupont.<br>Ce studio refait à neuf, orienté à l'Ouest, offre une disposition optimale comprena…",
    "vu_le": "2026-11-20T14:09:48Z",
@@ -417,10 +460,10 @@
     "SKEMA": null,
     "Porte Maillot": null
    },
-   "ratio_marche": 1.0,
+   "ratio_marche": 0.991,
    "prix_m2": 39.5,
    "note_detail": {
-    "prix": 15,
+    "prix": 16,
     "securite": 5,
     "trajets": 12,
     "gare": 11,
@@ -485,7 +528,7 @@
     "SKEMA": null,
     "Porte Maillot": null
    },
-   "ratio_marche": 1.024,
+   "ratio_marche": 1.015,
    "prix_m2": 40.5,
    "note_detail": {
     "prix": 14,
@@ -553,17 +596,17 @@
     "SKEMA": null,
     "Porte Maillot": null
    },
-   "ratio_marche": 0.827,
+   "ratio_marche": 0.82,
    "prix_m2": 32.7,
    "note_detail": {
-    "prix": 25,
+    "prix": 26,
     "securite": 0,
     "trajets": 13,
     "gare": 0,
     "surface": 6,
     "bonus": 0
    },
-   "score": 44,
+   "score": 45,
    "tags": [
     "bonne_affaire"
    ],
@@ -761,7 +804,7 @@
     "SKEMA": null,
     "Porte Maillot": null
    },
-   "ratio_marche": 0.849,
+   "ratio_marche": 0.842,
    "prix_m2": 33.6,
    "note_detail": {
     "prix": 24,
@@ -831,7 +874,7 @@
     "SKEMA": null,
     "Porte Maillot": null
    },
-   "ratio_marche": 0.902,
+   "ratio_marche": 0.894,
    "prix_m2": 35.7,
    "note_detail": {
     "prix": 21,
@@ -1048,10 +1091,10 @@
     "SKEMA": null,
     "Porte Maillot": null
    },
-   "ratio_marche": 0.814,
+   "ratio_marche": 0.807,
    "prix_m2": 32.2,
    "note_detail": {
-    "prix": 26,
+    "prix": 27,
     "securite": 10,
     "trajets": 11,
     "gare": 10,
@@ -1116,10 +1159,10 @@
     "SKEMA": null,
     "Porte Maillot": null
    },
-   "ratio_marche": 1.248,
+   "ratio_marche": 1.237,
    "prix_m2": 49.3,
    "note_detail": {
-    "prix": 0,
+    "prix": 1,
     "securite": 0,
     "trajets": 14,
     "gare": 17,
@@ -1252,10 +1295,10 @@
     "SKEMA": null,
     "Porte Maillot": null
    },
-   "ratio_marche": 0.76,
+   "ratio_marche": 0.753,
    "prix_m2": 30.0,
    "note_detail": {
-    "prix": 29,
+    "prix": 30,
     "securite": 3,
     "trajets": 13,
     "gare": 19,
@@ -1396,10 +1439,10 @@
     "SKEMA": null,
     "Porte Maillot": null
    },
-   "ratio_marche": 0.9,
+   "ratio_marche": 0.892,
    "prix_m2": 35.6,
    "note_detail": {
-    "prix": 21,
+    "prix": 22,
     "securite": 0,
     "trajets": 14,
     "gare": 16,
@@ -1464,7 +1507,7 @@
     "SKEMA": null,
     "Porte Maillot": null
    },
-   "ratio_marche": 0.746,
+   "ratio_marche": 0.739,
    "prix_m2": 29.5,
    "note_detail": {
     "prix": 30,
@@ -1538,7 +1581,7 @@
     "SKEMA": null,
     "Porte Maillot": null
    },
-   "ratio_marche": 1.123,
+   "ratio_marche": 1.113,
    "prix_m2": 44.4,
    "note_detail": {
     "prix": 8,
@@ -1548,7 +1591,7 @@
     "surface": 0,
     "bonus": 0
    },
-   "score": 35,
+   "score": 36,
    "tags": [],
    "extrait": "À proximité de la Gare du Nord, dans un immeuble ravalé, studio en très bon état.Il se compose d'une entrée desservant une pièce principale avec parquet au sol et fenêtre en double vitrage, et d'une cuisine américaine équipée de plaques de cuisson, d'un réfrigérateur, d'un plan d…",
    "vu_le": "2026-11-20T14:09:48Z",
@@ -1606,7 +1649,7 @@
     "SKEMA": null,
     "Porte Maillot": null
    },
-   "ratio_marche": 1.237,
+   "ratio_marche": 1.226,
    "prix_m2": 48.9,
    "note_detail": {
     "prix": 1,
@@ -1616,7 +1659,7 @@
     "surface": 0,
     "bonus": 0
    },
-   "score": 31,
+   "score": 32,
    "tags": [],
    "extrait": "À louer à Paris 15ᵉ, agréable studio meublé de 18 m² avec balcon, situé au 5ᵉ étage sans ascenseur d'un immeuble sécurisé, à environ 10 minutes à pied du métro Convention.\n\nFonctionnel, bien équipé et agréable à vivre, ce studio bénéficie d'un emplacement recherché à proximité im…",
    "vu_le": "2026-11-20T14:09:48Z",
