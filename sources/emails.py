@@ -35,13 +35,16 @@ URL_ANNONCE = re.compile(
     r"lokaviz\.fr/.*(?:logement|annonce)|entreparticuliers\.com/annonces?|paruvendu\.fr/immobilier/.*location|"
     r"locservice\.fr/.+/\d+\.html|"
     r"lesiteimmo\.com/louer/appartement-[^/]+/[^/]+/\d+|immojeune\.com/location-etudiant/[^/]+/[^/]+_\d+\.html", re.I)
-RE_PRIX = re.compile(r"(\d[\d\s  .]{0,7})\s?(?:€|&euro;|eur\b)", re.I)
+RE_PRIX = re.compile(r"(\d{1,2},\d{3}(?!\d)|\d[\d\s  .]{0,7}(?:,\d{1,2})?)\s?(?:€|&euro;|eur\b)", re.I)  # « 1,020€ » = 1 020 €
 RE_SURFACE = re.compile(r"(\d{1,3}(?:[.,]\d)?)\s?m(?:²|2)\b", re.I)
 RE_PIECES = re.compile(r"(\d)\s?pi[eè]ces?|\b[TF]([1-5])\b|(studio)", re.I)
 RE_CP = re.compile(r"\b(7[5789]|9[1-5])\d{3}\b")
 
 
 def _nombre(s):
+    s = s.strip()
+    if re.fullmatch(r"\d{1,2},\d{3}", s):  # virgule des milliers (format anglais)
+        s = s.replace(",", "")
     return float(re.sub(r"[\s  .]", "", s).replace(",", "."))
 
 

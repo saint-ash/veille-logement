@@ -114,6 +114,15 @@ class Tests(unittest.TestCase):
         loin = evaluer({"pieces": 1, "prix": 800, "surface": 22, "distances": {"SKEMA": 11.0, "Porte Maillot": 12.0}}, self.conf, ref)
         self.assertGreater(proche["note_detail"]["trajets"], loin["note_detail"]["trajets"] + 15)
 
+    def test_prix_et_doublons(self):
+        from sources.emails import _lire_carte
+        for texte, prix in [("1,020€ /mois", 1020), ("Loyer 899,50 € CC", 899.5), ("1 450 € par mois", 1450),
+                            ("810 € · 41 €/m²/mois", 810), ("Loyer : 1.195 € CC", 1195)]:
+            self.assertEqual(_lire_carte({"cle": "x", "titre": texte}, texte)["prix"], prix, texte)
+        a = {"source": "LocService", "prix": 859, "surface": 20, "code_postal": "92600"}
+        self.assertIsNotNone(main.doublon(a, [{"source": "Lesiteimmo", "prix": 859, "surface": 20.4, "code_postal": "92600"}]))
+        self.assertIsNone(main.doublon(a, [{"source": "Lesiteimmo", "prix": 859, "surface": 20, "code_postal": "92400"}]))
+
     def test_score(self):
         base = [{"ville": "Nanterre", "pieces": 2, "prix": 1000, "surface": 40, "distance_km": 0.3}] * 5
         ref = references(base, 30)

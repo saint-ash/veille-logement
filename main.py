@@ -162,6 +162,18 @@ def garder(a, conf):
     return a
 
 
+def doublon(a, autres):
+    """Même logement publié sur deux sites : même loyer (± 5 €), même surface (± 1 m²), même code postal."""
+    if not (a.get("prix") and a.get("surface") and a.get("code_postal")):
+        return None
+    for b in autres:
+        if (b is not a and b.get("source") != a.get("source") and b.get("code_postal") == a["code_postal"]
+                and b.get("prix") and abs(b["prix"] - a["prix"]) <= 5
+                and b.get("surface") and abs(b["surface"] - a["surface"]) <= 1):
+            return b
+    return None
+
+
 def ajouter_distances(a, lieux, en_ligne=True):
     """Distance à vol d'oiseau vers SKEMA / Porte Maillot. Sans position précise (alerte mail, page) :
     depuis le centre de la commune ou de l'arrondissement, marquée « ≈ »."""
@@ -281,6 +293,10 @@ def main(argv=None):
         if prec is None:
             store.marquer(a["cle"], a.get("prix"))
             if (ok := garder(a, conf)) is not None:
+                if (meme := doublon(ok, list(store.annonces.values()) + nouvelles)) is not None:
+                    meme["aussi_sur"] = sorted(set(meme.get("aussi_sur", [])) | {ok.get("source") or "?"})
+                    print(f"[doublon] {ok.get('source')} = {meme.get('source')} : {ok['titre'][:50]}")
+                    continue
                 nouvelles.append(ok)
         elif a.get("prix") and prec.get("p") and a["prix"] < prec["p"] - 0.5:
             ancien = prec["p"]
