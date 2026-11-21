@@ -1,6 +1,75 @@
 {
- "maj": "2026-11-21T13:13:31Z",
+ "maj": "2026-11-21T14:15:27Z",
  "annonces": [
+  {
+   "cle": "bienici:ag753736-561725846",
+   "source": "Bien'ici",
+   "url": "https://www.bienici.com/annonce/ag753736-561725846",
+   "titre": "Studio meublé à Paris (75017) - Métro La Fourche ligne 13",
+   "prix": 811,
+   "surface": 19,
+   "pieces": 1,
+   "ville": "Paris 17e",
+   "code_postal": "75017",
+   "lat": 48.89030142218221,
+   "lon": 2.321078999790399,
+   "rayon_flou_km": 0.05,
+   "photo": "https://photos.ubiflow.net/753736/561725846/photos/1.jpg?INSOON_EB_5512801818_20261121133216",
+   "photos": [
+    "https://photos.ubiflow.net/753736/561725846/photos/1.jpg?INSOON_EB_5512801818_20261121133216",
+    "https://photos.ubiflow.net/753736/561725846/photos/2.jpg?INSOON_EB_5512801818_20261121133216",
+    "https://photos.ubiflow.net/753736/561725846/photos/3.jpg?INSOON_EB_5512801818_20261121133216",
+    "https://photos.ubiflow.net/753736/561725846/photos/4.jpg?INSOON_EB_5512801818_20261121133216"
+   ],
+   "charges": 80,
+   "meuble": true,
+   "etage": 3,
+   "annonceur": "agence",
+   "frais_agence": 293.7,
+   "date": "2026-11-21T13:40:43.845Z",
+   "coup_de_coeur": true,
+   "insee": "75056",
+   "securite": {
+    "niveau": 2,
+    "taux": 7.3,
+    "rang": 235,
+    "sur": 293,
+    "annee": "2025",
+    "code": "75117"
+   },
+   "gare": "Brochant",
+   "lignes": [
+    "M13"
+   ],
+   "gare_lat": 48.89059,
+   "gare_lon": 2.32017,
+   "distance_km": 0.074,
+   "minutes": 1,
+   "position_approx": false,
+   "distances": {
+    "SKEMA": 7.8,
+    "Porte Maillot": 3.0
+   },
+   "trajets": {
+    "SKEMA": null,
+    "Porte Maillot": null
+   },
+   "ratio_marche": 1.061,
+   "prix_m2": 42.7,
+   "note_detail": {
+    "prix": 11,
+    "securite": 5,
+    "trajets": 13,
+    "gare": 20,
+    "surface": 1,
+    "bonus": 4
+   },
+   "score": 54,
+   "tags": [],
+   "extrait": "Situé au 3ème étage avec ascenseur, découvrez ce charmant studio meublé de 19,58 m², idéalement situé à proximité du métro La Fourche (ligne 13) et de nombreux commerces.\n\nCalme et fonctionnel, cet appartement offre un cadre de vie agréable et un agencement optimisé. Il se compos…",
+   "vu_le": "2026-11-21T14:15:26Z",
+   "prix_initial": 811
+  },
   {
    "cle": "mail:426eba1708e78da4",
    "source": "LocService (92)",
@@ -28,17 +97,17 @@
     "SKEMA": 8.1,
     "Porte Maillot": 4.4
    },
-   "ratio_marche": 1.077,
+   "ratio_marche": 1.067,
    "prix_m2": 43.0,
    "note_detail": {
-    "prix": 10,
+    "prix": 11,
     "securite": 10,
     "trajets": 12,
     "gare": 10,
     "surface": 1,
     "bonus": 3
    },
-   "score": 46,
+   "score": 47,
    "tags": [],
    "extrait": "Studio meublé à louer · Asnières-sur-Seine (92600) · 20 m² · 859 € / mois · Beau studio en excellent état de 20 m² comprenant petite entrée, sdb avec douche, belle pièce à vivre et cui…",
    "vu_le": "2026-11-21T13:11:39Z",
@@ -70,17 +139,17 @@
     "Porte Maillot": 4.4
    },
    "distances_approx": true,
-   "ratio_marche": 1.077,
+   "ratio_marche": 1.067,
    "prix_m2": 43.0,
    "note_detail": {
-    "prix": 10,
+    "prix": 11,
     "securite": 10,
     "trajets": 12,
     "gare": 10,
     "surface": 1,
     "bonus": 0
    },
-   "score": 43,
+   "score": 44,
    "tags": [],
    "extrait": "C · 1/5 · Locservice Appartement à louer Studio de 20m2 à louer sur Asnières-sur-Seine 859 € CC /mois 43 € / m² 1 pièce • 1 chambre • 20 m² Asnières-sur-Seine (92600) Meublé Studio de particulier à louer sur asnières-sur-seine. Disponible le 19 / 12 / 2026 pour cette location meu…",
    "vu_le": "2026-11-21T12:53:01Z",
@@ -108,7 +177,7 @@
     "annee": "2025",
     "code": "75115"
    },
-   "ratio_marche": 0.99,
+   "ratio_marche": 0.981,
    "prix_m2": 39.5,
    "note_detail": {
     "prix": 16,
@@ -179,17 +248,17 @@
     "SKEMA": null,
     "Porte Maillot": null
    },
-   "ratio_marche": 1.009,
+   "ratio_marche": 1.0,
    "prix_m2": 40.2,
    "note_detail": {
-    "prix": 14,
+    "prix": 15,
     "securite": 10,
     "trajets": 11,
     "gare": 11,
     "surface": 2,
     "bonus": 0
    },
-   "score": 49,
+   "score": 50,
    "tags": [],
    "extrait": "Avec IMMOJEUNE, trouvez les meilleurs logements étudiants et jeunes actifs en quelques clics et en toute confiance.\n\nÀ seulement 8 km de Paris et à proximité immédiate du quartier d'affaires de la Défense, Rueil-Malmaison bénéficie d'un emplacement privilégié. Notre appartement, …",
    "vu_le": "2026-11-21T12:45:28Z",
@@ -248,17 +317,17 @@
     "SKEMA": null,
     "Porte Maillot": null
    },
-   "ratio_marche": 0.777,
+   "ratio_marche": 0.77,
    "prix_m2": 31.0,
    "note_detail": {
-    "prix": 28,
+    "prix": 29,
     "securite": 10,
     "trajets": 15,
     "gare": 6,
     "surface": 6,
     "bonus": 4
    },
-   "score": 69,
+   "score": 70,
    "tags": [
     "bonne_affaire"
    ],
@@ -392,10 +461,10 @@
     "SKEMA": null,
     "Porte Maillot": null
    },
-   "ratio_marche": 1.229,
+   "ratio_marche": 1.218,
    "prix_m2": 49.0,
    "note_detail": {
-    "prix": 1,
+    "prix": 2,
     "securite": 5,
     "trajets": 19,
     "gare": 11,
@@ -460,7 +529,7 @@
     "SKEMA": null,
     "Porte Maillot": null
    },
-   "ratio_marche": 0.991,
+   "ratio_marche": 0.982,
    "prix_m2": 39.5,
    "note_detail": {
     "prix": 16,
@@ -470,7 +539,7 @@
     "surface": 2,
     "bonus": 0
    },
-   "score": 45,
+   "score": 46,
    "tags": [],
    "extrait": "Avec IMMOJEUNE, trouvez les meilleurs logements étudiants et jeunes actifs en quelques clics et en toute confiance.\n\nIdéalement implanté à proximité immédiate du RER A, cet appartement offre un accès rapide à La Défense en seulement 20 minutes et au centre de Paris (Châtelet) en …",
    "vu_le": "2026-11-20T14:09:48Z",
@@ -528,17 +597,17 @@
     "SKEMA": null,
     "Porte Maillot": null
    },
-   "ratio_marche": 1.015,
+   "ratio_marche": 1.006,
    "prix_m2": 40.5,
    "note_detail": {
-    "prix": 14,
+    "prix": 15,
     "securite": 5,
     "trajets": 14,
     "gare": 15,
     "surface": 1,
     "bonus": 0
    },
-   "score": 49,
+   "score": 50,
    "tags": [],
    "extrait": "CENTURY21 L'ami immobilier vous propose :<br>Studio meublé de 20 m² à louer  Rue  Bernard Jugault -Asnières-sur-Seine (92600)<br>À louer, charmant studio meublé de 20 m², idéalement situé à seulement 6 minutes à pied de la gare d'Asnières-sur-Seine.<br>Ce logement fonctionnel et …",
    "vu_le": "2026-11-20T14:09:48Z",
@@ -596,7 +665,7 @@
     "SKEMA": null,
     "Porte Maillot": null
    },
-   "ratio_marche": 0.82,
+   "ratio_marche": 0.812,
    "prix_m2": 32.7,
    "note_detail": {
     "prix": 26,
@@ -804,17 +873,17 @@
     "SKEMA": null,
     "Porte Maillot": null
    },
-   "ratio_marche": 0.842,
+   "ratio_marche": 0.834,
    "prix_m2": 33.6,
    "note_detail": {
-    "prix": 24,
+    "prix": 25,
     "securite": 5,
     "trajets": 19,
     "gare": 18,
     "surface": 2,
     "bonus": 0
    },
-   "score": 68,
+   "score": 69,
    "tags": [
     "bonne_affaire"
    ],
@@ -874,17 +943,17 @@
     "SKEMA": null,
     "Porte Maillot": null
    },
-   "ratio_marche": 0.894,
+   "ratio_marche": 0.886,
    "prix_m2": 35.7,
    "note_detail": {
-    "prix": 21,
+    "prix": 22,
     "securite": 5,
     "trajets": 12,
     "gare": 12,
     "surface": 2,
     "bonus": 0
    },
-   "score": 52,
+   "score": 53,
    "tags": [],
    "extrait": "Avec IMMOJEUNE, trouvez les meilleurs logements étudiants et jeunes actifs en quelques clics et en toute confiance.\n\nIdéalement situé aux abords ouest de Paris et à proximité de Nanterre, cet appartement se trouve à quelques pas de l'Université Paris X – Nanterre, de renommées in…",
    "vu_le": "2026-11-20T14:09:48Z",
@@ -1091,7 +1160,7 @@
     "SKEMA": null,
     "Porte Maillot": null
    },
-   "ratio_marche": 0.807,
+   "ratio_marche": 0.8,
    "prix_m2": 32.2,
    "note_detail": {
     "prix": 27,
@@ -1159,7 +1228,7 @@
     "SKEMA": null,
     "Porte Maillot": null
    },
-   "ratio_marche": 1.237,
+   "ratio_marche": 1.226,
    "prix_m2": 49.3,
    "note_detail": {
     "prix": 1,
@@ -1169,7 +1238,7 @@
     "surface": 0,
     "bonus": 0
    },
-   "score": 31,
+   "score": 32,
    "tags": [],
    "extrait": "Avec IMMOJEUNE, trouvez les meilleurs logements étudiants et jeunes actifs en quelques clics et en toute confiance.\n\nStudio de 18 à 25m² meublé et équipé\n\nMis à jour le 20/11/2026\nUpdated on 20/11/2026",
    "vu_le": "2026-11-20T14:09:48Z",
@@ -1295,7 +1364,7 @@
     "SKEMA": null,
     "Porte Maillot": null
    },
-   "ratio_marche": 0.753,
+   "ratio_marche": 0.746,
    "prix_m2": 30.0,
    "note_detail": {
     "prix": 30,
@@ -1439,7 +1508,7 @@
     "SKEMA": null,
     "Porte Maillot": null
    },
-   "ratio_marche": 0.892,
+   "ratio_marche": 0.884,
    "prix_m2": 35.6,
    "note_detail": {
     "prix": 22,
@@ -1449,7 +1518,7 @@
     "surface": 4,
     "bonus": 0
    },
-   "score": 55,
+   "score": 56,
    "tags": [],
    "extrait": "Au pied du Nouveau Tribunal, porte de Clichy, dans un immeuble calme, au 4ème étage sans ascenseur sur cour sans vis à vis: studio MEUBLE comprenant: cuisine dinatoire,  pièce principale, salle d'eau avec WC.<br>Très calme.<br>",
    "vu_le": "2026-11-20T14:09:48Z",
@@ -1507,7 +1576,7 @@
     "SKEMA": null,
     "Porte Maillot": null
    },
-   "ratio_marche": 0.739,
+   "ratio_marche": 0.732,
    "prix_m2": 29.5,
    "note_detail": {
     "prix": 30,
@@ -1581,17 +1650,17 @@
     "SKEMA": null,
     "Porte Maillot": null
    },
-   "ratio_marche": 1.113,
+   "ratio_marche": 1.103,
    "prix_m2": 44.4,
    "note_detail": {
-    "prix": 8,
+    "prix": 9,
     "securite": 0,
     "trajets": 9,
     "gare": 19,
     "surface": 0,
     "bonus": 0
    },
-   "score": 36,
+   "score": 37,
    "tags": [],
    "extrait": "À proximité de la Gare du Nord, dans un immeuble ravalé, studio en très bon état.Il se compose d'une entrée desservant une pièce principale avec parquet au sol et fenêtre en double vitrage, et d'une cuisine américaine équipée de plaques de cuisson, d'un réfrigérateur, d'un plan d…",
    "vu_le": "2026-11-20T14:09:48Z",
@@ -1649,17 +1718,17 @@
     "SKEMA": null,
     "Porte Maillot": null
    },
-   "ratio_marche": 1.226,
+   "ratio_marche": 1.215,
    "prix_m2": 48.9,
    "note_detail": {
-    "prix": 1,
+    "prix": 2,
     "securite": 0,
     "trajets": 14,
     "gare": 17,
     "surface": 0,
     "bonus": 0
    },
-   "score": 32,
+   "score": 33,
    "tags": [],
    "extrait": "À louer à Paris 15ᵉ, agréable studio meublé de 18 m² avec balcon, situé au 5ᵉ étage sans ascenseur d'un immeuble sécurisé, à environ 10 minutes à pied du métro Convention.\n\nFonctionnel, bien équipé et agréable à vivre, ce studio bénéficie d'un emplacement recherché à proximité im…",
    "vu_le": "2026-11-20T14:09:48Z",
