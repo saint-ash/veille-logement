@@ -63,6 +63,15 @@ Toutes les 10 minutes, de 6 h à minuit, le robot :
 2. Une à deux minutes plus tard, ton site est en ligne : `https://TON-PSEUDO.github.io/veille-logement/`.
 3. Sur ton téléphone, ouvre le lien → *Partager* → **Sur l'écran d'accueil**.
 
+### Fréquence garantie avec cron-job.org (conseillé)
+Les lancements programmés de GitHub sont parfois retardés de plusieurs heures. Pour un passage vraiment toutes les 10 minutes :
+1. GitHub → photo de profil → *Settings* → *Developer settings* → *Personal access tokens* → **Fine-grained tokens** → *Generate new token*. Nom `veille cron`, expiration 90 jours, *Only select repositories* → `veille-logement`, permission **Actions : Read and write** → *Generate*. Copie le jeton.
+2. Sur **cron-job.org** (gratuit), crée un compte → *Create cronjob* :
+   - URL : `https://api.github.com/repos/saint-ash/veille-logement/actions/workflows/veille.yml/dispatches`
+   - Planification : toutes les 10 minutes (de 6 h à 23 h 59).
+   - Onglet *Advanced* : méthode **POST** ; en-têtes `Authorization: Bearer TON_JETON`, `Accept: application/vnd.github+json` ; corps `{"ref":"main"}`.
+3. *Test run* : la réponse doit être **204**. C'est tout.
+
 ### 6. Les particuliers : centraliser toutes tes alertes (10 min, conseillé)
 Leboncoin, SeLoger et PAP bloquent les robots. On passe donc par leurs propres alertes mail, qui sont faites pour ça.
 1. Crée une Gmail dédiée (exemple : `douaa.appart@gmail.com`), active la validation en 2 étapes, puis crée un **mot de passe d'application** (Compte Google → Sécurité).

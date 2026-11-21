@@ -2,8 +2,9 @@ name: Veille logement
 
 on:
   schedule:
-    # Toutes les 10 min de 6h à minuit (heure de Paris, hiver = UTC+1).
-    - cron: "*/10 5-22 * * *"
+    # Toutes les 10 min de 6h à minuit (heure de Paris, hiver = UTC+1), décalé des heures pile
+    # (GitHub saute souvent les lancements à :00). Pour une fréquence garantie : voir README, « cron-job.org ».
+    - cron: "4,14,24,34,44,54 5-22 * * *"
   workflow_dispatch: {}
 
 permissions:
