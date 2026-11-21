@@ -122,3 +122,27 @@ Tests sans réseau : `python -m unittest discover tests` · site de démo : `pyt
 
 ## Bon usage
 Pour ta recherche perso uniquement : quelques requêtes toutes les 10 min, comme si tu rafraîchissais la page. Ne republie pas les annonces. **Ne paie jamais rien avant d'avoir visité.**
+
+## Sources d'annonces
+
+| Source | Comment | Réglage |
+|---|---|---|
+| Bien'ici | API publique, secteur par secteur (agences, positions précises) | `[sources.bienici]` |
+| ImmoJeune, LocService, Lesiteimmo | pages de résultats publiques lues directement (robots.txt respecté, 1 requête par page et par passage) | `[[sources.pages.sites]]` |
+| Leboncoin, SeLoger, PAP, Studapart, Lodgis, Paris Attitude… | alertes mail reçues sur l'adresse dédiée (lecture seule) | `[sources.emails]` |
+
+Leboncoin, SeLoger et PAP ne sont jamais lus directement (anti-bot et CGU) : leurs alertes mail font le travail.
+Le journal de chaque passage indique, site par site, combien d'annonces ont été lues et pourquoi elles ont été écartées (`[filtre] … prix 21, surface 1…`).
+
+## Paris : les arrondissements retenus
+
+Choisis sur les chiffres de délinquance du SSMSI (violences uniquement) et la distance à SKEMA et Porte Maillot :
+
+- très bons (coup de cœur, bonus de note) : **15e, 16e, 17e** ;
+- bons : **5e, 6e, 7e, 14e**.
+
+Les autres arrondissements sont ignorés. Pour en changer : `paris_arrondissements` et `paris_coups_de_coeur` dans `[geo]`.
+
+## Distance SKEMA / Porte Maillot
+
+Chaque annonce affiche sa distance à vol d'oiseau vers tes deux lieux (📏 sur Telegram). Quand le site ne donne pas la position exacte, elle est calculée depuis le centre de la commune ou de l'arrondissement et notée « ≈ ». Avec la clé `PRIM_API_KEY`, ce sont les vrais temps en transports qui s'affichent (🕒) et comptent dans la note.

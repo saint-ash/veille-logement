@@ -162,6 +162,24 @@ def garder(a, conf):
     return a
 
 
+def ajouter_distances(a, lieux, en_ligne=True):
+    """Distance à vol d'oiseau vers SKEMA / Porte Maillot. Sans position précise (alerte mail, page) :
+    depuis le centre de la commune ou de l'arrondissement, marquée « ≈ »."""
+    cibles = [l for l in lieux or [] if l.get("lat") is not None]
+    if not cibles:
+        return
+    if a.get("lat") is not None and a.get("lon") is not None:
+        pos = (a["lat"], a["lon"])
+    elif en_ligne and (a.get("code_postal") or a.get("ville")):
+        pos = centre_commune(a.get("ville"), a.get("code_postal"))
+        if pos:
+            a["distances_approx"] = True
+    else:
+        pos = None
+    if pos:
+        a["distances"] = {l["nom"]: round(haversine_km(*pos, l["lat"], l["lon"]), 1) for l in cibles}
+
+
 def nettoyer(a):
     """Allège l'annonce avant de l'enregistrer / l'afficher."""
     desc = (a.pop("description", "") or "").strip()
@@ -280,17 +298,12 @@ def main(argv=None):
             print(f"[filtre] {src} rejetées : " + ", ".join(liste))
     modifiees = nouvelles + [b for b, _ in baisses]
     for a in modifiees:
+        ajouter_distances(a, lieux, en_ligne=not args.fixtures)
         if a.get("lat") is not None and lieux:
-            a["distances"] = {l["nom"]: round(haversine_km(a["lat"], a["lon"], l["lat"], l["lon"]), 1)
-                              for l in lieux if l.get("lat") is not None}
             a["trajets"] = {l["nom"]: trajets.minutes(a["lat"], a["lon"], l) for l in lieux}
-        elif lieux and (a.get("code_postal") or a.get("ville")) and not args.fixtures:
-            # pas de position précise (alerte mail, page) : distance depuis le centre de la commune / de l'arrondissement
-            centre = centre_commune(a.get("ville"), a.get("code_postal"))
-            if centre:
-                a["distances"] = {l["nom"]: round(haversine_km(*centre, l["lat"], l["lon"]), 1)
-                                  for l in lieux if l.get("lat") is not None}
-                a["distances_approx"] = True
+    for a in store.annonces.values():  # annonces déjà en mémoire, retenues avant l'ajout des distances
+        if "distances" not in a:
+            ajouter_distances(a, lieux, en_ligne=not args.fixtures)
     trajets.sauver()
     ref_de = references(list(store.annonces.values()) + modifiees, conf["score"]["prix_m2_reference"])
     for a in modifiees:
