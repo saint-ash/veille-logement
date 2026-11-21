@@ -9,7 +9,9 @@ Règles de bonne conduite, appliquées automatiquement :
 L'extraction réutilise le découpage en « cartes » des alertes mail : chaque lien
 d'annonce + le texte autour (prix, surface, ville, code postal).
 """
+import re
 import time
+from collections import Counter
 from urllib import robotparser
 from urllib.parse import urlparse
 
@@ -36,6 +38,18 @@ def autorise(url, session):
             rp.parse([])
         _robots[base] = rp
     return _robots[base].can_fetch("*", url)
+
+
+def _sans_menu(annonces):
+    """Retire du titre les morceaux répétés sur presque toutes les cartes (menu, boutons du site)."""
+    if len(annonces) < 4:
+        return
+    morceaux = Counter(m for a in annonces for m in set(a["titre"].split(" · ")))
+    communs = {m for m, n in morceaux.items() if n >= 0.6 * len(annonces)}
+    for a in annonces:
+        propre = [m for m in a["titre"].split(" · ") if m not in communs]
+        if propre:
+            a["titre"] = " · ".join(propre)
 
 
 def recuperer(conf, session=None):
@@ -66,11 +80,15 @@ def recuperer(conf, session=None):
         if r.status_code != 200:
             print(f"[pages] {site['nom']} : HTTP {r.status_code}")
             continue
-        brutes = extraire_annonces(r.text, domaine, site.get("max", 40), base=r.url)
+        motif = re.compile(site["motif"], re.I) if site.get("motif") else None
+        brutes = extraire_annonces(r.text, domaine, site.get("max", 40), base=r.url, motif=motif)
         # une page de résultats contient aussi des liens de menu (« Location studio Paris ») : sans prix, on jette
         trouvees = [a for a in brutes if a.get("prix") and (a.get("surface") or a.get("pieces"))]
-        if brutes and not trouvees:
-            print(f"[pages] {site['nom']} : {len(brutes)} lien(s) sans prix, ex. {[b['url'][:70] for b in brutes[:3]]}")
+        if not trouvees:
+            liens = sorted({u for u in re.findall(r'href="([^"#]+)"', r.text) if re.search(r"\d{4,}", u)})
+            print(f"[pages] {site['nom']} : 0 annonce exploitable ({len(brutes)} lien(s) sans prix) ; "
+                  f"liens avec numéro : {liens[:6]}")
+        _sans_menu(trouvees)
         for a in trouvees:
             a["source"] = site["nom"]
             if site.get("deja_meuble"):  # page déjà filtrée « meublé » sur le site

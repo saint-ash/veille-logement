@@ -7,7 +7,7 @@ sont faites pour ça : tu dessines la zone autour des gares RER A sur leur site,
 et ce module centralise tout au même endroit, sans doublons.
 """
 import base64
-from urllib.parse import urljoin
+from urllib.parse import urljoin, urlparse
 import email
 import hashlib
 import html
@@ -119,7 +119,19 @@ def _lire_carte(a, texte):
     return a
 
 
-def extraire_annonces(html_body, domaine, max_liens=10, base=None):
+def ressemble_annonce(url, domaine):
+    """Page web : lien vers une fiche d'annonce du même site (identifiant de 5 chiffres ou plus, ou UUID)."""
+    p = urlparse(url)
+    if domaine not in p.netloc:
+        return False
+    if re.search(r"[0-9a-f]{8}-[0-9a-f]{4}-[0-9a-f]{4}-", p.path):
+        return True
+    seg = p.path.rstrip("/").rsplit("/", 1)[-1]
+    nums = re.findall(r"\d{5,}", f"{seg}?{p.query}")
+    return any(not re.fullmatch(r"(?:75|77|78|9[1-5])\d{3}", n) for n in nums)  # 75015 = code postal, pas un id
+
+
+def extraire_annonces(html_body, domaine, max_liens=10, base=None, motif=None):
     """Découpe une alerte mail en annonces.
 
     Les sites mettent l'annonce dans une « carte » : un lien sur la photo, du texte
@@ -140,7 +152,8 @@ def extraire_annonces(html_body, domaine, max_liens=10, base=None):
         reel = url_reelle(e[1])
         if any(m in e[2].lower() for m in MOTS_PIED_DE_PAGE):
             continue
-        if URL_ANNONCE.search(reel) or TEXTE_BOUTON.search(e[2]) or (len(e[2]) >= 6 and INDICES_ANNONCE.search(e[2])):
+        if (URL_ANNONCE.search(reel) or TEXTE_BOUTON.search(e[2]) or (len(e[2]) >= 6 and INDICES_ANNONCE.search(e[2]))
+                or (base and (motif.search(reel) if motif else ressemble_annonce(reel, domaine)))):
             cles.append((i, cle_url(reel), reel, e[3]))
     ordre, cartes = [], {}
     for i, k, reel, img in cles:
