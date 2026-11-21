@@ -57,7 +57,8 @@ def formater(a, baisse_depuis=None):
     if trajets:
         lignes.append("🕒 " + " · ".join(f"{e(k)} {v} min" for k, v in trajets.items()))
     elif a.get("distances"):
-        lignes.append("📏 " + " · ".join(f"{e(k)} {str(v).replace('.', ',')} km" for k, v in a["distances"].items()))
+        approx = "≈ " if a.get("distances_approx") else ""
+        lignes.append("📏 " + " · ".join(f"{e(k)} {approx}{str(v).replace('.', ',')} km" for k, v in a["distances"].items()))
     sec = a.get("securite")
     if sec:
         lignes.append(f"🛡️ Sécurité {'●' * sec['niveau']}{'○' * (5 - sec['niveau'])} "

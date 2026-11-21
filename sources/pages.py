@@ -66,13 +66,17 @@ def recuperer(conf, session=None):
         if r.status_code != 200:
             print(f"[pages] {site['nom']} : HTTP {r.status_code}")
             continue
-        brutes = extraire_annonces(r.text, domaine, site.get("max", 40))
+        brutes = extraire_annonces(r.text, domaine, site.get("max", 40), base=r.url)
         # une page de résultats contient aussi des liens de menu (« Location studio Paris ») : sans prix, on jette
         trouvees = [a for a in brutes if a.get("prix") and (a.get("surface") or a.get("pieces"))]
         if brutes and not trouvees:
             print(f"[pages] {site['nom']} : {len(brutes)} lien(s) sans prix, ex. {[b['url'][:70] for b in brutes[:3]]}")
         for a in trouvees:
             a["source"] = site["nom"]
+            if site.get("deja_meuble"):  # page déjà filtrée « meublé » sur le site
+                a["meuble"] = True
+            else:  # page généraliste : « meublé » doit être écrit dans l'annonce
+                a["meuble_requis"] = True
             if site.get("particuliers"):
                 a["annonceur"] = "particulier"
         exemple = f" — ex. « {trouvees[0]['titre'][:60]} »" if trouvees else ""

@@ -46,6 +46,33 @@ def geocoder(adresse):
     return None
 
 
+_CENTRES = {}
+
+
+def centre_commune(ville, cp):
+    """Centre de la commune (ou de l'arrondissement pour Paris), en cache dans data/lieux.json."""
+    cle = f"centre:{cp or ''}:{ville or ''}".lower()
+    if not _CENTRES:
+        _CENTRES.update(_lire(CACHE_LIEUX) or {})
+    if cle not in _CENTRES:
+        q = f"{ville or ''} {cp or ''}".strip()
+        r = None
+        for url in GEOCODEURS:
+            try:
+                rep = requests.get(url, params={"q": q, "type": "municipality", "limit": 1}, timeout=20)
+                if rep.ok and rep.json().get("features"):
+                    lon, lat = rep.json()["features"][0]["geometry"]["coordinates"]
+                    r = [lat, lon]
+                    break
+            except (requests.RequestException, ValueError, KeyError, IndexError):
+                continue
+        if r is None:
+            return None
+        _CENTRES[cle] = r
+        _ecrire(CACHE_LIEUX, {**(_lire(CACHE_LIEUX) or {}), cle: r})
+    return tuple(_CENTRES[cle])
+
+
 def charger_lieux(conf):
     """[{nom, adresse, lat, lon}] — les coordonnées sont mises en cache dans data/."""
     cache, modifie, lieux = _lire(CACHE_LIEUX), False, []

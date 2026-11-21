@@ -7,6 +7,7 @@ sont faites pour ça : tu dessines la zone autour des gares RER A sur leur site,
 et ce module centralise tout au même endroit, sans doublons.
 """
 import base64
+from urllib.parse import urljoin
 import email
 import hashlib
 import html
@@ -32,8 +33,8 @@ URL_ANNONCE = re.compile(
     r"seloger\.com/annonces/|bienici\.com/annonce/|logic-immo\.com/(?:detail|annonce)|locservice\.fr/.*(?:annonce|location-)|"
     r"lodgis\.com/.*(?:appartement|apartment|studio)|parisattitude\.com/.*(?:location|rent)|immojeune\.com/.*(?:logement|location)|"
     r"lokaviz\.fr/.*(?:logement|annonce)|entreparticuliers\.com/annonces?|paruvendu\.fr/immobilier/.*location|"
-    r"locservice\.fr/.+/\d+\.html|location-etudiant\.fr/.*(?:annonce|logement-etudiant/.+-\d+)|"
-    r"lesiteimmo\.com/.*(?:annonce|louer/.+/\d+)|immojeune\.com/.*(?:annonce|logement-|housing-)", re.I)
+    r"locservice\.fr/.+/\d+\.html|"
+    r"lesiteimmo\.com/louer/appartement-[^/]+/[^/]+/\d+|immojeune\.com/location-etudiant/[^/]+/[^/]+_\d+\.html", re.I)
 RE_PRIX = re.compile(r"(\d[\d\s  .]{0,7})\s?(?:€|&euro;|eur\b)", re.I)
 RE_SURFACE = re.compile(r"(\d{1,3}(?:[.,]\d)?)\s?m(?:²|2)\b", re.I)
 RE_PIECES = re.compile(r"(\d)\s?pi[eè]ces?|\b[TF]([1-5])\b|(studio)", re.I)
@@ -118,7 +119,7 @@ def _lire_carte(a, texte):
     return a
 
 
-def extraire_annonces(html_body, domaine, max_liens=10):
+def extraire_annonces(html_body, domaine, max_liens=10, base=None):
     """Découpe une alerte mail en annonces.
 
     Les sites mettent l'annonce dans une « carte » : un lien sur la photo, du texte
@@ -131,6 +132,8 @@ def extraire_annonces(html_body, domaine, max_liens=10):
     f.feed(html_body or "")
     ev = f.ev
     cles = []  # (index, clé, url réelle, image) des liens d'annonce
+    if base:  # page web : liens relatifs (« /louer/… ») -> adresse complète
+        ev = [(e[0], urljoin(base, e[1] or ""), *e[2:]) if e[0] == "lien" else e for e in ev]
     for i, e in enumerate(ev):
         if e[0] != "lien" or not (e[1] or "").startswith("http"):
             continue

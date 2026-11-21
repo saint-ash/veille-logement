@@ -14,13 +14,14 @@ from datetime import datetime
 from zoneinfo import ZoneInfo
 
 import re
+from collections import Counter
 
 import gares
 import securite
 from analyse import evaluer, references
 from dashboard import construire
 from geo import gare_la_plus_proche, haversine_km, minutes_a_pied
-from lieux import Trajets, charger_lieux
+from lieux import Trajets, centre_commune, charger_lieux
 from notify import Notifier, entete
 from store import Store
 
@@ -78,40 +79,48 @@ def arrondissement_de(a):
     return int(m.group(1)) if m and 1 <= int(m.group(1)) <= 20 else None
 
 
+REJETS = Counter()
+
+
+def _rejet(a, raison):
+    REJETS[(a.get("source") or a["cle"].split(":")[0], raison)] += 1
+    return None
+
+
 def garder(a, conf):
     """Applique les critères. Renvoie l'annonce enrichie, ou None si rejetée."""
     r, g, sec = conf["recherche"], conf["geo"], conf.get("securite", {})
     cp = a.get("code_postal") or ""
     if cp and not cp.startswith(tuple(g["departements"])):
-        return None
+        return _rejet(a, "département")
     arr = arrondissement_de(a)
     if arr and g.get("paris_arrondissements") and arr not in g["paris_arrondissements"]:
-        return None
+        return _rejet(a, "arrondissement")
     if arr in g.get("paris_coups_de_coeur", []):
         a["coup_de_coeur"] = True
     if cp.startswith("750") and len(cp) == 5 and int(cp[-2:] or 0) in g.get("paris_arrondissements_exclus", []):
-        return None
+        return _rejet(a, "arrondissement")
     prix = a.get("prix")
     if prix is not None and not (r.get("loyer_min", 0) <= prix <= r["loyer_max"]):
-        return None
+        return _rejet(a, "prix")
     if a.get("surface") is not None and a["surface"] < r.get("surface_min", 0):
-        return None
+        return _rejet(a, "surface")
     if a.get("pieces") is not None and not (r["pieces_min"] <= a["pieces"] <= r["pieces_max"]):
-        return None
+        return _rejet(a, "pièces")
     texte = f"{a.get('titre', '')} {a.get('description', '')}".lower()
     if any(m.lower() in texte for m in r.get("mots_exclus", [])):
-        return None
+        return _rejet(a, "mot exclu")
 
     meuble = est_meuble(a)
     a["meuble"] = meuble
     if r.get("meuble") == "oui":
         # inconnu : on garde les alertes mail (le filtre « meublé » est réglé sur le site d'origine)
-        if meuble is False or (meuble is None and not a["cle"].startswith("mail:")):
-            return None
+        if meuble is False or (meuble is None and (not a["cle"].startswith("mail:") or a.get("meuble_requis"))):
+            return _rejet(a, "non meublé")
     elif r.get("meuble") == "non" and meuble is True:
-        return None
+        return _rejet(a, "meublé")
     if r.get("exclure_rdc") and est_rdc(a):
-        return None
+        return _rejet(a, "rez-de-chaussée")
 
     if not a.get("ville"):  # alertes mail : on cherche la commune dans le titre
         for v in sorted(g.get("villes", []), key=lambda v: -len(v["nom"])):
@@ -120,7 +129,7 @@ def garder(a, conf):
                 break
     commune = securite.commune_de(a.get("ville"), cp, conf)
     if commune is None and (a["cle"].startswith("bienici:") or conf["sources"]["emails"].get("communes_strictes", True)):
-        return None  # hors des communes choisies (ex. alerte Studapart trop large : Bezons…)
+        return _rejet(a, "commune")  # hors des communes choisies (ex. alerte Studapart trop large : Bezons…)
     if commune:
         a["insee"] = commune["insee"]
         if commune.get("coup_de_coeur"):
@@ -130,26 +139,26 @@ def garder(a, conf):
             if infos:
                 a["securite"] = {**infos, "code": code}
                 if infos["niveau"] < sec.get("niveau_min", 1):
-                    return None
+                    return _rejet(a, "sécurité")
                 break
 
     pres_gare = (commune or {}).get("zone", "gare") == "gare"
     if a.get("lat") is not None and a.get("lon") is not None:
         for z in sec.get("zones_a_eviter", []):
             if haversine_km(a["lat"], a["lon"], z["lat"], z["lon"]) * 1000 < z.get("rayon_m", 300):
-                return None
+                return _rejet(a, "zone à éviter")
         res = gare_la_plus_proche(a["lat"], a["lon"], conf["stations"])
         flou = a.get("rayon_flou_km", 0) or 0
         if res is None or max(0.0, res[1] - flou) > g["distance_max_km"]:
             if pres_gare:
-                return None
+                return _rejet(a, "trop loin d'une gare")
             res = res if res and res[1] <= 1.5 else None  # « toute la commune » : gare affichée si proche
         if res:
             gare, dist = res
             a.update(gare=gare["nom"], lignes=gare.get("lignes", []), gare_lat=gare["lat"], gare_lon=gare["lon"],
                      distance_km=round(dist, 3), minutes=minutes_a_pied(dist), position_approx=flou > 0.3)
     elif a["cle"].startswith("bienici:") and pres_gare:
-        return None  # pas de position : impossible de vérifier la proximité d'une gare
+        return _rejet(a, "sans position")  # pas de position : impossible de vérifier la proximité d'une gare
     return a
 
 
@@ -263,12 +272,25 @@ def main(argv=None):
                 ok["baisse_le"] = maintenant.astimezone(ZoneInfo("UTC")).strftime("%Y-%m-%dT%H:%M:%SZ")
                 baisses.append((ok, ancien))
 
+    if REJETS:
+        par_source = {}
+        for (src, raison), n in REJETS.most_common():
+            par_source.setdefault(src, []).append(f"{raison} {n}")
+        for src, liste in par_source.items():
+            print(f"[filtre] {src} rejetées : " + ", ".join(liste))
     modifiees = nouvelles + [b for b, _ in baisses]
     for a in modifiees:
         if a.get("lat") is not None and lieux:
             a["distances"] = {l["nom"]: round(haversine_km(a["lat"], a["lon"], l["lat"], l["lon"]), 1)
                               for l in lieux if l.get("lat") is not None}
             a["trajets"] = {l["nom"]: trajets.minutes(a["lat"], a["lon"], l) for l in lieux}
+        elif lieux and (a.get("code_postal") or a.get("ville")) and not args.fixtures:
+            # pas de position précise (alerte mail, page) : distance depuis le centre de la commune / de l'arrondissement
+            centre = centre_commune(a.get("ville"), a.get("code_postal"))
+            if centre:
+                a["distances"] = {l["nom"]: round(haversine_km(*centre, l["lat"], l["lon"]), 1)
+                                  for l in lieux if l.get("lat") is not None}
+                a["distances_approx"] = True
     trajets.sauver()
     ref_de = references(list(store.annonces.values()) + modifiees, conf["score"]["prix_m2_reference"])
     for a in modifiees:

@@ -301,23 +301,17 @@ est = 1
 [sources.pages]
 # Pages de résultats publiques lues directement (robots.txt respecté, 1 requête par page et par passage).
 # Ajoute l'adresse d'une recherche (avec tes filtres) copiée depuis ton navigateur.
+# deja_meuble = true : la page ne montre que du meublé ; sinon « meublé » doit figurer dans l'annonce.
 actif = true
 
 [[sources.pages.sites]]
 nom = "ImmoJeune"
 url = "https://www.immojeune.com/location-meublee/paris-75.html"
+deja_meuble = true
 
 [[sources.pages.sites]]
 nom = "ImmoJeune (studios)"
 url = "https://www.immojeune.com/location-studio/paris-75.html"
-
-[[sources.pages.sites]]
-nom = "Studapart"
-url = "https://www.studapart.com/fr/studio-meuble-paris"
-
-[[sources.pages.sites]]
-nom = "Location-Etudiant"
-url = "https://www.location-etudiant.fr/logement-etudiant/Paris-75-studio.html"
 
 [[sources.pages.sites]]
 nom = "LocService"
@@ -327,6 +321,11 @@ particuliers = true
 [[sources.pages.sites]]
 nom = "Lesiteimmo"
 url = "https://www.lesiteimmo.com/louer/immo/paris-75"
+
+[[sources.pages.sites]]
+nom = "Lesiteimmo (92)"
+url = "https://www.lesiteimmo.com/louer/immo/hauts-de-seine-92"
+# Studapart et Location-Etudiant affichent leurs annonces en JavaScript : on passe par leurs alertes mail.
 
 [sources.emails]
 actif = true              # s'active dès que IMAP_USER et IMAP_PASSWORD sont dans les secrets GitHub
