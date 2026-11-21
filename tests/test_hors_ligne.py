@@ -123,6 +123,24 @@ class Tests(unittest.TestCase):
         self.assertIsNotNone(main.doublon(a, [{"source": "Lesiteimmo", "prix": 859, "surface": 20.4, "code_postal": "92600"}]))
         self.assertIsNone(main.doublon(a, [{"source": "Lesiteimmo", "prix": 859, "surface": 20, "code_postal": "92400"}]))
 
+    def test_alerte_seloger_liens_de_suivi(self):
+        from sources.emails import extraire_annonces
+        q = lambda n: f"https://click.by.seloger.com/?qs=ABp7Im{n}xyz"
+        html = (f'<p>2 nouvelles annonces</p><a href="{q(1)}"><img src="https://img.seloger.com/p1.jpg"></a>'
+                f'<p>Localisation différente</p><a href="{q(3)}">895 €/mois charges comprises</a>'
+                f'<a href="{q(4)}">Appartement Meublé 31 m2</a><a href="{q(5)}">1 pièce · 31 m²</a>'
+                f'<a href="{q(6)}">Bécon, Courbevoie (92400)</a><a href="{q(7)}">Voir l\'annonce</a>'
+                f'<a href="{q(9)}">880 €/mois charges comprises</a><a href="{q(11)}">2 pièces · 32,4 m²</a>'
+                f'<a href="{q(12)}">Centre, Puteaux (92800)</a><a href="{q(13)}">Voir l\'annonce</a>'
+                f'<a href="{q(14)}">Gérer mes alertes et abonnements</a>')
+        r = extraire_annonces(html, "seloger.com", 15)
+        self.assertEqual([(a["prix"], a["surface"], a["code_postal"]) for a in r],
+                         [(895, 31, "92400"), (880, 32.4, "92800")])
+        self.assertEqual(r[0]["photo"], "https://img.seloger.com/p1.jpg")
+        self.assertNotIn("nouvelles annonces", r[0]["titre"])
+        autre = extraire_annonces(html.replace("ABp7Im", "QQ").replace("2 nouvelles", "3 nouvelles"), "seloger.com", 15)
+        self.assertEqual([a["cle"] for a in r], [a["cle"] for a in autre])  # même annonce dans 2 mails = 1 notif
+
     def test_score(self):
         base = [{"ville": "Nanterre", "pieces": 2, "prix": 1000, "surface": 40, "distance_km": 0.3}] * 5
         ref = references(base, 30)

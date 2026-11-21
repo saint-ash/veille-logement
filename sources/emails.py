@@ -77,7 +77,10 @@ def nettoyer_url(u):
 def cle_url(u):
     """Adresse canonique (sans paramètres de suivi) : la même annonce reçue deux fois = une seule notif."""
     p = urlparse(u)
-    return f"{p.netloc.lower().removeprefix('www.')}{p.path.rstrip('/')}"
+    chemin = p.path.rstrip("/")
+    if not chemin and p.query:  # lien de suivi « https://click.site/?qs=… » : l'identité est dans le paramètre
+        return f"{p.netloc.lower().removeprefix('www.')}?{p.query}"
+    return f"{p.netloc.lower().removeprefix('www.')}{chemin}"
 
 
 class _Flux(HTMLParser):
@@ -134,6 +137,11 @@ def ressemble_annonce(url, domaine):
     return any(not re.fullmatch(r"(?:75|77|78|9[1-5])\d{3}", n) for n in nums)  # 75015 = code postal, pas un id
 
 
+ENTETE_ALERTE = re.compile(r"^\s*(?:\d+ )?nouvelles? annonces?\b|pourraient vous int[ée]resser|^\s*localisation diff[ée]rente\s*$"
+                           r"|correspondant à (?:certains de )?vos crit", re.I)
+SUIVI_OPAQUE = re.compile(r"^https?://click\.[^/]*seloger\.com/|^https?://[^/]*\.(?:sendgrid|mailjet|sparkpost)", re.I)
+
+
 def extraire_annonces(html_body, domaine, max_liens=10, base=None, motif=None):
     """Découpe une alerte mail en annonces.
 
@@ -155,6 +163,8 @@ def extraire_annonces(html_body, domaine, max_liens=10, base=None, motif=None):
         reel = url_reelle(e[1])
         if any(m in e[2].lower() for m in MOTS_PIED_DE_PAGE):
             continue
+        if SUIVI_OPAQUE.search(reel) and not TEXTE_BOUTON.search(e[2]):
+            continue  # liens de suivi tous différents : seul le bouton « Voir l'annonce » délimite une carte
         if (URL_ANNONCE.search(reel) or TEXTE_BOUTON.search(e[2]) or (len(e[2]) >= 6 and INDICES_ANNONCE.search(e[2]))
                 or (base and (motif.search(reel) if motif else ressemble_annonce(reel, domaine)))):
             cles.append((i, cle_url(reel), reel, e[3]))
@@ -177,11 +187,17 @@ def extraire_annonces(html_body, domaine, max_liens=10, base=None, motif=None):
             debut = idx[j]
         cartes[k]["debut"] = debut
     debuts = sorted(c["debut"] for c in cartes.values())
+    fins = sorted(c["fin"] for c in cartes.values())
     annonces = []
     for k in ordre:
         c = cartes[k]
         fin = c["fin"]
-        if fin == c["debut"]:  # lien unique : son texte + ce qui suit, jusqu'au prochain lien d'annonce
+        if fin == c["debut"] and TEXTE_BOUTON.search(ev[fin][2] or ""):
+            # bouton « Voir l'annonce » seul (liens de suivi tous différents, ex. SeLoger) :
+            # la carte est AVANT le bouton, depuis la fin de la carte précédente
+            precedent = max((x for x in fins if x < fin), default=-1)
+            c["debut"] = max(precedent + 1, fin - 14)
+        elif fin == c["debut"]:  # lien unique : son texte + ce qui suit, jusqu'au prochain lien d'annonce
             suivant = next((d for d in debuts if d > fin), len(ev))
             fin = min(suivant - 1, fin + 6)
         morceaux = []
@@ -189,14 +205,22 @@ def extraire_annonces(html_body, domaine, max_liens=10, base=None, motif=None):
             t = e[1] if e[0] == "texte" else e[2]
             if t and not TEXTE_BOUTON.fullmatch(t.strip()) and not any(m in t.lower() for m in MOTS_PIED_DE_PAGE):
                 morceaux.append(t)
+        morceaux = [m for m in morceaux if not ENTETE_ALERTE.search(m)]
         texte = " · ".join(x for x in (" ".join(m.split()) for m in morceaux) if x)
+        if not c["photo"]:  # photo sur un lien voisin (liens de suivi tous différents)
+            c["photo"] = next((e[3] for e in ev[c["debut"]:fin + 1] if e[0] == "lien" and len(e) > 3 and e[3]), None)
         if not INDICES_ANNONCE.search(texte):
             continue
         a = {"cle": "mail:" + hashlib.sha1(k.encode()).hexdigest()[:16], "source": domaine, "url": nettoyer_url(c["url"]),
              "titre": texte[:150], "description": texte}
         if c["photo"]:
             a["photo"] = c["photo"]
-        annonces.append(_lire_carte(a, texte))
+        a = _lire_carte(a, texte)
+        if SUIVI_OPAQUE.search(c["url"]):
+            # lien de suivi chiffré, différent à chaque mail : la clé anti-doublon vient du contenu
+            contenu = f"{domaine}|{a.get('prix')}|{a.get('surface')}|{a.get('code_postal')}|{a.get('pieces')}"
+            a["cle"] = "mail:" + hashlib.sha1(contenu.encode()).hexdigest()[:16]
+        annonces.append(a)
         if len(annonces) >= max_liens:
             break
     return annonces
