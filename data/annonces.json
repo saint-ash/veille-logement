@@ -1,5 +1,5 @@
 {
- "maj": "2026-11-21T12:53:01Z",
+ "maj": "2026-11-21T12:54:43Z",
  "annonces": [
   {
    "cle": "mail:3da92278fb94cb5e",
@@ -81,7 +81,12 @@
    ],
    "extrait": "Studio à louer · Paris 15 (75015) · 19 m² · 750 € / mois · Studio de 19m2, Paris 15ème métro Convention. 2ème étage. Immeuble calme avec digicode, gardien, ascenseur.…",
    "vu_le": "2026-11-21T12:50:07Z",
-   "prix_initial": 750.0
+   "prix_initial": 750.0,
+   "distances_approx": true,
+   "distances": {
+    "SKEMA": 9.0,
+    "Porte Maillot": 5.2
+   }
   },
   {
    "cle": "bienici:ag752861-561635636",
@@ -136,16 +141,20 @@
    "note_detail": {
     "prix": 14,
     "securite": 10,
-    "trajets": 10,
+    "trajets": 11,
     "gare": 11,
     "surface": 2,
     "bonus": 0
    },
-   "score": 47,
+   "score": 48,
    "tags": [],
    "extrait": "Avec IMMOJEUNE, trouvez les meilleurs logements étudiants et jeunes actifs en quelques clics et en toute confiance.\n\nÀ seulement 8 km de Paris et à proximité immédiate du quartier d'affaires de la Défense, Rueil-Malmaison bénéficie d'un emplacement privilégié. Notre appartement, …",
    "vu_le": "2026-11-21T12:45:28Z",
-   "prix_initial": 845
+   "prix_initial": 845,
+   "distances": {
+    "SKEMA": 4.8,
+    "Porte Maillot": 7.9
+   }
   },
   {
    "cle": "bienici:immo-facile-51708054",
@@ -201,18 +210,22 @@
    "note_detail": {
     "prix": 28,
     "securite": 10,
-    "trajets": 10,
+    "trajets": 15,
     "gare": 6,
     "surface": 6,
     "bonus": 4
    },
-   "score": 64,
+   "score": 69,
    "tags": [
     "bonne_affaire"
    ],
    "extrait": "La Garenne Colombes- Studio meublé - Cet appartement situé dans une rue calme du centre ville se compose d'une entrée avec penderie et placard, d'une pièce principale avec mezzanine, d'une cuisine aménagée et équipée et d'une salle de bains avec WC. Une cave en sous-sol accompagn…",
    "vu_le": "2026-11-21T12:45:28Z",
-   "prix_initial": 820
+   "prix_initial": 820,
+   "distances": {
+    "SKEMA": 4.9,
+    "Porte Maillot": 4.0
+   }
   },
   {
    "cle": "bienici:iad-france-2151546",
@@ -272,16 +285,20 @@
    "note_detail": {
     "prix": 7,
     "securite": 10,
-    "trajets": 10,
+    "trajets": 16,
     "gare": 0,
     "surface": 0,
     "bonus": 4
    },
-   "score": 31,
+   "score": 36,
    "tags": [],
    "extrait": "iad France - Aurelia Vakili Taleghani (<span class=\"importDescriptionDecorator\" data-type=\"phone\">07 61 53 76 41</span>) vous propose : À LOUER - STUDIO MEUBLÉ AVEC BALCON - AUX PORTES DE LA DÉFENSE <br>Idéalement situé près de l'arrêt de T2 Faubourg de l'arche, au sein d'une rés…",
    "vu_le": "2026-11-20T21:46:14Z",
-   "prix_initial": 880
+   "prix_initial": 880,
+   "distances": {
+    "SKEMA": 4.4,
+    "Porte Maillot": 4.1
+   }
   },
   {
    "cle": "bienici:ladresse-1-adresse-14705828",
@@ -337,16 +354,20 @@
    "note_detail": {
     "prix": 1,
     "securite": 5,
-    "trajets": 10,
+    "trajets": 19,
     "gare": 11,
     "surface": 0,
     "bonus": 0
    },
-   "score": 26,
+   "score": 35,
    "tags": [],
    "extrait": "L'Adresse immobilier vous présente ce charmant STUDIO  MEUBLE de  18m², idéalement situé au pied du Parc du Château, entouré de commodités locales (T2 et Ligne L). Il se site rue Pierre Dupont.<br>Ce studio refait à neuf, orienté à l'Ouest, offre une disposition optimale comprena…",
    "vu_le": "2026-11-20T14:09:48Z",
-   "prix_initial": 882
+   "prix_initial": 882,
+   "distances": {
+    "SKEMA": 0.7,
+    "Porte Maillot": 4.5
+   }
   },
   {
    "cle": "bienici:ag752861-559942019",
@@ -401,16 +422,20 @@
    "note_detail": {
     "prix": 15,
     "securite": 5,
-    "trajets": 10,
+    "trajets": 12,
     "gare": 11,
     "surface": 2,
     "bonus": 0
    },
-   "score": 43,
+   "score": 45,
    "tags": [],
    "extrait": "Avec IMMOJEUNE, trouvez les meilleurs logements étudiants et jeunes actifs en quelques clics et en toute confiance.\n\nIdéalement implanté à proximité immédiate du RER A, cet appartement offre un accès rapide à La Défense en seulement 20 minutes et au centre de Paris (Châtelet) en …",
    "vu_le": "2026-11-20T14:09:48Z",
-   "prix_initial": 830
+   "prix_initial": 830,
+   "distances": {
+    "SKEMA": 4.6,
+    "Porte Maillot": 7.7
+   }
   },
   {
    "cle": "bienici:century-21-202_2179_24806",
@@ -465,16 +490,20 @@
    "note_detail": {
     "prix": 14,
     "securite": 5,
-    "trajets": 10,
+    "trajets": 14,
     "gare": 15,
     "surface": 1,
     "bonus": 0
    },
-   "score": 45,
+   "score": 49,
    "tags": [],
    "extrait": "CENTURY21 L'ami immobilier vous propose :<br>Studio meublé de 20 m² à louer  Rue  Bernard Jugault -Asnières-sur-Seine (92600)<br>À louer, charmant studio meublé de 20 m², idéalement situé à seulement 6 minutes à pied de la gare d'Asnières-sur-Seine.<br>Ce logement fonctionnel et …",
    "vu_le": "2026-11-20T14:09:48Z",
-   "prix_initial": 810
+   "prix_initial": 810,
+   "distances": {
+    "SKEMA": 7.0,
+    "Porte Maillot": 3.4
+   }
   },
   {
    "cle": "bienici:ag210198-559786058",
@@ -529,18 +558,22 @@
    "note_detail": {
     "prix": 25,
     "securite": 0,
-    "trajets": 10,
+    "trajets": 13,
     "gare": 0,
     "surface": 6,
     "bonus": 0
    },
-   "score": 41,
+   "score": 44,
    "tags": [
     "bonne_affaire"
    ],
    "extrait": "Réf. AN006483 - Imodirect vous propose ce charmant studio meublé de 26 m², situé au 3ème étage avec ascenseur, au sein d'une résidence particulièrement calme et agréable.\n\nÀ deux pas de Paris, ce logement offre un cadre de vie idéal pour ceux qui recherchent confort, tranquillité…",
    "vu_le": "2026-11-20T14:09:48Z",
-   "prix_initial": 850
+   "prix_initial": 850,
+   "distances": {
+    "SKEMA": 4.0,
+    "Porte Maillot": 6.9
+   }
   },
   {
    "cle": "bienici:citya-immobilier-41372534200013-GES77300120-846",
@@ -596,16 +629,20 @@
    "note_detail": {
     "prix": 19,
     "securite": 5,
-    "trajets": 10,
+    "trajets": 17,
     "gare": 12,
     "surface": 2,
     "bonus": 4
    },
-   "score": 51,
+   "score": 58,
    "tags": [],
    "extrait": "À LOUER : Découvrez ce charmant appartement T1 situé au cœur de Courbevoie, dans un quartier prisé et dynamique à 5mn de la Défense. Niché au troisième étage d'un immeuble élégant, cet espace de vie de 20 m² allie confort et fonctionnalité, idéal pour une personne seule.\n\nL'appar…",
    "vu_le": "2026-11-20T14:09:48Z",
-   "prix_initial": 815
+   "prix_initial": 815,
+   "distances": {
+    "SKEMA": 4.5,
+    "Porte Maillot": 2.8
+   }
   },
   {
    "cle": "bienici:iad-france-2153993",
@@ -661,16 +698,20 @@
    "note_detail": {
     "prix": 16,
     "securite": 5,
-    "trajets": 10,
+    "trajets": 12,
     "gare": 0,
     "surface": 1,
     "bonus": 4
    },
-   "score": 36,
+   "score": 38,
    "tags": [],
    "extrait": "iad France - Nicolas Vysavat (<span class=\"importDescriptionDecorator\" data-type=\"phone\">06 51 41 93 21</span>) vous propose : Appartement meublé 2P traversant lumineux refait à neuf avec balcon et cave.<br>Merci de NE PAS APPELER et de remplir le FORMULAIRE DE CONTACT en ligne f…",
    "vu_le": "2026-11-20T14:09:48Z",
-   "prix_initial": 880
+   "prix_initial": 880,
+   "distances": {
+    "SKEMA": 6.5,
+    "Porte Maillot": 5.6
+   }
   },
   {
    "cle": "bienici:gedeon-34162633",
@@ -725,18 +766,22 @@
    "note_detail": {
     "prix": 24,
     "securite": 5,
-    "trajets": 10,
+    "trajets": 19,
     "gare": 18,
     "surface": 2,
     "bonus": 0
    },
-   "score": 59,
+   "score": 68,
    "tags": [
     "bonne_affaire"
    ],
    "extrait": "Situé à Neuilly-sur-Seine, à proximité du métro et de toutes les commodités, découvrez ce studio meublé de 21,85 m², situé au 8ᵉ et dernier étage sans ascenseur.\n\nLe logement se compose d’une pièce principale lumineuse, d’un coin cuisine, ainsi que d’une salle d’eau avec wc. Enti…",
    "vu_le": "2026-11-20T14:09:48Z",
-   "prix_initial": 705
+   "prix_initial": 705,
+   "distances": {
+    "SKEMA": 4.4,
+    "Porte Maillot": 0.7
+   }
   },
   {
    "cle": "bienici:ag752861-557013227",
@@ -791,16 +836,20 @@
    "note_detail": {
     "prix": 21,
     "securite": 5,
-    "trajets": 10,
+    "trajets": 12,
     "gare": 12,
     "surface": 2,
     "bonus": 0
    },
-   "score": 50,
+   "score": 52,
    "tags": [],
    "extrait": "Avec IMMOJEUNE, trouvez les meilleurs logements étudiants et jeunes actifs en quelques clics et en toute confiance.\n\nIdéalement situé aux abords ouest de Paris et à proximité de Nanterre, cet appartement se trouve à quelques pas de l'Université Paris X – Nanterre, de renommées in…",
    "vu_le": "2026-11-20T14:09:48Z",
-   "prix_initial": 749
+   "prix_initial": 749,
+   "distances": {
+    "SKEMA": 4.5,
+    "Porte Maillot": 7.7
+   }
   },
   {
    "cle": "bienici:hektor-parsimmo-1245",
@@ -860,16 +909,20 @@
    "note_detail": {
     "prix": 8,
     "securite": 5,
-    "trajets": 10,
+    "trajets": 16,
     "gare": 7,
     "surface": 0,
     "bonus": 4
    },
-   "score": 35,
+   "score": 40,
    "tags": [],
    "extrait": "Situé au 4e étage d'une résidence avec ascenseur, ce charmant studio meublé de 18,57 m2 vous séduira par son agencement fonctionnel, sa luminosité et son emplacement à proximité du quartier d'affaires de La Défense.<br> Entièrement aménagé et équipé, cet appartement offre un cadr…",
    "vu_le": "2026-11-20T14:09:48Z",
-   "prix_initial": 890
+   "prix_initial": 890,
+   "distances": {
+    "SKEMA": 4.1,
+    "Porte Maillot": 4.1
+   }
   },
   {
    "cle": "bienici:ag754125-555019304",
@@ -925,18 +978,22 @@
    "note_detail": {
     "prix": 27,
     "securite": 5,
-    "trajets": 10,
+    "trajets": 16,
     "gare": 13,
     "surface": 5,
     "bonus": 4
    },
-   "score": 64,
+   "score": 70,
    "tags": [
     "bonne_affaire"
    ],
    "extrait": "À louer à Courbevoie, agréable studio meublé de 25 m², situé au 3ᵉ étage sans ascenseur, dans un quartier calme et pratique à proximité immédiate de La Défense et des transports.\n\nFonctionnel et bien agencé, le logement bénéficie de nombreux équipements et espaces de rangement pe…",
    "vu_le": "2026-11-20T14:09:48Z",
-   "prix_initial": 860
+   "prix_initial": 860,
+   "distances": {
+    "SKEMA": 4.3,
+    "Porte Maillot": 3.6
+   }
   },
   {
    "cle": "bienici:netty-rueil-appt-3021",
@@ -996,15 +1053,19 @@
    "note_detail": {
     "prix": 26,
     "securite": 10,
-    "trajets": 10,
+    "trajets": 11,
     "gare": 10,
     "surface": 4,
     "bonus": 0
    },
-   "score": 60,
+   "score": 62,
    "extrait": "*** IMPORTANT : demande de contact à faire par e-mail via le formulaire sur cette annonce. Un accès vous sera automatiquement ouvert pour déposer votre dossier en ligne. Les visites seront organisées après validation de votre dossier. ***<br>NESTENN Rueil-Malmaison vous propose, …",
    "vu_le": "2026-11-20T14:09:48Z",
-   "prix_initial": 790
+   "prix_initial": 790,
+   "distances": {
+    "SKEMA": 4.8,
+    "Porte Maillot": 7.8
+   }
   },
   {
    "cle": "bienici:ag752861-543327803",
@@ -1060,16 +1121,20 @@
    "note_detail": {
     "prix": 0,
     "securite": 0,
-    "trajets": 10,
+    "trajets": 14,
     "gare": 17,
     "surface": 0,
     "bonus": 0
    },
-   "score": 27,
+   "score": 31,
    "tags": [],
    "extrait": "Avec IMMOJEUNE, trouvez les meilleurs logements étudiants et jeunes actifs en quelques clics et en toute confiance.\n\nStudio de 18 à 25m² meublé et équipé\n\nMis à jour le 20/11/2026\nUpdated on 20/11/2026",
    "vu_le": "2026-11-20T14:09:48Z",
-   "prix_initial": 888
+   "prix_initial": 888,
+   "distances": {
+    "SKEMA": 4.6,
+    "Porte Maillot": 5.9
+   }
   },
   {
    "cle": "bienici:netty-comimob-appt-9977",
@@ -1122,18 +1187,22 @@
    "note_detail": {
     "prix": 24,
     "securite": 5,
-    "trajets": 10,
+    "trajets": 16,
     "gare": 0,
     "surface": 5,
     "bonus": 4
    },
-   "score": 48,
+   "score": 54,
    "tags": [
     "bonne_affaire"
    ],
    "extrait": "COURBEVOIE / Bd de Verdun - au 1er étage d'une copropriété sécurisée, avec ascenseur, Studio MEUBLE de 24.41m² composé d'une entrée placard, pièce principale avec coin cuisine aménagé et équipé, donnant sur balcon, une salle de bains avec WC. Parking en sous-sol. Chauffage indivi…",
    "vu_le": "2026-11-20T14:09:48Z",
-   "prix_initial": 890
+   "prix_initial": 890,
+   "distances": {
+    "SKEMA": 5.1,
+    "Porte Maillot": 2.7
+   }
   },
   {
    "cle": "bienici:apimo-84822929",
@@ -1188,19 +1257,23 @@
    "note_detail": {
     "prix": 29,
     "securite": 3,
-    "trajets": 10,
+    "trajets": 13,
     "gare": 19,
     "surface": 8,
     "bonus": 0
    },
-   "score": 70,
+   "score": 73,
    "tags": [
     "bonne_affaire",
     "securise"
    ],
    "extrait": "Au deuxième étage d'une résidence sécurisée et à deux pas de la gare de RER de Nanterre Ville, un appartement de type studio meublé. Composé d'une entrée sur couloir desservant une salle de bains, un W.C., un séjour, une cuisine séparée.\n\nDisponible le 01/10/2026.",
    "vu_le": "2026-11-20T14:09:48Z",
-   "prix_initial": 895
+   "prix_initial": 895,
+   "distances": {
+    "SKEMA": 4.5,
+    "Porte Maillot": 6.6
+   }
   },
   {
    "cle": "bienici:hektor-lebihan-2812",
@@ -1256,18 +1329,22 @@
    "note_detail": {
     "prix": 11,
     "securite": 8,
-    "trajets": 10,
+    "trajets": 17,
     "gare": 11,
     "surface": 0,
     "bonus": 4
    },
-   "score": 45,
+   "score": 51,
    "tags": [
     "securise"
    ],
    "extrait": "Courbevoie-Charras : résidence avec gardien située au pied du parc Freudenstadt, studio meublé de 18.59 m2 au 9ème étage avec ascenseur.<br> Entrée, kitchenette équipée, pièce principale, salle d'eau avec wc et dressing aménagé.<br> Emplacement idéal sur Courbevoie, proche tous c…",
    "vu_le": "2026-11-20T14:09:48Z",
-   "prix_initial": 850
+   "prix_initial": 850,
+   "distances": {
+    "SKEMA": 4.2,
+    "Porte Maillot": 2.9
+   }
   },
   {
    "cle": "bienici:immo-facile-37967877",
@@ -1324,16 +1401,20 @@
    "note_detail": {
     "prix": 21,
     "securite": 0,
-    "trajets": 10,
+    "trajets": 14,
     "gare": 16,
     "surface": 4,
     "bonus": 0
    },
-   "score": 51,
+   "score": 55,
    "tags": [],
    "extrait": "Au pied du Nouveau Tribunal, porte de Clichy, dans un immeuble calme, au 4ème étage sans ascenseur sur cour sans vis à vis: studio MEUBLE comprenant: cuisine dinatoire,  pièce principale, salle d'eau avec WC.<br>Très calme.<br>",
    "vu_le": "2026-11-20T14:09:48Z",
-   "prix_initial": 820
+   "prix_initial": 820,
+   "distances": {
+    "SKEMA": 7.3,
+    "Porte Maillot": 2.7
+   }
   },
   {
    "cle": "bienici:laforet-immo-facile-16763443",
@@ -1388,18 +1469,22 @@
    "note_detail": {
     "prix": 30,
     "securite": 10,
-    "trajets": 10,
+    "trajets": 15,
     "gare": 17,
     "surface": 9,
     "bonus": 0
    },
-   "score": 76,
+   "score": 81,
    "tags": [
     "bonne_affaire"
    ],
    "extrait": "Charmant Studio Quartier Bécon-les-Bruyères, de 30 m²,<br>A moins de 5 min à pied de la gare SNCF Bécon-les-Bruyères<br>Dans un immeuble récent  et sécurisé :<br>Situé au 5éme étage avec ascenseur, composé d'une entrée, d'une cuisine ouvert, d'une pièce principale, d'une salle d'…",
    "vu_le": "2026-11-20T14:09:48Z",
-   "prix_initial": 890
+   "prix_initial": 890,
+   "distances": {
+    "SKEMA": 5.8,
+    "Porte Maillot": 3.2
+   }
   },
   {
    "cle": "bienici:ag752352-560551214",
@@ -1458,16 +1543,20 @@
    "note_detail": {
     "prix": 8,
     "securite": 0,
-    "trajets": 10,
+    "trajets": 9,
     "gare": 19,
     "surface": 0,
     "bonus": 0
    },
-   "score": 36,
+   "score": 35,
    "tags": [],
    "extrait": "À proximité de la Gare du Nord, dans un immeuble ravalé, studio en très bon état.Il se compose d'une entrée desservant une pièce principale avec parquet au sol et fenêtre en double vitrage, et d'une cuisine américaine équipée de plaques de cuisson, d'un réfrigérateur, d'un plan d…",
    "vu_le": "2026-11-20T14:09:48Z",
-   "prix_initial": 799
+   "prix_initial": 799,
+   "distances": {
+    "SKEMA": 9.7,
+    "Porte Maillot": 5.3
+   }
   },
   {
    "cle": "bienici:ag752485-559752977",
@@ -1522,16 +1611,20 @@
    "note_detail": {
     "prix": 1,
     "securite": 0,
-    "trajets": 10,
+    "trajets": 14,
     "gare": 17,
     "surface": 0,
     "bonus": 0
    },
-   "score": 27,
+   "score": 31,
    "tags": [],
    "extrait": "À louer à Paris 15ᵉ, agréable studio meublé de 18 m² avec balcon, situé au 5ᵉ étage sans ascenseur d'un immeuble sécurisé, à environ 10 minutes à pied du métro Convention.\n\nFonctionnel, bien équipé et agréable à vivre, ce studio bénéficie d'un emplacement recherché à proximité im…",
    "vu_le": "2026-11-20T14:09:48Z",
-   "prix_initial": 880
+   "prix_initial": 880,
+   "distances": {
+    "SKEMA": 5.5,
+    "Porte Maillot": 4.5
+   }
   }
  ]
 }
