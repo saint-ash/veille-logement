@@ -155,13 +155,24 @@ def extraire_annonces(html_body, domaine, max_liens=10, base=None, motif=None):
         if (URL_ANNONCE.search(reel) or TEXTE_BOUTON.search(e[2]) or (len(e[2]) >= 6 and INDICES_ANNONCE.search(e[2]))
                 or (base and (motif.search(reel) if motif else ressemble_annonce(reel, domaine)))):
             cles.append((i, cle_url(reel), reel, e[3]))
-    ordre, cartes = [], {}
+    ordre, cartes, occ = [], {}, {}
     for i, k, reel, img in cles:
         c = cartes.setdefault(k, {"debut": i, "fin": i, "url": reel, "photo": None})
         if k not in ordre:
             ordre.append(k)
         c["fin"] = i
         c["photo"] = c["photo"] or img
+        occ.setdefault(k, []).append(i)
+    # une carte ne doit pas englober d'autres annonces (lien répété en haut de page, carrousel…) :
+    # on remonte depuis la dernière occurrence tant qu'aucun autre lien d'annonce ne s'intercale
+    positions = [(i, k) for i, k, _, _ in cles]
+    for k, idx in occ.items():
+        debut = idx[-1]
+        for j in range(len(idx) - 2, -1, -1):
+            if any(idx[j] < i < debut and kk != k for i, kk in positions):
+                break
+            debut = idx[j]
+        cartes[k]["debut"] = debut
     debuts = sorted(c["debut"] for c in cartes.values())
     annonces = []
     for k in ordre:

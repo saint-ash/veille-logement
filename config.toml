@@ -327,11 +327,6 @@ nom = "Lesiteimmo (92)"
 url = "https://www.lesiteimmo.com/louer/immo/hauts-de-seine-92"
 
 [[sources.pages.sites]]
-nom = "ImmoJeune (92)"
-url = "https://www.immojeune.com/location-meublee/hauts-de-seine-92.html"
-deja_meuble = true
-
-[[sources.pages.sites]]
 nom = "LocService (meublés Paris)"
 url = "https://www.locservice.fr/paris-75/location-meuble.html"
 particuliers = true
@@ -360,34 +355,11 @@ nom = "Zimo (appartements 92)"
 url = "https://www.zimo.fr/annonces/immobilier/location/appartement/hauts-de-seine-92"
 
 [[sources.pages.sites]]
-nom = "Trovit (studios meublés Paris)"
-url = "https://immo.trovit.fr/location-studio-meuble-paris"
-
-[[sources.pages.sites]]
-nom = "Trovit (studios 92)"
-url = "https://immo.trovit.fr/location-studio-hauts-seine"
-
-# Agences et locations meublées
-[[sources.pages.sites]]
-nom = "Foncia (meublés Paris)"
-url = "https://fr.foncia.com/location/paris-75/appartement-meuble"
-deja_meuble = true
-
-[[sources.pages.sites]]
-nom = "Foncia (meublés 92)"
-url = "https://fr.foncia.com/location/hauts-de-seine-92/appartement-meuble"
-deja_meuble = true
-
-[[sources.pages.sites]]
-nom = "Wunderflats"
-url = "https://wunderflats.com/fr/appartements-meubles/paris"
-deja_meuble = true
-
-[[sources.pages.sites]]
 nom = "Location-Etudiant (92)"
 url = "https://www.location-etudiant.fr/logement-etudiant/Asnieres-sur-Seine-92004-T1-7.html"
 motif = "location-etudiant\\.fr/annonce-logement-etudiant/.+/\\d+\\.php"
 # Studapart, Lodgis, Paris Attitude : annonces chargées en JavaScript -> alertes mail.
+# Trovit (401), Foncia (403), Wunderflats (captcha) refusent les robots : non lus, par respect de leur choix.
 
 [sources.emails]
 actif = true              # s'active dès que IMAP_USER et IMAP_PASSWORD sont dans les secrets GitHub
