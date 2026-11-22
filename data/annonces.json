@@ -1,6 +1,94 @@
 {
- "maj": "2026-11-22T13:15:30Z",
+ "maj": "2026-11-22T20:24:02Z",
  "annonces": [
+  {
+   "cle": "mail:a30bbf113447c122",
+   "source": "pap.fr",
+   "url": "https://www.pap.fr/annonces/-r422101705?a=63674132",
+   "titre": "Location appartement · Asnières-sur-Seine (92600) · 850 € / mois · 1 pièces · 25 m² · Voir l'annonce et contacter le propriétaire",
+   "photo": "https://cdn.pap.fr/photos/pap/60/70/6070924b4f5e3e2bcd450e9f1bbeb307/6-p5.jpg",
+   "prix": 850.0,
+   "surface": 25.0,
+   "pieces": 1,
+   "code_postal": "92600",
+   "annonceur": "particulier",
+   "meuble": null,
+   "ville": "Asnières-sur-Seine",
+   "insee": "92004",
+   "securite": {
+    "niveau": 3,
+    "taux": 4.8,
+    "rang": 171,
+    "sur": 293,
+    "annee": "2025",
+    "code": "92004"
+   },
+   "distances_approx": true,
+   "distances": {
+    "SKEMA": 8.1,
+    "Porte Maillot": 4.4
+   },
+   "ratio_marche": 0.861,
+   "prix_m2": 34.0,
+   "note_detail": {
+    "prix": 23,
+    "securite": 10,
+    "trajets": 12,
+    "gare": 10,
+    "surface": 5,
+    "bonus": 3
+   },
+   "score": 63,
+   "tags": [
+    "bonne_affaire"
+   ],
+   "vu_le": "2026-11-22T20:24:00Z",
+   "prix_initial": 850.0
+  },
+  {
+   "cle": "mail:66eedf60d7f2c068",
+   "source": "pap.fr",
+   "url": "https://www.pap.fr/annonces/-r444300540?a=63674132",
+   "titre": "Location appartement · Bois-Colombes (92270) · 890 € / mois · 1 pièces · 26 m² · Voir l'annonce et contacter le propriétaire",
+   "photo": "https://cdn.pap.fr/photos/pap/e9/82/e9822bc729dfda08a2927689842db515/e-p5.jpg",
+   "prix": 890.0,
+   "surface": 26.0,
+   "pieces": 1,
+   "code_postal": "92270",
+   "annonceur": "particulier",
+   "meuble": null,
+   "ville": "Bois-Colombes",
+   "insee": "92009",
+   "securite": {
+    "niveau": 4,
+    "taux": 2.9,
+    "rang": 112,
+    "sur": 293,
+    "annee": "2025",
+    "code": "92009"
+   },
+   "distances_approx": true,
+   "distances": {
+    "SKEMA": 6.9,
+    "Porte Maillot": 4.2
+   },
+   "ratio_marche": 0.867,
+   "prix_m2": 34.2,
+   "note_detail": {
+    "prix": 23,
+    "securite": 15,
+    "trajets": 13,
+    "gare": 10,
+    "surface": 6,
+    "bonus": 3
+   },
+   "score": 70,
+   "tags": [
+    "bonne_affaire"
+   ],
+   "vu_le": "2026-11-22T20:24:00Z",
+   "prix_initial": 890.0
+  },
   {
    "cle": "mail:a3e7bef00245653f",
    "source": "seloger.com",
@@ -72,7 +160,7 @@
     "SKEMA": 5.4,
     "Porte Maillot": 4.2
    },
-   "ratio_marche": 1.265,
+   "ratio_marche": 1.267,
    "prix_m2": 50.0,
    "note_detail": {
     "prix": 0,
@@ -113,7 +201,7 @@
     "SKEMA": 1.2,
     "Porte Maillot": 4.9
    },
-   "ratio_marche": 0.961,
+   "ratio_marche": 0.962,
    "prix_m2": 38.0,
    "note_detail": {
     "prix": 17,
@@ -225,7 +313,7 @@
     "SKEMA": null,
     "Porte Maillot": null
    },
-   "ratio_marche": 1.08,
+   "ratio_marche": 1.081,
    "prix_m2": 42.7,
    "note_detail": {
     "prix": 10,
@@ -268,7 +356,7 @@
     "SKEMA": 8.1,
     "Porte Maillot": 4.4
    },
-   "ratio_marche": 1.087,
+   "ratio_marche": 1.088,
    "prix_m2": 43.0,
    "note_detail": {
     "prix": 10,
@@ -310,7 +398,7 @@
     "Porte Maillot": 4.4
    },
    "distances_approx": true,
-   "ratio_marche": 1.087,
+   "ratio_marche": 1.088,
    "prix_m2": 43.0,
    "note_detail": {
     "prix": 10,
@@ -348,7 +436,7 @@
     "annee": "2025",
     "code": "75115"
    },
-   "ratio_marche": 0.999,
+   "ratio_marche": 1.0,
    "prix_m2": 39.5,
    "note_detail": {
     "prix": 15,
@@ -419,7 +507,7 @@
     "SKEMA": null,
     "Porte Maillot": null
    },
-   "ratio_marche": 1.018,
+   "ratio_marche": 1.019,
    "prix_m2": 40.2,
    "note_detail": {
     "prix": 14,
@@ -488,7 +576,7 @@
     "SKEMA": null,
     "Porte Maillot": null
    },
-   "ratio_marche": 0.784,
+   "ratio_marche": 0.785,
    "prix_m2": 31.0,
    "note_detail": {
     "prix": 28,
@@ -632,7 +720,7 @@
     "SKEMA": null,
     "Porte Maillot": null
    },
-   "ratio_marche": 1.24,
+   "ratio_marche": 1.241,
    "prix_m2": 49.0,
    "note_detail": {
     "prix": 1,
@@ -700,7 +788,7 @@
     "SKEMA": null,
     "Porte Maillot": null
    },
-   "ratio_marche": 1.0,
+   "ratio_marche": 1.001,
    "prix_m2": 39.5,
    "note_detail": {
     "prix": 15,
@@ -768,7 +856,7 @@
     "SKEMA": null,
     "Porte Maillot": null
    },
-   "ratio_marche": 1.024,
+   "ratio_marche": 1.025,
    "prix_m2": 40.5,
    "note_detail": {
     "prix": 14,
@@ -836,7 +924,7 @@
     "SKEMA": null,
     "Porte Maillot": null
    },
-   "ratio_marche": 0.827,
+   "ratio_marche": 0.828,
    "prix_m2": 32.7,
    "note_detail": {
     "prix": 25,
@@ -1044,7 +1132,7 @@
     "SKEMA": null,
     "Porte Maillot": null
    },
-   "ratio_marche": 0.849,
+   "ratio_marche": 0.85,
    "prix_m2": 33.6,
    "note_detail": {
     "prix": 24,
@@ -1114,7 +1202,7 @@
     "SKEMA": null,
     "Porte Maillot": null
    },
-   "ratio_marche": 0.902,
+   "ratio_marche": 0.904,
    "prix_m2": 35.7,
    "note_detail": {
     "prix": 21,
@@ -1331,7 +1419,7 @@
     "SKEMA": null,
     "Porte Maillot": null
    },
-   "ratio_marche": 0.814,
+   "ratio_marche": 0.815,
    "prix_m2": 32.2,
    "note_detail": {
     "prix": 26,
@@ -1341,7 +1429,7 @@
     "surface": 4,
     "bonus": 0
    },
-   "score": 62,
+   "score": 61,
    "extrait": "*** IMPORTANT : demande de contact à faire par e-mail via le formulaire sur cette annonce. Un accès vous sera automatiquement ouvert pour déposer votre dossier en ligne. Les visites seront organisées après validation de votre dossier. ***<br>NESTENN Rueil-Malmaison vous propose, …",
    "vu_le": "2026-11-20T14:09:48Z",
    "prix_initial": 790,
@@ -1399,7 +1487,7 @@
     "SKEMA": null,
     "Porte Maillot": null
    },
-   "ratio_marche": 1.248,
+   "ratio_marche": 1.25,
    "prix_m2": 49.3,
    "note_detail": {
     "prix": 0,
@@ -1533,7 +1621,7 @@
     "SKEMA": null,
     "Porte Maillot": null
    },
-   "ratio_marche": 0.76,
+   "ratio_marche": 0.761,
    "prix_m2": 30.0,
    "note_detail": {
     "prix": 29,
@@ -1677,7 +1765,7 @@
     "SKEMA": null,
     "Porte Maillot": null
    },
-   "ratio_marche": 0.9,
+   "ratio_marche": 0.901,
    "prix_m2": 35.6,
    "note_detail": {
     "prix": 21,
@@ -1745,7 +1833,7 @@
     "SKEMA": null,
     "Porte Maillot": null
    },
-   "ratio_marche": 0.746,
+   "ratio_marche": 0.747,
    "prix_m2": 29.5,
    "note_detail": {
     "prix": 30,
@@ -1819,7 +1907,7 @@
     "SKEMA": null,
     "Porte Maillot": null
    },
-   "ratio_marche": 1.123,
+   "ratio_marche": 1.125,
    "prix_m2": 44.4,
    "note_detail": {
     "prix": 8,
@@ -1887,7 +1975,7 @@
     "SKEMA": null,
     "Porte Maillot": null
    },
-   "ratio_marche": 1.237,
+   "ratio_marche": 1.239,
    "prix_m2": 48.9,
    "note_detail": {
     "prix": 1,
