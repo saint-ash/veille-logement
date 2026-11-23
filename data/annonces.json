@@ -1,6 +1,206 @@
 {
- "maj": "2026-11-23T01:00:36Z",
+ "maj": "2026-11-23T15:51:23Z",
  "annonces": [
+  {
+   "cle": "bienici:nestenn-1-99939648154",
+   "source": "Bien'ici",
+   "url": "https://www.bienici.com/annonce/nestenn-1-99939648154",
+   "titre": "Appartement Colombes 1 pièce 19.97 m2",
+   "prix": 865,
+   "surface": 19.97,
+   "pieces": 1,
+   "ville": "Colombes",
+   "code_postal": "92700",
+   "lat": 48.915307280358846,
+   "lon": 2.2474256659769933,
+   "rayon_flou_km": 0.05,
+   "photo": "https://media.immo-facile.com/office15/solvimo-courbevoie/catalog/images/pr_p/3/9/6/4/8/1/5/4/39648154a.jpg?DATEMAJ=30/07/2026-19:01:40",
+   "photos": [
+    "https://media.immo-facile.com/office15/solvimo-courbevoie/catalog/images/pr_p/3/9/6/4/8/1/5/4/39648154a.jpg?DATEMAJ=30/07/2026-19:01:40",
+    "https://media.immo-facile.com/office15/solvimo-courbevoie/catalog/images/pr_p/3/9/6/4/8/1/5/4/39648154b.jpg?DATEMAJ=30/07/2026-19:01:46",
+    "https://media.immo-facile.com/office15/solvimo-courbevoie/catalog/images/pr_p/3/9/6/4/8/1/5/4/39648154c.jpg?DATEMAJ=30/07/2026-19:01:50",
+    "https://media.immo-facile.com/office15/solvimo-courbevoie/catalog/images/pr_p/3/9/6/4/8/1/5/4/39648154d.jpg?DATEMAJ=30/07/2026-19:01:54"
+   ],
+   "charges": 120,
+   "meuble": true,
+   "etage": 4,
+   "annonceur": "agence",
+   "frais_agence": 302.15,
+   "date": "1970-01-01T00:00:00.000Z",
+   "insee": "92025",
+   "coup_de_coeur": true,
+   "securite": {
+    "niveau": 2,
+    "taux": 5.1,
+    "rang": 181,
+    "sur": 293,
+    "annee": "2025",
+    "code": "92025"
+   },
+   "gare": "Les Vallées",
+   "lignes": [
+    "L"
+   ],
+   "gare_lat": 48.91364,
+   "gare_lon": 2.25733,
+   "distance_km": 0.747,
+   "minutes": 12,
+   "position_approx": false,
+   "distances": {
+    "SKEMA": 6.3,
+    "Porte Maillot": 4.8
+   },
+   "trajets": {
+    "SKEMA": null,
+    "Porte Maillot": null
+   },
+   "ratio_marche": 1.097,
+   "prix_m2": 43.3,
+   "note_detail": {
+    "prix": 9,
+    "securite": 5,
+    "trajets": 13,
+    "gare": 3,
+    "surface": 1,
+    "bonus": 4
+   },
+   "score": 35,
+   "tags": [],
+   "extrait": "Quartier Wiener - Garamont; Au 4ème étage (sans ascenseur), studio meublé de 19.97 m2 comprenant une entrée, une pièce principale avec canapé lit convertible Poltronesofa, une cuisine aménagée équipée (hotte, plaque de cuisson, four, machine à laver lavante-séchante) , une salle …",
+   "vu_le": "2026-11-23T15:51:17Z",
+   "prix_initial": 865
+  },
+  {
+   "cle": "mail:c1c3727e244301e9",
+   "source": "pap.fr",
+   "url": "https://www.pap.fr/annonces/-r460400265?a=63674132",
+   "titre": "Location appartement · Asnières-sur-Seine (92600) · 850 € / mois · 1 pièces · 25 m² · Voir l'annonce et contacter le propriétaire",
+   "photo": "https://cdn.pap.fr/photos/pap/65/19/65191f4eb9aa5abff1589a2a55f18820/6-p5.jpg",
+   "prix": 850.0,
+   "surface": 25.0,
+   "pieces": 1,
+   "code_postal": "92600",
+   "annonceur": "particulier",
+   "meuble": null,
+   "ville": "Asnières-sur-Seine",
+   "insee": "92004",
+   "securite": {
+    "niveau": 3,
+    "taux": 4.8,
+    "rang": 171,
+    "sur": 293,
+    "annee": "2025",
+    "code": "92004"
+   },
+   "distances_approx": true,
+   "distances": {
+    "SKEMA": 8.1,
+    "Porte Maillot": 4.4
+   },
+   "ratio_marche": 0.84,
+   "prix_m2": 34.0,
+   "note_detail": {
+    "prix": 25,
+    "securite": 10,
+    "trajets": 12,
+    "gare": 10,
+    "surface": 5,
+    "bonus": 3
+   },
+   "score": 64,
+   "tags": [
+    "bonne_affaire"
+   ],
+   "vu_le": "2026-11-23T15:51:17Z",
+   "prix_initial": 850.0
+  },
+  {
+   "cle": "mail:e43ebb7264e92f59",
+   "source": "pap.fr",
+   "url": "https://www.pap.fr/annonces/-r456101122?a=63674132",
+   "titre": "Location appartement · Courbevoie (92400) · 780 € / mois · 1 pièces · 18 m² · Voir l'annonce et contacter le propriétaire",
+   "photo": "https://cdn.pap.fr/photos/pap/31/76/3176732fec410b107ac338faedced877/3-p5.jpg",
+   "prix": 780.0,
+   "surface": 18.0,
+   "pieces": 1,
+   "code_postal": "92400",
+   "annonceur": "particulier",
+   "meuble": null,
+   "ville": "Courbevoie",
+   "insee": "92026",
+   "coup_de_coeur": true,
+   "securite": {
+    "niveau": 3,
+    "taux": 3.7,
+    "rang": 140,
+    "sur": 293,
+    "annee": "2025",
+    "code": "92026"
+   },
+   "distances_approx": true,
+   "distances": {
+    "SKEMA": 4.8,
+    "Porte Maillot": 2.9
+   },
+   "ratio_marche": 1.0,
+   "prix_m2": 43.3,
+   "note_detail": {
+    "prix": 15,
+    "securite": 10,
+    "trajets": 16,
+    "gare": 10,
+    "surface": 0,
+    "bonus": 7
+   },
+   "score": 58,
+   "tags": [],
+   "vu_le": "2026-11-23T15:51:17Z",
+   "prix_initial": 780.0
+  },
+  {
+   "cle": "mail:73fe6ada42730499",
+   "source": "pap.fr",
+   "url": "https://www.pap.fr/annonces/-r466201968?a=63674120",
+   "titre": "Location appartement · Paris 16e · 770 € / mois · 1 pièces · 23 m² · Voir l'annonce et contacter le propriétaire",
+   "photo": "https://static.pap.fr/photos/G62/G62A1968.thumb.jpg",
+   "prix": 770.0,
+   "surface": 23.0,
+   "pieces": 1,
+   "annonceur": "particulier",
+   "coup_de_coeur": true,
+   "meuble": null,
+   "ville": "Paris",
+   "insee": "75056",
+   "securite": {
+    "niveau": 1,
+    "taux": 11.7,
+    "rang": 276,
+    "sur": 293,
+    "annee": "2025",
+    "code": "75056"
+   },
+   "distances_approx": true,
+   "distances": {
+    "SKEMA": 9.0,
+    "Porte Maillot": 5.2
+   },
+   "ratio_marche": 0.848,
+   "prix_m2": 33.5,
+   "note_detail": {
+    "prix": 24,
+    "securite": 0,
+    "trajets": 10,
+    "gare": 10,
+    "surface": 4,
+    "bonus": 7
+   },
+   "score": 55,
+   "tags": [
+    "bonne_affaire"
+   ],
+   "vu_le": "2026-11-23T15:51:17Z",
+   "prix_initial": 770.0
+  },
   {
    "cle": "mail:a30bbf113447c122",
    "source": "pap.fr",
@@ -28,17 +228,17 @@
     "SKEMA": 8.1,
     "Porte Maillot": 4.4
    },
-   "ratio_marche": 0.861,
+   "ratio_marche": 0.84,
    "prix_m2": 34.0,
    "note_detail": {
-    "prix": 23,
+    "prix": 25,
     "securite": 10,
     "trajets": 12,
     "gare": 10,
     "surface": 5,
     "bonus": 3
    },
-   "score": 63,
+   "score": 64,
    "tags": [
     "bonne_affaire"
    ],
@@ -116,7 +316,7 @@
     "SKEMA": 4.8,
     "Porte Maillot": 2.9
    },
-   "ratio_marche": 0.702,
+   "ratio_marche": 0.654,
    "prix_m2": 28.3,
    "note_detail": {
     "prix": 30,
@@ -160,7 +360,7 @@
     "SKEMA": 5.4,
     "Porte Maillot": 4.2
    },
-   "ratio_marche": 1.267,
+   "ratio_marche": 1.266,
    "prix_m2": 50.0,
    "note_detail": {
     "prix": 0,
@@ -201,7 +401,7 @@
     "SKEMA": 1.2,
     "Porte Maillot": 4.9
    },
-   "ratio_marche": 0.962,
+   "ratio_marche": 0.961,
    "prix_m2": 38.0,
    "note_detail": {
     "prix": 17,
@@ -356,17 +556,17 @@
     "SKEMA": 8.1,
     "Porte Maillot": 4.4
    },
-   "ratio_marche": 1.088,
+   "ratio_marche": 1.062,
    "prix_m2": 43.0,
    "note_detail": {
-    "prix": 10,
+    "prix": 11,
     "securite": 10,
     "trajets": 12,
     "gare": 10,
     "surface": 1,
     "bonus": 3
    },
-   "score": 46,
+   "score": 47,
    "tags": [],
    "extrait": "Studio meublé à louer · Asnières-sur-Seine (92600) · 20 m² · 859 € / mois · Beau studio en excellent état de 20 m² comprenant petite entrée, sdb avec douche, belle pièce à vivre et cui…",
    "vu_le": "2026-11-21T13:11:39Z",
@@ -398,17 +598,17 @@
     "Porte Maillot": 4.4
    },
    "distances_approx": true,
-   "ratio_marche": 1.088,
+   "ratio_marche": 1.062,
    "prix_m2": 43.0,
    "note_detail": {
-    "prix": 10,
+    "prix": 11,
     "securite": 10,
     "trajets": 12,
     "gare": 10,
     "surface": 1,
     "bonus": 0
    },
-   "score": 43,
+   "score": 44,
    "tags": [],
    "extrait": "C · 1/5 · Locservice Appartement à louer Studio de 20m2 à louer sur Asnières-sur-Seine 859 € CC /mois 43 € / m² 1 pièce • 1 chambre • 20 m² Asnières-sur-Seine (92600) Meublé Studio de particulier à louer sur asnières-sur-seine. Disponible le 19 / 12 / 2026 pour cette location meu…",
    "vu_le": "2026-11-21T12:53:01Z",
@@ -436,7 +636,7 @@
     "annee": "2025",
     "code": "75115"
    },
-   "ratio_marche": 1.0,
+   "ratio_marche": 0.999,
    "prix_m2": 39.5,
    "note_detail": {
     "prix": 15,
@@ -651,17 +851,17 @@
     "SKEMA": null,
     "Porte Maillot": null
    },
-   "ratio_marche": 1.212,
+   "ratio_marche": 1.128,
    "prix_m2": 48.9,
    "note_detail": {
-    "prix": 2,
+    "prix": 7,
     "securite": 10,
     "trajets": 16,
     "gare": 0,
     "surface": 0,
     "bonus": 4
    },
-   "score": 32,
+   "score": 37,
    "tags": [],
    "extrait": "iad France - Aurelia Vakili Taleghani (<span class=\"importDescriptionDecorator\" data-type=\"phone\">07 61 53 76 41</span>) vous propose : À LOUER - STUDIO MEUBLÉ AVEC BALCON - AUX PORTES DE LA DÉFENSE <br>Idéalement situé près de l'arrêt de T2 Faubourg de l'arche, au sein d'une rés…",
    "vu_le": "2026-11-20T21:46:14Z",
@@ -856,17 +1056,17 @@
     "SKEMA": null,
     "Porte Maillot": null
    },
-   "ratio_marche": 1.025,
+   "ratio_marche": 1.0,
    "prix_m2": 40.5,
    "note_detail": {
-    "prix": 14,
+    "prix": 15,
     "securite": 5,
     "trajets": 14,
     "gare": 15,
     "surface": 1,
     "bonus": 0
    },
-   "score": 49,
+   "score": 50,
    "tags": [],
    "extrait": "CENTURY21 L'ami immobilier vous propose :<br>Studio meublé de 20 m² à louer  Rue  Bernard Jugault -Asnières-sur-Seine (92600)<br>À louer, charmant studio meublé de 20 m², idéalement situé à seulement 6 minutes à pied de la gare d'Asnières-sur-Seine.<br>Ce logement fonctionnel et …",
    "vu_le": "2026-11-20T14:09:48Z",
@@ -995,17 +1195,17 @@
     "SKEMA": null,
     "Porte Maillot": null
    },
-   "ratio_marche": 1.0,
+   "ratio_marche": 0.931,
    "prix_m2": 40.3,
    "note_detail": {
-    "prix": 15,
+    "prix": 19,
     "securite": 5,
     "trajets": 17,
     "gare": 12,
     "surface": 2,
     "bonus": 4
    },
-   "score": 54,
+   "score": 58,
    "tags": [],
    "extrait": "À LOUER : Découvrez ce charmant appartement T1 situé au cœur de Courbevoie, dans un quartier prisé et dynamique à 5mn de la Défense. Niché au troisième étage d'un immeuble élégant, cet espace de vie de 20 m² allie confort et fonctionnalité, idéal pour une personne seule.\n\nL'appar…",
    "vu_le": "2026-11-20T14:09:48Z",
@@ -1202,7 +1402,7 @@
     "SKEMA": null,
     "Porte Maillot": null
    },
-   "ratio_marche": 0.904,
+   "ratio_marche": 0.903,
    "prix_m2": 35.7,
    "note_detail": {
     "prix": 21,
@@ -1227,7 +1427,7 @@
    "source": "Bien'ici",
    "url": "https://www.bienici.com/annonce/hektor-parsimmo-1245",
    "titre": "À LOUER   STUDIO MEUBLÉ DE 18,57 M2   COURBEVOIE   PROCHE LA",
-   "prix": 890,
+   "prix": 850,
    "surface": 18.57,
    "pieces": 1,
    "ville": "Courbevoie",
@@ -1242,7 +1442,7 @@
     "https://parsimmo.staticlbi.com/original/images/biens/1/352fc0b7336291016a0920e28a581841/photo_45ff44cbe00ccb9e4386d30a934aa954.jpg",
     "https://parsimmo.staticlbi.com/original/images/biens/1/352fc0b7336291016a0920e28a581841/photo_d44d08cba887a97c486d6295cc6747f9.jpg"
    ],
-   "charges": null,
+   "charges": 50,
    "meuble": true,
    "etage": null,
    "annonceur": "agence",
@@ -1251,10 +1451,10 @@
    "insee": "92026",
    "coup_de_coeur": true,
    "securite": {
-    "niveau": 2,
-    "taux": 16.6,
-    "rang": 225,
-    "sur": 311,
+    "niveau": 3,
+    "taux": 3.7,
+    "rang": 140,
+    "sur": 293,
     "annee": "2025",
     "code": "92026"
    },
@@ -1271,29 +1471,32 @@
    "distance_km": 0.643,
    "minutes": 10,
    "position_approx": false,
+   "tags": [
+    "baisse"
+   ],
+   "baisse_le": "2026-11-23T15:50:16Z",
+   "distances": {
+    "SKEMA": 4.1,
+    "Porte Maillot": 4.1
+   },
    "trajets": {
     "SKEMA": null,
     "Porte Maillot": null
    },
-   "ratio_marche": 1.188,
-   "prix_m2": 47.9,
+   "ratio_marche": 1.056,
+   "prix_m2": 45.8,
    "note_detail": {
-    "prix": 4,
-    "securite": 5,
+    "prix": 12,
+    "securite": 10,
     "trajets": 16,
     "gare": 7,
     "surface": 0,
     "bonus": 4
    },
-   "score": 36,
-   "tags": [],
+   "score": 49,
    "extrait": "Situé au 4e étage d'une résidence avec ascenseur, ce charmant studio meublé de 18,57 m2 vous séduira par son agencement fonctionnel, sa luminosité et son emplacement à proximité du quartier d'affaires de La Défense.<br> Entièrement aménagé et équipé, cet appartement offre un cadr…",
    "vu_le": "2026-11-20T14:09:48Z",
-   "prix_initial": 890,
-   "distances": {
-    "SKEMA": 4.1,
-    "Porte Maillot": 4.1
-   }
+   "prix_initial": 890
   },
   {
    "cle": "bienici:ag754125-555019304",
@@ -1344,17 +1547,17 @@
     "SKEMA": null,
     "Porte Maillot": null
    },
-   "ratio_marche": 0.853,
+   "ratio_marche": 0.794,
    "prix_m2": 34.4,
    "note_detail": {
-    "prix": 24,
+    "prix": 27,
     "securite": 5,
     "trajets": 16,
     "gare": 13,
     "surface": 5,
     "bonus": 4
    },
-   "score": 67,
+   "score": 70,
    "tags": [
     "bonne_affaire"
    ],
@@ -1429,7 +1632,7 @@
     "surface": 4,
     "bonus": 0
    },
-   "score": 61,
+   "score": 62,
    "extrait": "*** IMPORTANT : demande de contact à faire par e-mail via le formulaire sur cette annonce. Un accès vous sera automatiquement ouvert pour déposer votre dossier en ligne. Les visites seront organisées après validation de votre dossier. ***<br>NESTENN Rueil-Malmaison vous propose, …",
    "vu_le": "2026-11-20T14:09:48Z",
    "prix_initial": 790,
@@ -1487,7 +1690,7 @@
     "SKEMA": null,
     "Porte Maillot": null
    },
-   "ratio_marche": 1.25,
+   "ratio_marche": 1.249,
    "prix_m2": 49.3,
    "note_detail": {
     "prix": 0,
@@ -1553,18 +1756,20 @@
     "SKEMA": null,
     "Porte Maillot": null
    },
-   "ratio_marche": 0.904,
+   "ratio_marche": 0.841,
    "prix_m2": 36.5,
    "note_detail": {
-    "prix": 21,
+    "prix": 25,
     "securite": 5,
     "trajets": 16,
     "gare": 0,
     "surface": 5,
     "bonus": 4
    },
-   "score": 51,
-   "tags": [],
+   "score": 54,
+   "tags": [
+    "bonne_affaire"
+   ],
    "extrait": "COURBEVOIE / Bd de Verdun - au 1er étage d'une copropriété sécurisée, avec ascenseur, Studio MEUBLE de 24.41m² composé d'une entrée placard, pièce principale avec coin cuisine aménagé et équipé, donnant sur balcon, une salle de bains avec WC. Parking en sous-sol. Chauffage indivi…",
    "vu_le": "2026-11-20T14:09:48Z",
    "prix_initial": 890,
@@ -1621,7 +1826,7 @@
     "SKEMA": null,
     "Porte Maillot": null
    },
-   "ratio_marche": 0.761,
+   "ratio_marche": 0.76,
    "prix_m2": 30.0,
    "note_detail": {
     "prix": 29,
@@ -1693,17 +1898,17 @@
     "SKEMA": null,
     "Porte Maillot": null
    },
-   "ratio_marche": 1.133,
+   "ratio_marche": 1.055,
    "prix_m2": 45.7,
    "note_detail": {
-    "prix": 7,
+    "prix": 12,
     "securite": 8,
     "trajets": 17,
     "gare": 11,
     "surface": 0,
     "bonus": 4
    },
-   "score": 47,
+   "score": 52,
    "tags": [
     "securise"
    ],
@@ -1765,7 +1970,7 @@
     "SKEMA": null,
     "Porte Maillot": null
    },
-   "ratio_marche": 0.901,
+   "ratio_marche": 0.9,
    "prix_m2": 35.6,
    "note_detail": {
     "prix": 21,
@@ -1833,7 +2038,7 @@
     "SKEMA": null,
     "Porte Maillot": null
    },
-   "ratio_marche": 0.747,
+   "ratio_marche": 0.746,
    "prix_m2": 29.5,
    "note_detail": {
     "prix": 30,
@@ -1907,7 +2112,7 @@
     "SKEMA": null,
     "Porte Maillot": null
    },
-   "ratio_marche": 1.125,
+   "ratio_marche": 1.124,
    "prix_m2": 44.4,
    "note_detail": {
     "prix": 8,
@@ -1975,7 +2180,7 @@
     "SKEMA": null,
     "Porte Maillot": null
    },
-   "ratio_marche": 1.239,
+   "ratio_marche": 1.238,
    "prix_m2": 48.9,
    "note_detail": {
     "prix": 1,
