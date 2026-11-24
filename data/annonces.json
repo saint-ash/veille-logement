@@ -1,6 +1,75 @@
 {
- "maj": "2026-11-24T02:38:54Z",
+ "maj": "2026-11-24T15:43:03Z",
  "annonces": [
+  {
+   "cle": "bienici:immo-facile-52284230",
+   "source": "Bien'ici",
+   "url": "https://www.bienici.com/annonce/immo-facile-52284230",
+   "titre": "STUDIO MEUBLE DE 19 M² LOUE MEUBLE",
+   "prix": 840,
+   "surface": 19,
+   "pieces": 1,
+   "ville": "Courbevoie",
+   "code_postal": "92400",
+   "lat": 48.90497366061393,
+   "lon": 2.2729062560466637,
+   "rayon_flou_km": 0.05,
+   "photo": "https://media.immo-facile.com/office13/pelissoloimmo_170223/catalog/images/pr_p/5/2/2/8/4/2/3/0/52284230a.jpg?DATEMAJ=16/03/2025-07:15:08",
+   "photos": [
+    "https://media.immo-facile.com/office13/pelissoloimmo_170223/catalog/images/pr_p/5/2/2/8/4/2/3/0/52284230a.jpg?DATEMAJ=16/03/2025-07:15:08",
+    "https://media.immo-facile.com/office13/pelissoloimmo_170223/catalog/images/pr_p/5/2/2/8/4/2/3/0/52284230b.jpg?DATEMAJ=16/03/2025-07:15:08",
+    "https://media.immo-facile.com/office13/pelissoloimmo_170223/catalog/images/pr_p/5/2/2/8/4/2/3/0/52284230c.jpg?DATEMAJ=16/03/2025-07:15:08",
+    "https://media.immo-facile.com/office13/pelissoloimmo_170223/catalog/images/pr_p/5/2/2/8/4/2/3/0/52284230d.jpg?DATEMAJ=16/03/2025-07:15:08"
+   ],
+   "charges": 20,
+   "meuble": true,
+   "etage": 5,
+   "annonceur": "agence",
+   "frais_agence": 287.47,
+   "date": "1970-01-01T00:00:00.000Z",
+   "insee": "92026",
+   "coup_de_coeur": true,
+   "securite": {
+    "niveau": 3,
+    "taux": 3.7,
+    "rang": 140,
+    "sur": 293,
+    "annee": "2025",
+    "code": "92026"
+   },
+   "gare": "Bécon-les-Bruyères",
+   "lignes": [
+    "L"
+   ],
+   "gare_lat": 48.90576,
+   "gare_lon": 2.26996,
+   "distance_km": 0.232,
+   "minutes": 4,
+   "position_approx": false,
+   "distances": {
+    "SKEMA": 6.1,
+    "Porte Maillot": 3.0
+   },
+   "trajets": {
+    "SKEMA": null,
+    "Porte Maillot": null
+   },
+   "ratio_marche": 1.02,
+   "prix_m2": 44.2,
+   "note_detail": {
+    "prix": 14,
+    "securite": 10,
+    "trajets": 15,
+    "gare": 18,
+    "surface": 1,
+    "bonus": 4
+   },
+   "score": 62,
+   "tags": [],
+   "extrait": "Quartier Bécon - Rue du 22 Septembre <br>Dans un quartier pavillonnaire, au 5ème étage sans ascenseur d'un immeuble ancien bien entretenu, un studio loué meublé de 19 m², comprenant une pièce principale, une cuisine ouverte aménagée et équipée et une salle de douche avec WC.  <br…",
+   "vu_le": "2026-11-24T15:43:02Z",
+   "prix_initial": 840
+  },
   {
    "cle": "mail:1c64cb7a3171ba85",
    "source": "seloger.com",
@@ -28,7 +97,7 @@
     "SKEMA": 7.1,
     "Porte Maillot": 5.5
    },
-   "ratio_marche": 0.23,
+   "ratio_marche": 0.226,
    "prix_m2": 8.9,
    "note_detail": {
     "prix": 30,
@@ -99,17 +168,17 @@
     "SKEMA": null,
     "Porte Maillot": null
    },
-   "ratio_marche": 1.119,
+   "ratio_marche": 1.097,
    "prix_m2": 43.3,
    "note_detail": {
-    "prix": 8,
+    "prix": 9,
     "securite": 5,
     "trajets": 13,
     "gare": 3,
     "surface": 1,
     "bonus": 4
    },
-   "score": 34,
+   "score": 35,
    "tags": [],
    "extrait": "Quartier Wiener - Garamont; Au 4ème étage (sans ascenseur), studio meublé de 19.97 m2 comprenant une entrée, une pièce principale avec canapé lit convertible Poltronesofa, une cuisine aménagée équipée (hotte, plaque de cuisson, four, machine à laver lavante-séchante) , une salle …",
    "vu_le": "2026-11-23T15:51:17Z",
@@ -187,17 +256,17 @@
     "SKEMA": 4.8,
     "Porte Maillot": 2.9
    },
-   "ratio_marche": 1.036,
+   "ratio_marche": 1.0,
    "prix_m2": 43.3,
    "note_detail": {
-    "prix": 13,
+    "prix": 15,
     "securite": 10,
     "trajets": 16,
     "gare": 10,
     "surface": 0,
     "bonus": 7
    },
-   "score": 56,
+   "score": 58,
    "tags": [],
    "vu_le": "2026-11-23T15:51:17Z",
    "prix_initial": 780.0
@@ -229,17 +298,17 @@
     "SKEMA": 9.0,
     "Porte Maillot": 5.2
    },
-   "ratio_marche": 0.865,
+   "ratio_marche": 0.848,
    "prix_m2": 33.5,
    "note_detail": {
-    "prix": 23,
+    "prix": 24,
     "securite": 0,
     "trajets": 10,
     "gare": 10,
     "surface": 4,
     "bonus": 7
    },
-   "score": 53,
+   "score": 54,
    "tags": [
     "bonne_affaire"
    ],
@@ -317,18 +386,20 @@
     "SKEMA": 6.9,
     "Porte Maillot": 4.2
    },
-   "ratio_marche": 0.884,
+   "ratio_marche": 0.867,
    "prix_m2": 34.2,
    "note_detail": {
-    "prix": 22,
+    "prix": 23,
     "securite": 15,
     "trajets": 13,
     "gare": 10,
     "surface": 6,
     "bonus": 3
    },
-   "score": 69,
-   "tags": [],
+   "score": 70,
+   "tags": [
+    "bonne_affaire"
+   ],
    "vu_le": "2026-11-22T20:24:00Z",
    "prix_initial": 890.0
   },
@@ -359,7 +430,7 @@
     "SKEMA": 4.8,
     "Porte Maillot": 2.9
    },
-   "ratio_marche": 0.677,
+   "ratio_marche": 0.654,
    "prix_m2": 28.3,
    "note_detail": {
     "prix": 30,
@@ -403,7 +474,7 @@
     "SKEMA": 5.4,
     "Porte Maillot": 4.2
    },
-   "ratio_marche": 1.291,
+   "ratio_marche": 1.267,
    "prix_m2": 50.0,
    "note_detail": {
     "prix": 0,
@@ -444,17 +515,17 @@
     "SKEMA": 1.2,
     "Porte Maillot": 4.9
    },
-   "ratio_marche": 0.981,
+   "ratio_marche": 0.962,
    "prix_m2": 38.0,
    "note_detail": {
-    "prix": 16,
+    "prix": 17,
     "securite": 10,
     "trajets": 18,
     "gare": 10,
     "surface": 4,
     "bonus": 0
    },
-   "score": 58,
+   "score": 59,
    "tags": [],
    "vu_le": "2026-11-21T20:38:38Z",
    "prix_initial": 900.0
@@ -485,7 +556,7 @@
     "SKEMA": 1.2,
     "Porte Maillot": 4.9
    },
-   "ratio_marche": 0.347,
+   "ratio_marche": 0.34,
    "prix_m2": 13.4,
    "note_detail": {
     "prix": 30,
@@ -556,17 +627,17 @@
     "SKEMA": null,
     "Porte Maillot": null
    },
-   "ratio_marche": 1.102,
+   "ratio_marche": 1.081,
    "prix_m2": 42.7,
    "note_detail": {
-    "prix": 9,
+    "prix": 10,
     "securite": 5,
     "trajets": 13,
     "gare": 20,
     "surface": 1,
     "bonus": 4
    },
-   "score": 52,
+   "score": 53,
    "tags": [],
    "extrait": "Situé au 3ème étage avec ascenseur, découvrez ce charmant studio meublé de 19,58 m², idéalement situé à proximité du métro La Fourche (ligne 13) et de nombreux commerces.\n\nCalme et fonctionnel, cet appartement offre un cadre de vie agréable et un agencement optimisé. Il se compos…",
    "vu_le": "2026-11-21T14:15:26Z",
@@ -679,17 +750,17 @@
     "annee": "2025",
     "code": "75115"
    },
-   "ratio_marche": 1.019,
+   "ratio_marche": 1.0,
    "prix_m2": 39.5,
    "note_detail": {
-    "prix": 14,
+    "prix": 15,
     "securite": 3,
     "trajets": 14,
     "gare": 16,
     "surface": 1,
     "bonus": 7
    },
-   "score": 55,
+   "score": 56,
    "tags": [
     "securise"
    ],
@@ -750,17 +821,17 @@
     "SKEMA": null,
     "Porte Maillot": null
    },
-   "ratio_marche": 1.039,
+   "ratio_marche": 1.019,
    "prix_m2": 40.2,
    "note_detail": {
-    "prix": 13,
+    "prix": 14,
     "securite": 10,
     "trajets": 11,
     "gare": 11,
     "surface": 2,
     "bonus": 0
    },
-   "score": 47,
+   "score": 48,
    "tags": [],
    "extrait": "Avec IMMOJEUNE, trouvez les meilleurs logements étudiants et jeunes actifs en quelques clics et en toute confiance.\n\nÀ seulement 8 km de Paris et à proximité immédiate du quartier d'affaires de la Défense, Rueil-Malmaison bénéficie d'un emplacement privilégié. Notre appartement, …",
    "vu_le": "2026-11-21T12:45:28Z",
@@ -819,17 +890,17 @@
     "SKEMA": null,
     "Porte Maillot": null
    },
-   "ratio_marche": 0.801,
+   "ratio_marche": 0.785,
    "prix_m2": 31.0,
    "note_detail": {
-    "prix": 27,
+    "prix": 28,
     "securite": 10,
     "trajets": 15,
     "gare": 6,
     "surface": 6,
     "bonus": 4
    },
-   "score": 68,
+   "score": 69,
    "tags": [
     "bonne_affaire"
    ],
@@ -894,17 +965,17 @@
     "SKEMA": null,
     "Porte Maillot": null
    },
-   "ratio_marche": 1.168,
+   "ratio_marche": 1.128,
    "prix_m2": 48.9,
    "note_detail": {
-    "prix": 5,
+    "prix": 7,
     "securite": 10,
     "trajets": 16,
     "gare": 0,
     "surface": 0,
     "bonus": 4
    },
-   "score": 34,
+   "score": 37,
    "tags": [],
    "extrait": "iad France - Aurelia Vakili Taleghani (<span class=\"importDescriptionDecorator\" data-type=\"phone\">07 61 53 76 41</span>) vous propose : À LOUER - STUDIO MEUBLÉ AVEC BALCON - AUX PORTES DE LA DÉFENSE <br>Idéalement situé près de l'arrêt de T2 Faubourg de l'arche, au sein d'une rés…",
    "vu_le": "2026-11-20T21:46:14Z",
@@ -963,17 +1034,17 @@
     "SKEMA": null,
     "Porte Maillot": null
    },
-   "ratio_marche": 1.265,
+   "ratio_marche": 1.241,
    "prix_m2": 49.0,
    "note_detail": {
-    "prix": 0,
+    "prix": 1,
     "securite": 5,
     "trajets": 19,
     "gare": 11,
     "surface": 0,
     "bonus": 0
    },
-   "score": 34,
+   "score": 35,
    "tags": [],
    "extrait": "L'Adresse immobilier vous présente ce charmant STUDIO  MEUBLE de  18m², idéalement situé au pied du Parc du Château, entouré de commodités locales (T2 et Ligne L). Il se site rue Pierre Dupont.<br>Ce studio refait à neuf, orienté à l'Ouest, offre une disposition optimale comprena…",
    "vu_le": "2026-11-20T14:09:48Z",
@@ -1031,17 +1102,17 @@
     "SKEMA": null,
     "Porte Maillot": null
    },
-   "ratio_marche": 1.021,
+   "ratio_marche": 1.001,
    "prix_m2": 39.5,
    "note_detail": {
-    "prix": 14,
+    "prix": 15,
     "securite": 5,
     "trajets": 12,
     "gare": 11,
     "surface": 2,
     "bonus": 0
    },
-   "score": 44,
+   "score": 45,
    "tags": [],
    "extrait": "Avec IMMOJEUNE, trouvez les meilleurs logements étudiants et jeunes actifs en quelques clics et en toute confiance.\n\nIdéalement implanté à proximité immédiate du RER A, cet appartement offre un accès rapide à La Défense en seulement 20 minutes et au centre de Paris (Châtelet) en …",
    "vu_le": "2026-11-20T14:09:48Z",
@@ -1167,17 +1238,17 @@
     "SKEMA": null,
     "Porte Maillot": null
    },
-   "ratio_marche": 0.844,
+   "ratio_marche": 0.828,
    "prix_m2": 32.7,
    "note_detail": {
-    "prix": 24,
+    "prix": 25,
     "securite": 0,
     "trajets": 13,
     "gare": 0,
     "surface": 6,
     "bonus": 0
    },
-   "score": 43,
+   "score": 44,
    "tags": [
     "bonne_affaire"
    ],
@@ -1238,17 +1309,17 @@
     "SKEMA": null,
     "Porte Maillot": null
    },
-   "ratio_marche": 0.964,
+   "ratio_marche": 0.931,
    "prix_m2": 40.3,
    "note_detail": {
-    "prix": 17,
+    "prix": 19,
     "securite": 5,
     "trajets": 17,
     "gare": 12,
     "surface": 2,
     "bonus": 4
    },
-   "score": 56,
+   "score": 58,
    "tags": [],
    "extrait": "À LOUER : Découvrez ce charmant appartement T1 situé au cœur de Courbevoie, dans un quartier prisé et dynamique à 5mn de la Défense. Niché au troisième étage d'un immeuble élégant, cet espace de vie de 20 m² allie confort et fonctionnalité, idéal pour une personne seule.\n\nL'appar…",
    "vu_le": "2026-11-20T14:09:48Z",
@@ -1375,17 +1446,17 @@
     "SKEMA": null,
     "Porte Maillot": null
    },
-   "ratio_marche": 0.867,
+   "ratio_marche": 0.85,
    "prix_m2": 33.6,
    "note_detail": {
-    "prix": 23,
+    "prix": 24,
     "securite": 5,
     "trajets": 19,
     "gare": 18,
     "surface": 2,
     "bonus": 0
    },
-   "score": 67,
+   "score": 68,
    "tags": [
     "bonne_affaire"
    ],
@@ -1445,17 +1516,17 @@
     "SKEMA": null,
     "Porte Maillot": null
    },
-   "ratio_marche": 0.921,
+   "ratio_marche": 0.904,
    "prix_m2": 35.7,
    "note_detail": {
-    "prix": 20,
+    "prix": 21,
     "securite": 5,
     "trajets": 12,
     "gare": 12,
     "surface": 2,
     "bonus": 0
    },
-   "score": 51,
+   "score": 52,
    "tags": [],
    "extrait": "Avec IMMOJEUNE, trouvez les meilleurs logements étudiants et jeunes actifs en quelques clics et en toute confiance.\n\nIdéalement situé aux abords ouest de Paris et à proximité de Nanterre, cet appartement se trouve à quelques pas de l'Université Paris X – Nanterre, de renommées in…",
    "vu_le": "2026-11-20T14:09:48Z",
@@ -1526,17 +1597,17 @@
     "SKEMA": null,
     "Porte Maillot": null
    },
-   "ratio_marche": 1.094,
+   "ratio_marche": 1.056,
    "prix_m2": 45.8,
    "note_detail": {
-    "prix": 9,
+    "prix": 12,
     "securite": 10,
     "trajets": 16,
     "gare": 7,
     "surface": 0,
     "bonus": 4
    },
-   "score": 47,
+   "score": 49,
    "extrait": "Situé au 4e étage d'une résidence avec ascenseur, ce charmant studio meublé de 18,57 m2 vous séduira par son agencement fonctionnel, sa luminosité et son emplacement à proximité du quartier d'affaires de La Défense.<br> Entièrement aménagé et équipé, cet appartement offre un cadr…",
    "vu_le": "2026-11-20T14:09:48Z",
    "prix_initial": 890
@@ -1590,17 +1661,17 @@
     "SKEMA": null,
     "Porte Maillot": null
    },
-   "ratio_marche": 0.822,
+   "ratio_marche": 0.794,
    "prix_m2": 34.4,
    "note_detail": {
-    "prix": 26,
+    "prix": 27,
     "securite": 5,
     "trajets": 16,
     "gare": 13,
     "surface": 5,
     "bonus": 4
    },
-   "score": 69,
+   "score": 70,
    "tags": [
     "bonne_affaire"
    ],
@@ -1665,10 +1736,10 @@
     "SKEMA": null,
     "Porte Maillot": null
    },
-   "ratio_marche": 0.831,
+   "ratio_marche": 0.815,
    "prix_m2": 32.2,
    "note_detail": {
-    "prix": 25,
+    "prix": 26,
     "securite": 10,
     "trajets": 11,
     "gare": 10,
@@ -1733,7 +1804,7 @@
     "SKEMA": null,
     "Porte Maillot": null
    },
-   "ratio_marche": 1.274,
+   "ratio_marche": 1.25,
    "prix_m2": 49.3,
    "note_detail": {
     "prix": 0,
@@ -1799,17 +1870,17 @@
     "SKEMA": null,
     "Porte Maillot": null
    },
-   "ratio_marche": 0.871,
+   "ratio_marche": 0.841,
    "prix_m2": 36.5,
    "note_detail": {
-    "prix": 23,
+    "prix": 25,
     "securite": 5,
     "trajets": 16,
     "gare": 0,
     "surface": 5,
     "bonus": 4
    },
-   "score": 52,
+   "score": 54,
    "tags": [
     "bonne_affaire"
    ],
@@ -1869,17 +1940,17 @@
     "SKEMA": null,
     "Porte Maillot": null
    },
-   "ratio_marche": 0.776,
+   "ratio_marche": 0.761,
    "prix_m2": 30.0,
    "note_detail": {
-    "prix": 28,
+    "prix": 29,
     "securite": 3,
     "trajets": 13,
     "gare": 19,
     "surface": 8,
     "bonus": 0
    },
-   "score": 72,
+   "score": 73,
    "tags": [
     "bonne_affaire",
     "securise"
@@ -1941,17 +2012,17 @@
     "SKEMA": null,
     "Porte Maillot": null
    },
-   "ratio_marche": 1.093,
+   "ratio_marche": 1.055,
    "prix_m2": 45.7,
    "note_detail": {
-    "prix": 9,
+    "prix": 12,
     "securite": 8,
     "trajets": 17,
     "gare": 11,
     "surface": 0,
     "bonus": 4
    },
-   "score": 50,
+   "score": 52,
    "tags": [
     "securise"
    ],
@@ -2013,17 +2084,17 @@
     "SKEMA": null,
     "Porte Maillot": null
    },
-   "ratio_marche": 0.918,
+   "ratio_marche": 0.901,
    "prix_m2": 35.6,
    "note_detail": {
-    "prix": 20,
+    "prix": 21,
     "securite": 0,
     "trajets": 14,
     "gare": 16,
     "surface": 4,
     "bonus": 0
    },
-   "score": 54,
+   "score": 55,
    "tags": [],
    "extrait": "Au pied du Nouveau Tribunal, porte de Clichy, dans un immeuble calme, au 4ème étage sans ascenseur sur cour sans vis à vis: studio MEUBLE comprenant: cuisine dinatoire,  pièce principale, salle d'eau avec WC.<br>Très calme.<br>",
    "vu_le": "2026-11-20T14:09:48Z",
@@ -2081,17 +2152,17 @@
     "SKEMA": null,
     "Porte Maillot": null
    },
-   "ratio_marche": 0.761,
+   "ratio_marche": 0.747,
    "prix_m2": 29.5,
    "note_detail": {
-    "prix": 29,
+    "prix": 30,
     "securite": 10,
     "trajets": 15,
     "gare": 17,
     "surface": 9,
     "bonus": 0
    },
-   "score": 80,
+   "score": 81,
    "tags": [
     "bonne_affaire"
    ],
@@ -2155,17 +2226,17 @@
     "SKEMA": null,
     "Porte Maillot": null
    },
-   "ratio_marche": 1.146,
+   "ratio_marche": 1.125,
    "prix_m2": 44.4,
    "note_detail": {
-    "prix": 6,
+    "prix": 8,
     "securite": 0,
     "trajets": 9,
     "gare": 19,
     "surface": 0,
     "bonus": 0
    },
-   "score": 34,
+   "score": 35,
    "tags": [],
    "extrait": "À proximité de la Gare du Nord, dans un immeuble ravalé, studio en très bon état.Il se compose d'une entrée desservant une pièce principale avec parquet au sol et fenêtre en double vitrage, et d'une cuisine américaine équipée de plaques de cuisson, d'un réfrigérateur, d'un plan d…",
    "vu_le": "2026-11-20T14:09:48Z",
@@ -2223,10 +2294,10 @@
     "SKEMA": null,
     "Porte Maillot": null
    },
-   "ratio_marche": 1.262,
+   "ratio_marche": 1.239,
    "prix_m2": 48.9,
    "note_detail": {
-    "prix": 0,
+    "prix": 1,
     "securite": 0,
     "trajets": 14,
     "gare": 17,
