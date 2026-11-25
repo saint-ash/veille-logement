@@ -1,6 +1,120 @@
 {
- "maj": "2026-11-25T00:09:57Z",
+ "maj": "2026-11-25T15:30:06Z",
  "annonces": [
+  {
+   "cle": "bienici:apimo-85060376",
+   "source": "Bien'ici",
+   "url": "https://www.bienici.com/annonce/apimo-85060376",
+   "titre": "Appartement meublé 2 pièces - EAUBONNE",
+   "prix": 850,
+   "surface": 40.16,
+   "pieces": 2,
+   "ville": "Eaubonne",
+   "code_postal": "95600",
+   "lat": 48.98589666103314,
+   "lon": 2.273407055435726,
+   "rayon_flou_km": 0.05,
+   "photo": "https://media.apimo.pro/cache/dd50ada399fa54433f309f0c8b956035_912e93bd8c_1920-original.jpg",
+   "photos": [
+    "https://media.apimo.pro/cache/dd50ada399fa54433f309f0c8b956035_912e93bd8c_1920-original.jpg",
+    "https://media.apimo.pro/cache/f230478712c19e9f60870afeb8b6b24a_3809829585_1920-original.jpg",
+    "https://media.apimo.pro/cache/d253573ebe2f6ab7a96369d65ee67acb_9e69f8ceec_1920-original.jpg",
+    "https://media.apimo.pro/cache/8b34d99d6588a13ab00ae33263899c11_5f5d3554e1_1920-original.jpg"
+   ],
+   "charges": 95,
+   "meuble": true,
+   "etage": 2,
+   "annonceur": "agence",
+   "frais_agence": 520,
+   "date": "2026-11-25T08:34:25.825Z",
+   "insee": "95203",
+   "securite": {
+    "niveau": 3,
+    "taux": 4.0,
+    "rang": 151,
+    "sur": 293,
+    "annee": "2025",
+    "code": "95203"
+   },
+   "gare": "Ermont-Eaubonne",
+   "lignes": [
+    "H",
+    "C",
+    "J"
+   ],
+   "gare_lat": 48.98065,
+   "gare_lon": 2.27208,
+   "distance_km": 0.591,
+   "minutes": 9,
+   "position_approx": false,
+   "distances": {
+    "SKEMA": 14.4,
+    "Porte Maillot": 11.9
+   },
+   "trajets": {
+    "SKEMA": null,
+    "Porte Maillot": null
+   },
+   "ratio_marche": 0.706,
+   "prix_m2": 21.2,
+   "note_detail": {
+    "prix": 30,
+    "securite": 10,
+    "trajets": 0,
+    "gare": 9,
+    "surface": 6,
+    "bonus": 0
+   },
+   "score": 55,
+   "tags": [
+    "bonne_affaire"
+   ],
+   "extrait": "A 600 mètres de la gare Ermont-Eaubonne, au 2ème étage d'un petit immeuble ancien, votre agence <span class=\"importDescriptionDecorator\" data-url=\"ARTHURIMMO.COM\" data-type=\"basicUrl\">ARTHURIMMO.COM</span> vous propose ce lumineux 2 pièces comprenant : une entrée, une cuisine amé…",
+   "vu_le": "2026-11-25T15:30:05Z",
+   "prix_initial": 850
+  },
+  {
+   "cle": "mail:f43e41d557706ea4",
+   "source": "pap.fr",
+   "url": "https://www.pap.fr/annonces/-r466300412?a=63674132",
+   "titre": "Location appartement · Asnières-sur-Seine (92600) · 780 € / mois · 1 pièces · 18 m² · Voir l'annonce et contacter le propriétaire",
+   "photo": "https://cdn.pap.fr/photos/pap/4e/de/4ede801d08cfb6a9d846642bd9730904/4-p5.jpg",
+   "prix": 780.0,
+   "surface": 18.0,
+   "pieces": 1,
+   "code_postal": "92600",
+   "annonceur": "particulier",
+   "meuble": null,
+   "ville": "Asnières-sur-Seine",
+   "insee": "92004",
+   "securite": {
+    "niveau": 3,
+    "taux": 4.8,
+    "rang": 171,
+    "sur": 293,
+    "annee": "2025",
+    "code": "92004"
+   },
+   "distances_approx": true,
+   "distances": {
+    "SKEMA": 8.1,
+    "Porte Maillot": 4.4
+   },
+   "ratio_marche": 1.039,
+   "prix_m2": 43.3,
+   "note_detail": {
+    "prix": 13,
+    "securite": 10,
+    "trajets": 12,
+    "gare": 10,
+    "surface": 0,
+    "bonus": 3
+   },
+   "score": 47,
+   "tags": [],
+   "vu_le": "2026-11-25T15:30:05Z",
+   "prix_initial": 780.0
+  },
   {
    "cle": "bienici:immo-facile-52284230",
    "source": "Bien'ici",
@@ -211,17 +325,17 @@
     "SKEMA": 8.1,
     "Porte Maillot": 4.4
    },
-   "ratio_marche": 0.84,
+   "ratio_marche": 0.815,
    "prix_m2": 34.0,
    "note_detail": {
-    "prix": 25,
+    "prix": 26,
     "securite": 10,
     "trajets": 12,
     "gare": 10,
     "surface": 5,
     "bonus": 3
    },
-   "score": 64,
+   "score": 66,
    "tags": [
     "bonne_affaire"
    ],
@@ -308,7 +422,7 @@
     "surface": 4,
     "bonus": 7
    },
-   "score": 54,
+   "score": 55,
    "tags": [
     "bonne_affaire"
    ],
@@ -342,17 +456,17 @@
     "SKEMA": 8.1,
     "Porte Maillot": 4.4
    },
-   "ratio_marche": 0.84,
+   "ratio_marche": 0.815,
    "prix_m2": 34.0,
    "note_detail": {
-    "prix": 25,
+    "prix": 26,
     "securite": 10,
     "trajets": 12,
     "gare": 10,
     "surface": 5,
     "bonus": 3
    },
-   "score": 64,
+   "score": 66,
    "tags": [
     "bonne_affaire"
    ],
@@ -474,7 +588,7 @@
     "SKEMA": 5.4,
     "Porte Maillot": 4.2
    },
-   "ratio_marche": 1.267,
+   "ratio_marche": 1.266,
    "prix_m2": 50.0,
    "note_detail": {
     "prix": 0,
@@ -515,7 +629,7 @@
     "SKEMA": 1.2,
     "Porte Maillot": 4.9
    },
-   "ratio_marche": 0.962,
+   "ratio_marche": 0.961,
    "prix_m2": 38.0,
    "note_detail": {
     "prix": 17,
@@ -670,17 +784,17 @@
     "SKEMA": 8.1,
     "Porte Maillot": 4.4
    },
-   "ratio_marche": 1.062,
+   "ratio_marche": 1.03,
    "prix_m2": 43.0,
    "note_detail": {
-    "prix": 11,
+    "prix": 13,
     "securite": 10,
     "trajets": 12,
     "gare": 10,
     "surface": 1,
     "bonus": 3
    },
-   "score": 47,
+   "score": 49,
    "tags": [],
    "extrait": "Studio meublé à louer · Asnières-sur-Seine (92600) · 20 m² · 859 € / mois · Beau studio en excellent état de 20 m² comprenant petite entrée, sdb avec douche, belle pièce à vivre et cui…",
    "vu_le": "2026-11-21T13:11:39Z",
@@ -712,17 +826,17 @@
     "Porte Maillot": 4.4
    },
    "distances_approx": true,
-   "ratio_marche": 1.062,
+   "ratio_marche": 1.03,
    "prix_m2": 43.0,
    "note_detail": {
-    "prix": 11,
+    "prix": 13,
     "securite": 10,
     "trajets": 12,
     "gare": 10,
     "surface": 1,
     "bonus": 0
    },
-   "score": 44,
+   "score": 46,
    "tags": [],
    "extrait": "C · 1/5 · Locservice Appartement à louer Studio de 20m2 à louer sur Asnières-sur-Seine 859 € CC /mois 43 € / m² 1 pièce • 1 chambre • 20 m² Asnières-sur-Seine (92600) Meublé Studio de particulier à louer sur asnières-sur-seine. Disponible le 19 / 12 / 2026 pour cette location meu…",
    "vu_le": "2026-11-21T12:53:01Z",
@@ -750,7 +864,7 @@
     "annee": "2025",
     "code": "75115"
    },
-   "ratio_marche": 1.0,
+   "ratio_marche": 0.999,
    "prix_m2": 39.5,
    "note_detail": {
     "prix": 15,
@@ -1170,17 +1284,17 @@
     "SKEMA": null,
     "Porte Maillot": null
    },
-   "ratio_marche": 1.0,
+   "ratio_marche": 0.97,
    "prix_m2": 40.5,
    "note_detail": {
-    "prix": 15,
+    "prix": 17,
     "securite": 5,
     "trajets": 14,
     "gare": 15,
     "surface": 1,
     "bonus": 0
    },
-   "score": 50,
+   "score": 52,
    "tags": [],
    "extrait": "CENTURY21 L'ami immobilier vous propose :<br>Studio meublé de 20 m² à louer  Rue  Bernard Jugault -Asnières-sur-Seine (92600)<br>À louer, charmant studio meublé de 20 m², idéalement situé à seulement 6 minutes à pied de la gare d'Asnières-sur-Seine.<br>Ce logement fonctionnel et …",
    "vu_le": "2026-11-20T14:09:48Z",
@@ -1516,7 +1630,7 @@
     "SKEMA": null,
     "Porte Maillot": null
    },
-   "ratio_marche": 0.904,
+   "ratio_marche": 0.903,
    "prix_m2": 35.7,
    "note_detail": {
     "prix": 21,
@@ -1746,7 +1860,7 @@
     "surface": 4,
     "bonus": 0
    },
-   "score": 61,
+   "score": 62,
    "extrait": "*** IMPORTANT : demande de contact à faire par e-mail via le formulaire sur cette annonce. Un accès vous sera automatiquement ouvert pour déposer votre dossier en ligne. Les visites seront organisées après validation de votre dossier. ***<br>NESTENN Rueil-Malmaison vous propose, …",
    "vu_le": "2026-11-20T14:09:48Z",
    "prix_initial": 790,
@@ -1804,7 +1918,7 @@
     "SKEMA": null,
     "Porte Maillot": null
    },
-   "ratio_marche": 1.25,
+   "ratio_marche": 1.249,
    "prix_m2": 49.3,
    "note_detail": {
     "prix": 0,
@@ -1940,7 +2054,7 @@
     "SKEMA": null,
     "Porte Maillot": null
    },
-   "ratio_marche": 0.761,
+   "ratio_marche": 0.76,
    "prix_m2": 30.0,
    "note_detail": {
     "prix": 29,
@@ -2084,7 +2198,7 @@
     "SKEMA": null,
     "Porte Maillot": null
    },
-   "ratio_marche": 0.901,
+   "ratio_marche": 0.9,
    "prix_m2": 35.6,
    "note_detail": {
     "prix": 21,
@@ -2152,7 +2266,7 @@
     "SKEMA": null,
     "Porte Maillot": null
    },
-   "ratio_marche": 0.747,
+   "ratio_marche": 0.746,
    "prix_m2": 29.5,
    "note_detail": {
     "prix": 30,
@@ -2226,7 +2340,7 @@
     "SKEMA": null,
     "Porte Maillot": null
    },
-   "ratio_marche": 1.125,
+   "ratio_marche": 1.124,
    "prix_m2": 44.4,
    "note_detail": {
     "prix": 8,
@@ -2294,7 +2408,7 @@
     "SKEMA": null,
     "Porte Maillot": null
    },
-   "ratio_marche": 1.239,
+   "ratio_marche": 1.238,
    "prix_m2": 48.9,
    "note_detail": {
     "prix": 1,
