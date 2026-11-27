@@ -1,6 +1,297 @@
 {
- "maj": "2026-11-26T14:59:34Z",
+ "maj": "2026-11-27T14:54:14Z",
  "annonces": [
+  {
+   "cle": "bienici:ag752345-563135060",
+   "source": "Bien'ici",
+   "url": "https://www.bienici.com/annonce/ag752345-563135060",
+   "titre": "Clichy",
+   "prix": 849,
+   "surface": 19,
+   "pieces": 1,
+   "ville": "Clichy",
+   "code_postal": "92110",
+   "lat": 48.90451331492996,
+   "lon": 2.3044167345819253,
+   "rayon_flou_km": 0.05,
+   "photo": "https://photos.ubiflow.net/752345/563135060/photos/1.jpg?INSOON_EB_5512801818_20261127113114",
+   "photos": [
+    "https://photos.ubiflow.net/752345/563135060/photos/1.jpg?INSOON_EB_5512801818_20261127113114",
+    "https://photos.ubiflow.net/752345/563135060/photos/2.jpg?INSOON_EB_5512801818_20261127113114",
+    "https://photos.ubiflow.net/752345/563135060/photos/3.jpg?INSOON_EB_5512801818_20261127113114",
+    "https://photos.ubiflow.net/752345/563135060/photos/4.jpg?INSOON_EB_5512801818_20261127113114"
+   ],
+   "charges": 100,
+   "meuble": true,
+   "etage": 4,
+   "annonceur": "agence",
+   "frais_agence": 286,
+   "date": "2026-11-27T11:43:13.512Z",
+   "insee": "92024",
+   "securite": {
+    "niveau": 2,
+    "taux": 5.3,
+    "rang": 187,
+    "sur": 293,
+    "annee": "2025",
+    "code": "92024"
+   },
+   "gare": "Mairie de Clichy",
+   "lignes": [
+    "M13"
+   ],
+   "gare_lat": 48.90323,
+   "gare_lon": 2.30601,
+   "distance_km": 0.184,
+   "minutes": 3,
+   "position_approx": false,
+   "distances": {
+    "SKEMA": 7.6,
+    "Porte Maillot": 3.2
+   },
+   "trajets": {
+    "SKEMA": null,
+    "Porte Maillot": null
+   },
+   "ratio_marche": 1.167,
+   "prix_m2": 44.7,
+   "note_detail": {
+    "prix": 5,
+    "securite": 5,
+    "trajets": 13,
+    "gare": 19,
+    "surface": 1,
+    "bonus": 0
+   },
+   "score": 43,
+   "tags": [],
+   "extrait": "Logement Manda ! Visitez et déposez votre dossier uniquement sur notre plateforme  ! Nous ne vous enverrons jamais le bail ou le RIB par mail - tout est sécurisé sur notre plateforme.\n\n L'agence Manda vous propose ce joli studio meublé entièrement refait à neuf, situé à Clichy.\n\n…",
+   "vu_le": "2026-11-27T14:54:10Z",
+   "prix_initial": 849
+  },
+  {
+   "cle": "bienici:ag923443-562961651",
+   "source": "Bien'ici",
+   "url": "https://www.bienici.com/annonce/ag923443-562961651",
+   "titre": "Studio meublé - 35m² - Nanterre 92000",
+   "prix": 850,
+   "surface": 35,
+   "pieces": 1,
+   "ville": "Nanterre",
+   "code_postal": "92000",
+   "lat": 48.89845426785629,
+   "lon": 2.2022321290804783,
+   "rayon_flou_km": 0.05,
+   "photo": "https://photos.ubiflow.net/923443/562961651/photos/1.jpg?INSOON_EB_5512801818_20261126170706",
+   "photos": [
+    "https://photos.ubiflow.net/923443/562961651/photos/1.jpg?INSOON_EB_5512801818_20261126170706",
+    "https://photos.ubiflow.net/923443/562961651/photos/2.jpg?INSOON_EB_5512801818_20261126170706",
+    "https://photos.ubiflow.net/923443/562961651/photos/3.jpg?INSOON_EB_5512801818_20261126170706",
+    "https://photos.ubiflow.net/923443/562961651/photos/4.jpg?INSOON_EB_5512801818_20261126170706"
+   ],
+   "charges": 90,
+   "meuble": true,
+   "etage": 3,
+   "annonceur": "agence",
+   "frais_agence": 530.6,
+   "date": "2026-11-26T16:38:29.359Z",
+   "insee": "92050",
+   "securite": {
+    "niveau": 2,
+    "taux": 7.1,
+    "rang": 228,
+    "sur": 293,
+    "annee": "2025",
+    "code": "92050"
+   },
+   "gare": "Nanterre-Ville",
+   "lignes": [
+    "A"
+   ],
+   "gare_lat": 48.89513,
+   "gare_lon": 2.19536,
+   "distance_km": 0.624,
+   "minutes": 10,
+   "position_approx": false,
+   "distances": {
+    "SKEMA": 4.5,
+    "Porte Maillot": 6.3
+   },
+   "trajets": {
+    "SKEMA": null,
+    "Porte Maillot": null
+   },
+   "ratio_marche": 0.75,
+   "prix_m2": 24.3,
+   "note_detail": {
+    "prix": 30,
+    "securite": 5,
+    "trajets": 13,
+    "gare": 8,
+    "surface": 10,
+    "bonus": 0
+   },
+   "score": 66,
+   "tags": [
+    "bonne_affaire"
+   ],
+   "extrait": "Grand studio de 35m² à 10 min à pied de la gare RER A de Nanterre-Ville et à proximité de toutes les commodités.\n\nSitué au sein d'une résidence récente, calme et sécurisé. Studio meublé qui se compose d'une entrée donnant sur une grande pièce de vie avec coin cuisine, d'une salle…",
+   "vu_le": "2026-11-27T14:54:10Z",
+   "prix_initial": 850
+  },
+  {
+   "cle": "bienici:citya-immobilier-5049-GES55510142-156",
+   "source": "Bien'ici",
+   "url": "https://www.bienici.com/annonce/citya-immobilier-5049-GES55510142-156",
+   "titre": "T1 Paris 15e",
+   "prix": 885.11,
+   "surface": 22.94,
+   "pieces": 1,
+   "ville": "Paris 15e",
+   "code_postal": "75015",
+   "lat": 48.84838,
+   "lon": 2.2892758,
+   "rayon_flou_km": 0.0,
+   "photo": "http://box.ics.fr/cit_CITYA_URBANIAPARIS_tic/location/photo/filigrane-20230301_163104-4070903149622235976.jpg",
+   "photos": [
+    "http://box.ics.fr/cit_CITYA_URBANIAPARIS_tic/location/photo/filigrane-20230301_163104-4070903149622235976.jpg",
+    "http://box.ics.fr/cit_CITYA_URBANIAPARIS_tic/location/photo/filigrane-20230301_163112-3437265948814885619.jpg",
+    "http://box.ics.fr/cit_CITYA_URBANIAPARIS_tic/location/photo/filigrane-20230301_163206-4282951797701056943.jpg",
+    "http://box.ics.fr/cit_CITYA_URBANIAPARIS_tic/location/photo/filigrane-20230301_163149-7619432231896390815.jpg"
+   ],
+   "charges": 40,
+   "meuble": true,
+   "etage": 2,
+   "annonceur": "agence",
+   "frais_agence": 347.08,
+   "date": "1970-01-01T00:00:00.000Z",
+   "coup_de_coeur": true,
+   "insee": "75056",
+   "securite": {
+    "niveau": 1,
+    "taux": 7.6,
+    "rang": 241,
+    "sur": 293,
+    "annee": "2025",
+    "code": "75115"
+   },
+   "gare": "Charles Michels",
+   "lignes": [
+    "M10"
+   ],
+   "gare_lat": 48.84653,
+   "gare_lon": 2.286,
+   "distance_km": 0.316,
+   "minutes": 5,
+   "position_approx": false,
+   "distances": {
+    "SKEMA": 4.9,
+    "Porte Maillot": 3.4
+   },
+   "trajets": {
+    "SKEMA": null,
+    "Porte Maillot": null
+   },
+   "ratio_marche": 1.008,
+   "prix_m2": 38.6,
+   "note_detail": {
+    "prix": 15,
+    "securite": 0,
+    "trajets": 16,
+    "gare": 17,
+    "surface": 4,
+    "bonus": 4
+   },
+   "score": 55,
+   "tags": [],
+   "extrait": "À LOUER : Appartement T1 rue du théâtre 75015 - disponible à partir de début décembre\n\nCe bien immobilier d'une superficie de 22,94 m² se trouve au deuxième étage d'un immeuble avec ascenseur, offrant ainsi un accès facile et pratique.\n\nL'appartement est entièrement meublé. Il di…",
+   "vu_le": "2026-11-27T14:54:10Z",
+   "prix_initial": 885.11
+  },
+  {
+   "cle": "mail:06d237faea33f0bc",
+   "source": "pap.fr",
+   "url": "https://www.pap.fr/annonces/-r453500105?a=63674132",
+   "titre": "Location appartement · Colombes (92700) · 880 € / mois · 1 pièces · 21 m² · Voir l'annonce et contacter le propriétaire",
+   "photo": "https://cdn.pap.fr/photos/pap/45/9d/459d102f16d2c93851e36736399e5936/4-p5.jpg",
+   "prix": 880.0,
+   "surface": 21.0,
+   "pieces": 1,
+   "code_postal": "92700",
+   "annonceur": "particulier",
+   "meuble": null,
+   "ville": "Colombes",
+   "insee": "92025",
+   "coup_de_coeur": true,
+   "securite": {
+    "niveau": 2,
+    "taux": 5.1,
+    "rang": 181,
+    "sur": 293,
+    "annee": "2025",
+    "code": "92025"
+   },
+   "distances_approx": true,
+   "distances": {
+    "SKEMA": 7.1,
+    "Porte Maillot": 5.5
+   },
+   "ratio_marche": 1.095,
+   "prix_m2": 41.9,
+   "note_detail": {
+    "prix": 9,
+    "securite": 5,
+    "trajets": 11,
+    "gare": 10,
+    "surface": 2,
+    "bonus": 7
+   },
+   "score": 45,
+   "tags": [],
+   "vu_le": "2026-11-27T14:54:10Z",
+   "prix_initial": 880.0
+  },
+  {
+   "cle": "mail:25b81791042e8b51",
+   "source": "pap.fr",
+   "url": "https://www.pap.fr/annonces/-r466301034?a=63674120",
+   "titre": "Location appartement · Paris 14e · 889 € / mois · 1 pièces · 18 m² · Voir l'annonce et contacter le propriétaire",
+   "photo": "https://cdn.pap.fr/photos/pap/7f/f5/7ff55aef7a53abec8d715427f780f979/7-p5.jpg",
+   "prix": 889.0,
+   "surface": 18.0,
+   "pieces": 1,
+   "annonceur": "particulier",
+   "meuble": null,
+   "ville": "Paris",
+   "insee": "75056",
+   "securite": {
+    "niveau": 1,
+    "taux": 11.7,
+    "rang": 276,
+    "sur": 293,
+    "annee": "2025",
+    "code": "75056"
+   },
+   "distances_approx": true,
+   "distances": {
+    "SKEMA": 9.0,
+    "Porte Maillot": 5.2
+   },
+   "ratio_marche": 1.29,
+   "prix_m2": 49.4,
+   "note_detail": {
+    "prix": 0,
+    "securite": 0,
+    "trajets": 10,
+    "gare": 10,
+    "surface": 0,
+    "bonus": 3
+   },
+   "score": 23,
+   "tags": [],
+   "vu_le": "2026-11-27T14:54:10Z",
+   "prix_initial": 889.0
+  },
   {
    "cle": "bienici:immo-facile-61794738",
    "source": "Bien'ici",
@@ -121,17 +412,17 @@
     "SKEMA": null,
     "Porte Maillot": null
    },
-   "ratio_marche": 0.888,
+   "ratio_marche": 1.0,
    "prix_m2": 32.4,
    "note_detail": {
-    "prix": 22,
+    "prix": 15,
     "securite": 5,
     "trajets": 13,
     "gare": 20,
     "surface": 4,
     "bonus": 0
    },
-   "score": 64,
+   "score": 57,
    "tags": [],
    "extrait": "RUE MAURICE THOREZ, au pied du RER A de Nanterre Ville. Au 4e et dernier étage, UN APPARTEMENT COMPOSÉ DE : une pièce principale lumineuse sous combles avec poutres apparentes et coin cuisine (plaque vitro 2 feux, hotte, évier, plan de travail, placards hauts et bas), un bureau (…",
    "vu_le": "2026-11-26T14:59:29Z",
@@ -190,17 +481,17 @@
     "SKEMA": null,
     "Porte Maillot": null
    },
-   "ratio_marche": 0.824,
+   "ratio_marche": 0.785,
    "prix_m2": 30.1,
    "note_detail": {
-    "prix": 26,
+    "prix": 28,
     "securite": 5,
     "trajets": 11,
     "gare": 6,
     "surface": 5,
     "bonus": 4
    },
-   "score": 57,
+   "score": 59,
    "tags": [
     "bonne_affaire"
    ],
@@ -234,7 +525,7 @@
     "SKEMA": 9.0,
     "Porte Maillot": 5.2
    },
-   "ratio_marche": 0.116,
+   "ratio_marche": 0.11,
    "prix_m2": 4.2,
    "note_detail": {
     "prix": 30,
@@ -278,17 +569,17 @@
     "SKEMA": 4.1,
     "Porte Maillot": 1.5
    },
-   "ratio_marche": 0.844,
+   "ratio_marche": 0.804,
    "prix_m2": 30.8,
    "note_detail": {
-    "prix": 24,
+    "prix": 27,
     "securite": 15,
     "trajets": 18,
     "gare": 10,
     "surface": 0,
     "bonus": 3
    },
-   "score": 71,
+   "score": 73,
    "tags": [
     "bonne_affaire"
    ],
@@ -552,7 +843,7 @@
     "SKEMA": 7.1,
     "Porte Maillot": 5.5
    },
-   "ratio_marche": 0.245,
+   "ratio_marche": 0.233,
    "prix_m2": 8.9,
    "note_detail": {
     "prix": 30,
@@ -623,17 +914,17 @@
     "SKEMA": null,
     "Porte Maillot": null
    },
-   "ratio_marche": 1.188,
+   "ratio_marche": 1.132,
    "prix_m2": 43.3,
    "note_detail": {
-    "prix": 4,
+    "prix": 7,
     "securite": 5,
     "trajets": 13,
     "gare": 3,
     "surface": 1,
     "bonus": 4
    },
-   "score": 30,
+   "score": 33,
    "tags": [],
    "extrait": "Quartier Wiener - Garamont; Au 4ème étage (sans ascenseur), studio meublé de 19.97 m2 comprenant une entrée, une pièce principale avec canapé lit convertible Poltronesofa, une cuisine aménagée équipée (hotte, plaque de cuisson, four, machine à laver lavante-séchante) , une salle …",
    "vu_le": "2026-11-23T15:51:17Z",
@@ -753,18 +1044,20 @@
     "SKEMA": 9.0,
     "Porte Maillot": 5.2
    },
-   "ratio_marche": 0.918,
+   "ratio_marche": 0.875,
    "prix_m2": 33.5,
    "note_detail": {
-    "prix": 20,
+    "prix": 23,
     "securite": 0,
     "trajets": 10,
     "gare": 10,
     "surface": 4,
     "bonus": 7
    },
-   "score": 50,
-   "tags": [],
+   "score": 53,
+   "tags": [
+    "bonne_affaire"
+   ],
    "vu_le": "2026-11-23T15:51:17Z",
    "prix_initial": 770.0
   },
@@ -839,17 +1132,17 @@
     "SKEMA": 6.9,
     "Porte Maillot": 4.2
    },
-   "ratio_marche": 0.939,
+   "ratio_marche": 0.894,
    "prix_m2": 34.2,
    "note_detail": {
-    "prix": 19,
+    "prix": 21,
     "securite": 15,
     "trajets": 13,
     "gare": 10,
     "surface": 6,
     "bonus": 3
    },
-   "score": 65,
+   "score": 68,
    "tags": [],
    "vu_le": "2026-11-22T20:24:00Z",
    "prix_initial": 890.0
@@ -925,7 +1218,7 @@
     "SKEMA": 5.4,
     "Porte Maillot": 4.2
    },
-   "ratio_marche": 1.371,
+   "ratio_marche": 1.306,
    "prix_m2": 50.0,
    "note_detail": {
     "prix": 0,
@@ -966,17 +1259,17 @@
     "SKEMA": 1.2,
     "Porte Maillot": 4.9
    },
-   "ratio_marche": 1.042,
+   "ratio_marche": 0.992,
    "prix_m2": 38.0,
    "note_detail": {
-    "prix": 13,
+    "prix": 15,
     "securite": 10,
     "trajets": 18,
     "gare": 10,
     "surface": 4,
     "bonus": 0
    },
-   "score": 54,
+   "score": 57,
    "tags": [],
    "vu_le": "2026-11-21T20:38:38Z",
    "prix_initial": 900.0
@@ -1007,7 +1300,7 @@
     "SKEMA": 1.2,
     "Porte Maillot": 4.9
    },
-   "ratio_marche": 0.368,
+   "ratio_marche": 0.351,
    "prix_m2": 13.4,
    "note_detail": {
     "prix": 30,
@@ -1078,17 +1371,17 @@
     "SKEMA": null,
     "Porte Maillot": null
    },
-   "ratio_marche": 1.171,
+   "ratio_marche": 1.115,
    "prix_m2": 42.7,
    "note_detail": {
-    "prix": 5,
+    "prix": 8,
     "securite": 5,
     "trajets": 13,
     "gare": 20,
     "surface": 1,
     "bonus": 4
    },
-   "score": 48,
+   "score": 51,
    "tags": [],
    "extrait": "Situé au 3ème étage avec ascenseur, découvrez ce charmant studio meublé de 19,58 m², idéalement situé à proximité du métro La Fourche (ligne 13) et de nombreux commerces.\n\nCalme et fonctionnel, cet appartement offre un cadre de vie agréable et un agencement optimisé. Il se compos…",
    "vu_le": "2026-11-21T14:15:26Z",
@@ -1201,17 +1494,17 @@
     "annee": "2025",
     "code": "75115"
    },
-   "ratio_marche": 1.083,
+   "ratio_marche": 1.031,
    "prix_m2": 39.5,
    "note_detail": {
-    "prix": 10,
+    "prix": 13,
     "securite": 3,
     "trajets": 14,
     "gare": 16,
     "surface": 1,
     "bonus": 7
    },
-   "score": 51,
+   "score": 54,
    "tags": [
     "securise"
    ],
@@ -1272,17 +1565,17 @@
     "SKEMA": null,
     "Porte Maillot": null
    },
-   "ratio_marche": 1.104,
+   "ratio_marche": 1.051,
    "prix_m2": 40.2,
    "note_detail": {
-    "prix": 9,
+    "prix": 12,
     "securite": 10,
     "trajets": 11,
     "gare": 11,
     "surface": 2,
     "bonus": 0
    },
-   "score": 43,
+   "score": 46,
    "tags": [],
    "extrait": "Avec IMMOJEUNE, trouvez les meilleurs logements étudiants et jeunes actifs en quelques clics et en toute confiance.\n\nÀ seulement 8 km de Paris et à proximité immédiate du quartier d'affaires de la Défense, Rueil-Malmaison bénéficie d'un emplacement privilégié. Notre appartement, …",
    "vu_le": "2026-11-21T12:45:28Z",
@@ -1341,17 +1634,17 @@
     "SKEMA": null,
     "Porte Maillot": null
    },
-   "ratio_marche": 0.85,
+   "ratio_marche": 0.81,
    "prix_m2": 31.0,
    "note_detail": {
-    "prix": 24,
+    "prix": 26,
     "securite": 10,
     "trajets": 15,
     "gare": 6,
     "surface": 6,
     "bonus": 4
    },
-   "score": 65,
+   "score": 68,
    "tags": [
     "bonne_affaire"
    ],
@@ -1485,7 +1778,7 @@
     "SKEMA": null,
     "Porte Maillot": null
    },
-   "ratio_marche": 1.344,
+   "ratio_marche": 1.28,
    "prix_m2": 49.0,
    "note_detail": {
     "prix": 0,
@@ -1553,17 +1846,17 @@
     "SKEMA": null,
     "Porte Maillot": null
    },
-   "ratio_marche": 1.084,
+   "ratio_marche": 1.033,
    "prix_m2": 39.5,
    "note_detail": {
-    "prix": 10,
+    "prix": 13,
     "securite": 5,
     "trajets": 12,
     "gare": 11,
     "surface": 2,
     "bonus": 0
    },
-   "score": 40,
+   "score": 43,
    "tags": [],
    "extrait": "Avec IMMOJEUNE, trouvez les meilleurs logements étudiants et jeunes actifs en quelques clics et en toute confiance.\n\nIdéalement implanté à proximité immédiate du RER A, cet appartement offre un accès rapide à La Défense en seulement 20 minutes et au centre de Paris (Châtelet) en …",
    "vu_le": "2026-11-20T14:09:48Z",
@@ -1689,17 +1982,17 @@
     "SKEMA": null,
     "Porte Maillot": null
    },
-   "ratio_marche": 0.897,
+   "ratio_marche": 1.009,
    "prix_m2": 32.7,
    "note_detail": {
-    "prix": 21,
+    "prix": 14,
     "securite": 0,
     "trajets": 13,
     "gare": 0,
     "surface": 6,
     "bonus": 0
    },
-   "score": 40,
+   "score": 33,
    "tags": [],
    "extrait": "Réf. AN006483 - Imodirect vous propose ce charmant studio meublé de 26 m², situé au 3ème étage avec ascenseur, au sein d'une résidence particulièrement calme et agréable.\n\nÀ deux pas de Paris, ce logement offre un cadre de vie idéal pour ceux qui recherchent confort, tranquillité…",
    "vu_le": "2026-11-20T14:09:48Z",
@@ -1895,18 +2188,20 @@
     "SKEMA": null,
     "Porte Maillot": null
    },
-   "ratio_marche": 0.921,
+   "ratio_marche": 0.877,
    "prix_m2": 33.6,
    "note_detail": {
-    "prix": 20,
+    "prix": 22,
     "securite": 5,
     "trajets": 19,
     "gare": 18,
     "surface": 2,
     "bonus": 0
    },
-   "score": 64,
-   "tags": [],
+   "score": 66,
+   "tags": [
+    "bonne_affaire"
+   ],
    "extrait": "Situé à Neuilly-sur-Seine, à proximité du métro et de toutes les commodités, découvrez ce studio meublé de 21,85 m², situé au 8ᵉ et dernier étage sans ascenseur.\n\nLe logement se compose d’une pièce principale lumineuse, d’un coin cuisine, ainsi que d’une salle d’eau avec wc. Enti…",
    "vu_le": "2026-11-20T14:09:48Z",
    "prix_initial": 705,
@@ -1963,17 +2258,17 @@
     "SKEMA": null,
     "Porte Maillot": null
    },
-   "ratio_marche": 0.978,
+   "ratio_marche": 0.932,
    "prix_m2": 35.7,
    "note_detail": {
-    "prix": 16,
+    "prix": 19,
     "securite": 5,
     "trajets": 12,
     "gare": 12,
     "surface": 2,
     "bonus": 0
    },
-   "score": 47,
+   "score": 50,
    "tags": [],
    "extrait": "Avec IMMOJEUNE, trouvez les meilleurs logements étudiants et jeunes actifs en quelques clics et en toute confiance.\n\nIdéalement situé aux abords ouest de Paris et à proximité de Nanterre, cet appartement se trouve à quelques pas de l'Université Paris X – Nanterre, de renommées in…",
    "vu_le": "2026-11-20T14:09:48Z",
@@ -2175,24 +2470,25 @@
    "minutes": 9,
    "position_approx": false,
    "tags": [
-    "baisse"
+    "baisse",
+    "bonne_affaire"
    ],
    "baisse_le": "2026-11-20T21:46:11Z",
    "trajets": {
     "SKEMA": null,
     "Porte Maillot": null
    },
-   "ratio_marche": 0.883,
+   "ratio_marche": 0.841,
    "prix_m2": 32.2,
    "note_detail": {
-    "prix": 22,
+    "prix": 25,
     "securite": 10,
     "trajets": 11,
     "gare": 10,
     "surface": 4,
     "bonus": 0
    },
-   "score": 57,
+   "score": 60,
    "extrait": "*** IMPORTANT : demande de contact à faire par e-mail via le formulaire sur cette annonce. Un accès vous sera automatiquement ouvert pour déposer votre dossier en ligne. Les visites seront organisées après validation de votre dossier. ***<br>NESTENN Rueil-Malmaison vous propose, …",
    "vu_le": "2026-11-20T14:09:48Z",
    "prix_initial": 790,
@@ -2250,7 +2546,7 @@
     "SKEMA": null,
     "Porte Maillot": null
    },
-   "ratio_marche": 1.353,
+   "ratio_marche": 1.523,
    "prix_m2": 49.3,
    "note_detail": {
     "prix": 0,
@@ -2386,19 +2682,18 @@
     "SKEMA": null,
     "Porte Maillot": null
    },
-   "ratio_marche": 0.824,
+   "ratio_marche": 0.927,
    "prix_m2": 30.0,
    "note_detail": {
-    "prix": 26,
+    "prix": 19,
     "securite": 3,
     "trajets": 13,
     "gare": 19,
     "surface": 8,
     "bonus": 0
    },
-   "score": 69,
+   "score": 63,
    "tags": [
-    "bonne_affaire",
     "securise"
    ],
    "extrait": "Au deuxième étage d'une résidence sécurisée et à deux pas de la gare de RER de Nanterre Ville, un appartement de type studio meublé. Composé d'une entrée sur couloir desservant une salle de bains, un W.C., un séjour, une cuisine séparée.\n\nDisponible le 01/10/2026.",
@@ -2530,17 +2825,17 @@
     "SKEMA": null,
     "Porte Maillot": null
    },
-   "ratio_marche": 0.975,
+   "ratio_marche": 0.929,
    "prix_m2": 35.6,
    "note_detail": {
-    "prix": 16,
+    "prix": 19,
     "securite": 0,
     "trajets": 14,
     "gare": 16,
     "surface": 4,
     "bonus": 0
    },
-   "score": 50,
+   "score": 53,
    "tags": [],
    "extrait": "Au pied du Nouveau Tribunal, porte de Clichy, dans un immeuble calme, au 4ème étage sans ascenseur sur cour sans vis à vis: studio MEUBLE comprenant: cuisine dinatoire,  pièce principale, salle d'eau avec WC.<br>Très calme.<br>",
    "vu_le": "2026-11-20T14:09:48Z",
@@ -2598,17 +2893,17 @@
     "SKEMA": null,
     "Porte Maillot": null
    },
-   "ratio_marche": 0.808,
+   "ratio_marche": 0.77,
    "prix_m2": 29.5,
    "note_detail": {
-    "prix": 27,
+    "prix": 29,
     "securite": 10,
     "trajets": 15,
     "gare": 17,
     "surface": 9,
     "bonus": 0
    },
-   "score": 77,
+   "score": 79,
    "tags": [
     "bonne_affaire"
    ],
@@ -2672,17 +2967,17 @@
     "SKEMA": null,
     "Porte Maillot": null
    },
-   "ratio_marche": 1.217,
+   "ratio_marche": 1.16,
    "prix_m2": 44.4,
    "note_detail": {
-    "prix": 2,
+    "prix": 5,
     "securite": 0,
     "trajets": 9,
     "gare": 19,
     "surface": 0,
     "bonus": 0
    },
-   "score": 30,
+   "score": 33,
    "tags": [],
    "extrait": "À proximité de la Gare du Nord, dans un immeuble ravalé, studio en très bon état.Il se compose d'une entrée desservant une pièce principale avec parquet au sol et fenêtre en double vitrage, et d'une cuisine américaine équipée de plaques de cuisson, d'un réfrigérateur, d'un plan d…",
    "vu_le": "2026-11-20T14:09:48Z",
@@ -2740,7 +3035,7 @@
     "SKEMA": null,
     "Porte Maillot": null
    },
-   "ratio_marche": 1.341,
+   "ratio_marche": 1.277,
    "prix_m2": 48.9,
    "note_detail": {
     "prix": 0,
