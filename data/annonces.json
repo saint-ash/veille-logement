@@ -1,6 +1,49 @@
 {
- "maj": "2026-11-27T23:06:55Z",
+ "maj": "2026-11-28T14:03:02Z",
  "annonces": [
+  {
+   "cle": "mail:e0c0e9742b0df0d1",
+   "source": "pap.fr",
+   "url": "https://www.pap.fr/annonces/-r465900593?a=63674132",
+   "titre": "Location appartement · La Garenne-Colombes (92250) · 890 € / mois · 1 pièces · 18 m² · Voir l'annonce et contacter le propriétaire",
+   "photo": "https://cdn.pap.fr/photos/pap/de/82/de824f9a267236e309927f0b74bc8906/d-p5.jpg",
+   "prix": 890.0,
+   "surface": 18.0,
+   "pieces": 1,
+   "code_postal": "92250",
+   "annonceur": "particulier",
+   "meuble": null,
+   "ville": "La Garenne-Colombes",
+   "insee": "92035",
+   "coup_de_coeur": true,
+   "securite": {
+    "niveau": 3,
+    "taux": 3.4,
+    "rang": 129,
+    "sur": 293,
+    "annee": "2025",
+    "code": "92035"
+   },
+   "distances_approx": true,
+   "distances": {
+    "SKEMA": 5.4,
+    "Porte Maillot": 4.2
+   },
+   "ratio_marche": 1.292,
+   "prix_m2": 49.4,
+   "note_detail": {
+    "prix": 0,
+    "securite": 10,
+    "trajets": 14,
+    "gare": 10,
+    "surface": 0,
+    "bonus": 7
+   },
+   "score": 41,
+   "tags": [],
+   "vu_le": "2026-11-28T14:03:01Z",
+   "prix_initial": 890.0
+  },
   {
    "cle": "mail:6abf56f5c7750560",
    "source": "pap.fr",
@@ -97,17 +140,17 @@
     "SKEMA": null,
     "Porte Maillot": null
    },
-   "ratio_marche": 1.177,
+   "ratio_marche": 1.167,
    "prix_m2": 44.7,
    "note_detail": {
-    "prix": 4,
+    "prix": 5,
     "securite": 5,
     "trajets": 13,
     "gare": 19,
     "surface": 1,
     "bonus": 0
    },
-   "score": 42,
+   "score": 43,
    "tags": [],
    "extrait": "Logement Manda ! Visitez et déposez votre dossier uniquement sur notre plateforme  ! Nous ne vous enverrons jamais le bail ou le RIB par mail - tout est sécurisé sur notre plateforme.\n\n L'agence Manda vous propose ce joli studio meublé entièrement refait à neuf, situé à Clichy.\n\n…",
    "vu_le": "2026-11-27T14:54:10Z",
@@ -236,17 +279,17 @@
     "SKEMA": null,
     "Porte Maillot": null
    },
-   "ratio_marche": 1.016,
+   "ratio_marche": 1.008,
    "prix_m2": 38.6,
    "note_detail": {
-    "prix": 14,
+    "prix": 15,
     "securite": 0,
     "trajets": 16,
     "gare": 17,
     "surface": 4,
     "bonus": 4
    },
-   "score": 54,
+   "score": 55,
    "tags": [],
    "extrait": "À LOUER : Appartement T1 rue du théâtre 75015 - disponible à partir de début décembre\n\nCe bien immobilier d'une superficie de 22,94 m² se trouve au deuxième étage d'un immeuble avec ascenseur, offrant ainsi un accès facile et pratique.\n\nL'appartement est entièrement meublé. Il di…",
    "vu_le": "2026-11-27T14:54:10Z",
@@ -280,7 +323,7 @@
     "SKEMA": 7.1,
     "Porte Maillot": 5.5
    },
-   "ratio_marche": 1.103,
+   "ratio_marche": 1.095,
    "prix_m2": 41.9,
    "note_detail": {
     "prix": 9,
@@ -290,7 +333,7 @@
     "surface": 2,
     "bonus": 7
    },
-   "score": 44,
+   "score": 45,
    "tags": [],
    "vu_le": "2026-11-27T14:54:10Z",
    "prix_initial": 880.0
@@ -321,7 +364,7 @@
     "SKEMA": 9.0,
     "Porte Maillot": 5.2
    },
-   "ratio_marche": 1.301,
+   "ratio_marche": 1.29,
    "prix_m2": 49.4,
    "note_detail": {
     "prix": 0,
@@ -525,7 +568,7 @@
     "SKEMA": null,
     "Porte Maillot": null
    },
-   "ratio_marche": 0.791,
+   "ratio_marche": 0.785,
    "prix_m2": 30.1,
    "note_detail": {
     "prix": 28,
@@ -569,7 +612,7 @@
     "SKEMA": 9.0,
     "Porte Maillot": 5.2
    },
-   "ratio_marche": 0.111,
+   "ratio_marche": 0.11,
    "prix_m2": 4.2,
    "note_detail": {
     "prix": 30,
@@ -613,10 +656,10 @@
     "SKEMA": 4.1,
     "Porte Maillot": 1.5
    },
-   "ratio_marche": 0.81,
+   "ratio_marche": 0.804,
    "prix_m2": 30.8,
    "note_detail": {
-    "prix": 26,
+    "prix": 27,
     "securite": 15,
     "trajets": 18,
     "gare": 10,
@@ -887,7 +930,7 @@
     "SKEMA": 7.1,
     "Porte Maillot": 5.5
    },
-   "ratio_marche": 0.235,
+   "ratio_marche": 0.233,
    "prix_m2": 8.9,
    "note_detail": {
     "prix": 30,
@@ -958,7 +1001,7 @@
     "SKEMA": null,
     "Porte Maillot": null
    },
-   "ratio_marche": 1.141,
+   "ratio_marche": 1.132,
    "prix_m2": 43.3,
    "note_detail": {
     "prix": 7,
@@ -968,7 +1011,7 @@
     "surface": 1,
     "bonus": 4
    },
-   "score": 32,
+   "score": 33,
    "tags": [],
    "extrait": "Quartier Wiener - Garamont; Au 4ème étage (sans ascenseur), studio meublé de 19.97 m2 comprenant une entrée, une pièce principale avec canapé lit convertible Poltronesofa, une cuisine aménagée équipée (hotte, plaque de cuisson, four, machine à laver lavante-séchante) , une salle …",
    "vu_le": "2026-11-23T15:51:17Z",
@@ -1088,18 +1131,20 @@
     "SKEMA": 9.0,
     "Porte Maillot": 5.2
    },
-   "ratio_marche": 0.882,
+   "ratio_marche": 0.875,
    "prix_m2": 33.5,
    "note_detail": {
-    "prix": 22,
+    "prix": 23,
     "securite": 0,
     "trajets": 10,
     "gare": 10,
     "surface": 4,
     "bonus": 7
    },
-   "score": 52,
-   "tags": [],
+   "score": 53,
+   "tags": [
+    "bonne_affaire"
+   ],
    "vu_le": "2026-11-23T15:51:17Z",
    "prix_initial": 770.0
   },
@@ -1174,7 +1219,7 @@
     "SKEMA": 6.9,
     "Porte Maillot": 4.2
    },
-   "ratio_marche": 0.901,
+   "ratio_marche": 0.894,
    "prix_m2": 34.2,
    "note_detail": {
     "prix": 21,
@@ -1260,7 +1305,7 @@
     "SKEMA": 5.4,
     "Porte Maillot": 4.2
    },
-   "ratio_marche": 1.317,
+   "ratio_marche": 1.306,
    "prix_m2": 50.0,
    "note_detail": {
     "prix": 0,
@@ -1301,7 +1346,7 @@
     "SKEMA": 1.2,
     "Porte Maillot": 4.9
    },
-   "ratio_marche": 1.0,
+   "ratio_marche": 0.992,
    "prix_m2": 38.0,
    "note_detail": {
     "prix": 15,
@@ -1342,7 +1387,7 @@
     "SKEMA": 1.2,
     "Porte Maillot": 4.9
    },
-   "ratio_marche": 0.354,
+   "ratio_marche": 0.351,
    "prix_m2": 13.4,
    "note_detail": {
     "prix": 30,
@@ -1413,7 +1458,7 @@
     "SKEMA": null,
     "Porte Maillot": null
    },
-   "ratio_marche": 1.124,
+   "ratio_marche": 1.115,
    "prix_m2": 42.7,
    "note_detail": {
     "prix": 8,
@@ -1423,7 +1468,7 @@
     "surface": 1,
     "bonus": 4
    },
-   "score": 50,
+   "score": 51,
    "tags": [],
    "extrait": "Situé au 3ème étage avec ascenseur, découvrez ce charmant studio meublé de 19,58 m², idéalement situé à proximité du métro La Fourche (ligne 13) et de nombreux commerces.\n\nCalme et fonctionnel, cet appartement offre un cadre de vie agréable et un agencement optimisé. Il se compos…",
    "vu_le": "2026-11-21T14:15:26Z",
@@ -1536,7 +1581,7 @@
     "annee": "2025",
     "code": "75115"
    },
-   "ratio_marche": 1.039,
+   "ratio_marche": 1.031,
    "prix_m2": 39.5,
    "note_detail": {
     "prix": 13,
@@ -1607,10 +1652,10 @@
     "SKEMA": null,
     "Porte Maillot": null
    },
-   "ratio_marche": 1.06,
+   "ratio_marche": 1.051,
    "prix_m2": 40.2,
    "note_detail": {
-    "prix": 11,
+    "prix": 12,
     "securite": 10,
     "trajets": 11,
     "gare": 11,
@@ -1676,7 +1721,7 @@
     "SKEMA": null,
     "Porte Maillot": null
    },
-   "ratio_marche": 0.816,
+   "ratio_marche": 0.81,
    "prix_m2": 31.0,
    "note_detail": {
     "prix": 26,
@@ -1686,7 +1731,7 @@
     "surface": 6,
     "bonus": 4
    },
-   "score": 67,
+   "score": 68,
    "tags": [
     "bonne_affaire"
    ],
@@ -1820,7 +1865,7 @@
     "SKEMA": null,
     "Porte Maillot": null
    },
-   "ratio_marche": 1.29,
+   "ratio_marche": 1.28,
    "prix_m2": 49.0,
    "note_detail": {
     "prix": 0,
@@ -1888,7 +1933,7 @@
     "SKEMA": null,
     "Porte Maillot": null
    },
-   "ratio_marche": 1.041,
+   "ratio_marche": 1.033,
    "prix_m2": 39.5,
    "note_detail": {
     "prix": 13,
@@ -1898,7 +1943,7 @@
     "surface": 2,
     "bonus": 0
    },
-   "score": 42,
+   "score": 43,
    "tags": [],
    "extrait": "Avec IMMOJEUNE, trouvez les meilleurs logements étudiants et jeunes actifs en quelques clics et en toute confiance.\n\nIdéalement implanté à proximité immédiate du RER A, cet appartement offre un accès rapide à La Défense en seulement 20 minutes et au centre de Paris (Châtelet) en …",
    "vu_le": "2026-11-20T14:09:48Z",
@@ -2230,7 +2275,7 @@
     "SKEMA": null,
     "Porte Maillot": null
    },
-   "ratio_marche": 0.884,
+   "ratio_marche": 0.877,
    "prix_m2": 33.6,
    "note_detail": {
     "prix": 22,
@@ -2241,7 +2286,9 @@
     "bonus": 0
    },
    "score": 66,
-   "tags": [],
+   "tags": [
+    "bonne_affaire"
+   ],
    "extrait": "Situé à Neuilly-sur-Seine, à proximité du métro et de toutes les commodités, découvrez ce studio meublé de 21,85 m², situé au 8ᵉ et dernier étage sans ascenseur.\n\nLe logement se compose d’une pièce principale lumineuse, d’un coin cuisine, ainsi que d’une salle d’eau avec wc. Enti…",
    "vu_le": "2026-11-20T14:09:48Z",
    "prix_initial": 705,
@@ -2298,7 +2345,7 @@
     "SKEMA": null,
     "Porte Maillot": null
    },
-   "ratio_marche": 0.939,
+   "ratio_marche": 0.932,
    "prix_m2": 35.7,
    "note_detail": {
     "prix": 19,
@@ -2518,10 +2565,10 @@
     "SKEMA": null,
     "Porte Maillot": null
    },
-   "ratio_marche": 0.848,
+   "ratio_marche": 0.841,
    "prix_m2": 32.2,
    "note_detail": {
-    "prix": 24,
+    "prix": 25,
     "securite": 10,
     "trajets": 11,
     "gare": 10,
@@ -2865,7 +2912,7 @@
     "SKEMA": null,
     "Porte Maillot": null
    },
-   "ratio_marche": 0.936,
+   "ratio_marche": 0.929,
    "prix_m2": 35.6,
    "note_detail": {
     "prix": 19,
@@ -2933,10 +2980,10 @@
     "SKEMA": null,
     "Porte Maillot": null
    },
-   "ratio_marche": 0.776,
+   "ratio_marche": 0.77,
    "prix_m2": 29.5,
    "note_detail": {
-    "prix": 28,
+    "prix": 29,
     "securite": 10,
     "trajets": 15,
     "gare": 17,
@@ -3007,7 +3054,7 @@
     "SKEMA": null,
     "Porte Maillot": null
    },
-   "ratio_marche": 1.169,
+   "ratio_marche": 1.16,
    "prix_m2": 44.4,
    "note_detail": {
     "prix": 5,
@@ -3075,7 +3122,7 @@
     "SKEMA": null,
     "Porte Maillot": null
    },
-   "ratio_marche": 1.287,
+   "ratio_marche": 1.277,
    "prix_m2": 48.9,
    "note_detail": {
     "prix": 0,
